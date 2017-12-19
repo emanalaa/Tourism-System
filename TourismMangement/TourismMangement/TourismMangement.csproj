@@ -164,12 +164,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UpdateTouPlace.resx">
-      <DependentUpon>UpdateTouPlace.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserHome.resx">
-      <DependentUpon>UserHome.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
