@@ -149,6 +149,12 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddTourPlace.resx">
+      <DependentUpon>AddTourPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -158,6 +164,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateTouPlace.resx">
+      <DependentUpon>UpdateTouPlace.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

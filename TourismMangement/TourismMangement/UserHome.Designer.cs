@@ -28,11 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttoneditprofile = new System.Windows.Forms.Button();
+            this.buttonreserve = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttoneditprofile
+            // 
+            this.buttoneditprofile.Location = new System.Drawing.Point(216, 289);
+            this.buttoneditprofile.Name = "buttoneditprofile";
+            this.buttoneditprofile.Size = new System.Drawing.Size(116, 46);
+            this.buttoneditprofile.TabIndex = 2;
+            this.buttoneditprofile.Text = "Edit Profile";
+            this.buttoneditprofile.UseVisualStyleBackColor = true;
+            // 
+            // buttonreserve
+            // 
+            this.buttonreserve.Location = new System.Drawing.Point(216, 177);
+            this.buttonreserve.Name = "buttonreserve";
+            this.buttonreserve.Size = new System.Drawing.Size(116, 46);
+            this.buttonreserve.TabIndex = 3;
+            this.buttonreserve.Text = "Reserve";
+            this.buttonreserve.UseVisualStyleBackColor = true;
+            // 
+            // UserHome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.buttonreserve);
+            this.Controls.Add(this.buttoneditprofile);
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Name = "UserHome";
             this.Text = "UserHome";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttoneditprofile;
+        private System.Windows.Forms.Button buttonreserve;
     }
 }

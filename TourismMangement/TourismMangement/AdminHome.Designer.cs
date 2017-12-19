@@ -28,11 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonadd = new System.Windows.Forms.Button();
+            this.buttonupdate = new System.Windows.Forms.Button();
+            this.buttondelete = new System.Windows.Forms.Button();
+            this.buttondisplay = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonadd
+            // 
+            this.buttonadd.Location = new System.Drawing.Point(230, 76);
+            this.buttonadd.Name = "buttonadd";
+            this.buttonadd.Size = new System.Drawing.Size(116, 46);
+            this.buttonadd.TabIndex = 0;
+            this.buttonadd.Text = "Add";
+            this.buttonadd.UseVisualStyleBackColor = true;
+            // 
+            // buttonupdate
+            // 
+            this.buttonupdate.Location = new System.Drawing.Point(230, 169);
+            this.buttonupdate.Name = "buttonupdate";
+            this.buttonupdate.Size = new System.Drawing.Size(116, 46);
+            this.buttonupdate.TabIndex = 1;
+            this.buttonupdate.Text = "Update";
+            this.buttonupdate.UseVisualStyleBackColor = true;
+            // 
+            // buttondelete
+            // 
+            this.buttondelete.Location = new System.Drawing.Point(230, 264);
+            this.buttondelete.Name = "buttondelete";
+            this.buttondelete.Size = new System.Drawing.Size(116, 46);
+            this.buttondelete.TabIndex = 2;
+            this.buttondelete.Text = "Delete";
+            this.buttondelete.UseVisualStyleBackColor = true;
+            // 
+            // buttondisplay
+            // 
+            this.buttondisplay.Location = new System.Drawing.Point(230, 355);
+            this.buttondisplay.Name = "buttondisplay";
+            this.buttondisplay.Size = new System.Drawing.Size(116, 46);
+            this.buttondisplay.TabIndex = 3;
+            this.buttondisplay.Text = "Display";
+            this.buttondisplay.UseVisualStyleBackColor = true;
+            // 
+            // AdminHome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.buttondisplay);
+            this.Controls.Add(this.buttondelete);
+            this.Controls.Add(this.buttonupdate);
+            this.Controls.Add(this.buttonadd);
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Name = "AdminHome";
             this.Text = "AdminHome";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonadd;
+        private System.Windows.Forms.Button buttonupdate;
+        private System.Windows.Forms.Button buttondelete;
+        private System.Windows.Forms.Button buttondisplay;
     }
 }
