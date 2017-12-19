@@ -1,0 +1,3 @@
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe.config
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.exe
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.pdb
