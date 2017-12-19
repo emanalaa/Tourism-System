@@ -16,5 +16,10 @@ namespace TourismMangement
         {
             InitializeComponent();
         }
+
+        private void Display_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
