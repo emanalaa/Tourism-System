@@ -1,8 +1,3 @@
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe.config
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.pdb
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csprojResolveAssemblyReference.cache
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Properties.Resources.resources
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csproj.GenerateResource.Cache
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.exe
-C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.pdb
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe.config
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.exe
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.pdb
