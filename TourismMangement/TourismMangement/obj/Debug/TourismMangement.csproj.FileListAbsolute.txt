@@ -25,3 +25,12 @@ C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangem
 C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
 C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
 C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Add.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AddTourPlace.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AdminHome.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.EditProfile.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login_Register.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
+C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
