@@ -16,5 +16,19 @@ namespace TourismMangement
         {
             InitializeComponent();
         }
+
+        private void ButtonSignIn_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void ButtonSignUp_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            register.Show();
+            this.Hide();
+        }
     }
 }

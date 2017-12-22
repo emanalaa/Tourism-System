@@ -46,6 +46,7 @@
             this.ButtonAddTourplace.TabIndex = 15;
             this.ButtonAddTourplace.Text = "Add TourPlace";
             this.ButtonAddTourplace.UseVisualStyleBackColor = false;
+            this.ButtonAddTourplace.Click += new System.EventHandler(this.ButtonAddTourplace_Click);
             // 
             // ButtonAddUser
             // 
@@ -60,6 +61,7 @@
             this.ButtonAddUser.TabIndex = 14;
             this.ButtonAddUser.Text = "Add User";
             this.ButtonAddUser.UseVisualStyleBackColor = false;
+            this.ButtonAddUser.Click += new System.EventHandler(this.ButtonAddUser_Click);
             // 
             // ButtonAddTrans
             // 
@@ -74,6 +76,7 @@
             this.ButtonAddTrans.TabIndex = 13;
             this.ButtonAddTrans.Text = "Add Transportation";
             this.ButtonAddTrans.UseVisualStyleBackColor = false;
+            this.ButtonAddTrans.Click += new System.EventHandler(this.ButtonAddTrans_Click);
             // 
             // Add
             // 

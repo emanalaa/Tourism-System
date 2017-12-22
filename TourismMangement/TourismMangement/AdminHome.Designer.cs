@@ -42,6 +42,7 @@
             this.buttonadd.TabIndex = 0;
             this.buttonadd.Text = "Add";
             this.buttonadd.UseVisualStyleBackColor = true;
+            this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click);
             // 
             // buttonupdate
             // 
@@ -51,6 +52,7 @@
             this.buttonupdate.TabIndex = 1;
             this.buttonupdate.Text = "Update";
             this.buttonupdate.UseVisualStyleBackColor = true;
+            this.buttonupdate.Click += new System.EventHandler(this.buttonupdate_Click);
             // 
             // buttondelete
             // 
@@ -60,6 +62,7 @@
             this.buttondelete.TabIndex = 2;
             this.buttondelete.Text = "Delete";
             this.buttondelete.UseVisualStyleBackColor = true;
+            this.buttondelete.Click += new System.EventHandler(this.buttondelete_Click);
             // 
             // buttondisplay
             // 
@@ -69,6 +72,7 @@
             this.buttondisplay.TabIndex = 3;
             this.buttondisplay.Text = "Display";
             this.buttondisplay.UseVisualStyleBackColor = true;
+            this.buttondisplay.Click += new System.EventHandler(this.buttondisplay_Click);
             // 
             // AdminHome
             // 
@@ -83,6 +87,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "AdminHome";
             this.Text = "AdminHome";
+            this.Load += new System.EventHandler(this.AdminHome_Load);
             this.ResumeLayout(false);
 
         }

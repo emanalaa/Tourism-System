@@ -16,5 +16,26 @@ namespace TourismMangement
         {
             InitializeComponent();
         }
+
+        private void ButtonUpdateUser_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            update.Show();
+            this.Hide();
+        }
+
+        private void ButtonUpdateTrans_Click(object sender, EventArgs e)
+        {
+            UpdateTransportation trans = new UpdateTransportation();
+            trans.Show();
+            this.Hide();
+        }
+
+        private void ButtonUpdateTouplace_Click(object sender, EventArgs e)
+        {
+            UpdateTouPlace tou = new UpdateTouPlace();
+            tou.Show();
+            this.Hide();
+        }
     }
 }

@@ -46,6 +46,7 @@
             this.ButtonUpdateTouplace.TabIndex = 16;
             this.ButtonUpdateTouplace.Text = "Update TourPlace";
             this.ButtonUpdateTouplace.UseVisualStyleBackColor = false;
+            this.ButtonUpdateTouplace.Click += new System.EventHandler(this.ButtonUpdateTouplace_Click);
             // 
             // ButtonUpdateTrans
             // 
@@ -60,6 +61,7 @@
             this.ButtonUpdateTrans.TabIndex = 15;
             this.ButtonUpdateTrans.Text = "Update Transportation";
             this.ButtonUpdateTrans.UseVisualStyleBackColor = false;
+            this.ButtonUpdateTrans.Click += new System.EventHandler(this.ButtonUpdateTrans_Click);
             // 
             // ButtonUpdateUser
             // 
@@ -74,6 +76,7 @@
             this.ButtonUpdateUser.TabIndex = 14;
             this.ButtonUpdateUser.Text = "Update User";
             this.ButtonUpdateUser.UseVisualStyleBackColor = false;
+            this.ButtonUpdateUser.Click += new System.EventHandler(this.ButtonUpdateUser_Click);
             // 
             // Update
             // 

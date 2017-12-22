@@ -42,6 +42,7 @@
             this.ButtonSignUp.TabIndex = 4;
             this.ButtonSignUp.Text = "SIGN UP";
             this.ButtonSignUp.UseVisualStyleBackColor = false;
+            this.ButtonSignUp.Click += new System.EventHandler(this.ButtonSignUp_Click);
             // 
             // ButtonSignIn
             // 
@@ -53,6 +54,7 @@
             this.ButtonSignIn.TabIndex = 3;
             this.ButtonSignIn.Text = "SIGN IN";
             this.ButtonSignIn.UseVisualStyleBackColor = false;
+            this.ButtonSignIn.Click += new System.EventHandler(this.ButtonSignIn_Click);
             // 
             // Login_Register
             // 

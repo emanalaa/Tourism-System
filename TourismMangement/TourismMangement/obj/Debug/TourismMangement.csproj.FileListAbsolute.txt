@@ -9,3 +9,19 @@ C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csprojResolveAssemblyReference.cache
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Properties.Resources.resources
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csproj.GenerateResource.Cache
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe.config
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.pdb
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csprojResolveAssemblyReference.cache
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AddTourPlace.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AdminHome.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Properties.Resources.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csproj.GenerateResource.Cache
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.exe
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.pdb
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Add.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.EditProfile.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login_Register.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources

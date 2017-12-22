@@ -40,6 +40,7 @@
             this.buttoneditprofile.TabIndex = 2;
             this.buttoneditprofile.Text = "Edit Profile";
             this.buttoneditprofile.UseVisualStyleBackColor = true;
+            this.buttoneditprofile.Click += new System.EventHandler(this.buttoneditprofile_Click);
             // 
             // buttonreserve
             // 
@@ -49,6 +50,7 @@
             this.buttonreserve.TabIndex = 3;
             this.buttonreserve.Text = "Reserve";
             this.buttonreserve.UseVisualStyleBackColor = true;
+            this.buttonreserve.Click += new System.EventHandler(this.buttonreserve_Click);
             // 
             // UserHome
             // 
