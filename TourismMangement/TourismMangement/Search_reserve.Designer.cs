@@ -65,6 +65,7 @@
             this.ReserveButton.TabIndex = 7;
             this.ReserveButton.Text = "Reserve";
             this.ReserveButton.UseVisualStyleBackColor = true;
+            this.ReserveButton.Click += new System.EventHandler(this.ReserveButton_Click);
             // 
             // TransportationComboBoxSearch
             // 
@@ -74,6 +75,7 @@
             this.TransportationComboBoxSearch.Name = "TransportationComboBoxSearch";
             this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 27);
             this.TransportationComboBoxSearch.TabIndex = 6;
+            this.TransportationComboBoxSearch.SelectedIndexChanged += new System.EventHandler(this.TransportationComboBoxSearch_SelectedIndexChanged);
             // 
             // SearchTourPlaceComboBox
             // 
@@ -83,6 +85,7 @@
             this.SearchTourPlaceComboBox.Name = "SearchTourPlaceComboBox";
             this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 27);
             this.SearchTourPlaceComboBox.TabIndex = 5;
+            this.SearchTourPlaceComboBox.SelectedIndexChanged += new System.EventHandler(this.SearchTourPlaceComboBox_SelectedIndexChanged);
             // 
             // Search_reserve
             // 
