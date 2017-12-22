@@ -28,61 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonDeleteTransportation = new System.Windows.Forms.Button();
-            this.buttonDeleteTourPlace = new System.Windows.Forms.Button();
-            this.buttonDeleteUser = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxDelete = new System.Windows.Forms.ComboBox();
+            this.comboBoxSelectDelete = new System.Windows.Forms.ComboBox();
+            this.buttonDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonDeleteTransportation
+            // label1
             // 
-            this.buttonDeleteTransportation.BackColor = System.Drawing.Color.Black;
-            this.buttonDeleteTransportation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDeleteTransportation.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteTransportation.ForeColor = System.Drawing.Color.White;
-            this.buttonDeleteTransportation.Location = new System.Drawing.Point(203, 249);
-            this.buttonDeleteTransportation.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.buttonDeleteTransportation.Name = "buttonDeleteTransportation";
-            this.buttonDeleteTransportation.Size = new System.Drawing.Size(305, 59);
-            this.buttonDeleteTransportation.TabIndex = 5;
-            this.buttonDeleteTransportation.Text = "Delete Transportation";
-            this.buttonDeleteTransportation.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(164, 159);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Delete: ";
             // 
-            // buttonDeleteTourPlace
+            // comboBoxDelete
             // 
-            this.buttonDeleteTourPlace.BackColor = System.Drawing.Color.Black;
-            this.buttonDeleteTourPlace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDeleteTourPlace.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteTourPlace.ForeColor = System.Drawing.Color.White;
-            this.buttonDeleteTourPlace.Location = new System.Drawing.Point(203, 345);
-            this.buttonDeleteTourPlace.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.buttonDeleteTourPlace.Name = "buttonDeleteTourPlace";
-            this.buttonDeleteTourPlace.Size = new System.Drawing.Size(305, 59);
-            this.buttonDeleteTourPlace.TabIndex = 4;
-            this.buttonDeleteTourPlace.Text = "Delete Tour Place";
-            this.buttonDeleteTourPlace.UseVisualStyleBackColor = false;
+            this.comboBoxDelete.FormattingEnabled = true;
+            this.comboBoxDelete.Items.AddRange(new object[] {
+            "User",
+            "Tour Place",
+            "Transportation"});
+            this.comboBoxDelete.Location = new System.Drawing.Point(299, 156);
+            this.comboBoxDelete.Name = "comboBoxDelete";
+            this.comboBoxDelete.Size = new System.Drawing.Size(228, 36);
+            this.comboBoxDelete.TabIndex = 1;
+            this.comboBoxDelete.SelectedIndexChanged += new System.EventHandler(this.comboBoxDelete_SelectedIndexChanged);
             // 
-            // buttonDeleteUser
+            // comboBoxSelectDelete
             // 
-            this.buttonDeleteUser.BackColor = System.Drawing.Color.Black;
-            this.buttonDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDeleteUser.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeleteUser.ForeColor = System.Drawing.Color.White;
-            this.buttonDeleteUser.Location = new System.Drawing.Point(203, 151);
-            this.buttonDeleteUser.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.buttonDeleteUser.Name = "buttonDeleteUser";
-            this.buttonDeleteUser.Size = new System.Drawing.Size(305, 59);
-            this.buttonDeleteUser.TabIndex = 3;
-            this.buttonDeleteUser.Text = "Delete User";
-            this.buttonDeleteUser.UseVisualStyleBackColor = false;
+            this.comboBoxSelectDelete.FormattingEnabled = true;
+            this.comboBoxSelectDelete.Location = new System.Drawing.Point(169, 253);
+            this.comboBoxSelectDelete.Name = "comboBoxSelectDelete";
+            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 36);
+            this.comboBoxSelectDelete.TabIndex = 2;
+            this.comboBoxSelectDelete.Visible = false;
+            // 
+            // buttonDelete
+            // 
+            this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.ForeColor = System.Drawing.Color.White;
+            this.buttonDelete.Location = new System.Drawing.Point(245, 359);
+            this.buttonDelete.Name = "buttonDelete";
+            this.buttonDelete.Size = new System.Drawing.Size(165, 56);
+            this.buttonDelete.TabIndex = 3;
+            this.buttonDelete.Text = "Delete";
+            this.buttonDelete.UseVisualStyleBackColor = false;
+            this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
             // Delete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
-            this.Controls.Add(this.buttonDeleteTransportation);
-            this.Controls.Add(this.buttonDeleteTourPlace);
-            this.Controls.Add(this.buttonDeleteUser);
+            this.Controls.Add(this.buttonDelete);
+            this.Controls.Add(this.comboBoxSelectDelete);
+            this.Controls.Add(this.comboBoxDelete);
+            this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Delete";
@@ -90,13 +94,15 @@
             this.Text = "Delete";
             this.Load += new System.EventHandler(this.Delete_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonDeleteTransportation;
-        private System.Windows.Forms.Button buttonDeleteTourPlace;
-        private System.Windows.Forms.Button buttonDeleteUser;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxDelete;
+        private System.Windows.Forms.ComboBox comboBoxSelectDelete;
+        private System.Windows.Forms.Button buttonDelete;
     }
 }
