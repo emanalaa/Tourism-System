@@ -34,3 +34,17 @@ C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.exe
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\bin\Debug\TourismMangement.pdb
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csprojResolveAssemblyReference.cache
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Add.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AddTourPlace.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.AdminHome.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.EditProfile.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login_Register.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Properties.Resources.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
+C:\Users\Mai Nour Al-Deen\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.csproj.GenerateResource.Cache
