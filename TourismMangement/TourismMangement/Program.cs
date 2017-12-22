@@ -19,5 +19,6 @@ namespace TourismMangement
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login_Register());
         }
+
     }
 }

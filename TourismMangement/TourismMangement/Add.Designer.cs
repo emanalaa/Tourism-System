@@ -87,6 +87,7 @@
             this.Controls.Add(this.ButtonAddUser);
             this.Controls.Add(this.ButtonAddTrans);
             this.Name = "Add";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add";
             this.ResumeLayout(false);
 
