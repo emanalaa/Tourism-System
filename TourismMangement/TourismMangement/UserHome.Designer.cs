@@ -36,7 +36,7 @@
             // 
             this.buttoneditprofile.Location = new System.Drawing.Point(216, 289);
             this.buttoneditprofile.Name = "buttoneditprofile";
-            this.buttoneditprofile.Size = new System.Drawing.Size(116, 46);
+            this.buttoneditprofile.Size = new System.Drawing.Size(148, 46);
             this.buttoneditprofile.TabIndex = 2;
             this.buttoneditprofile.Text = "Edit Profile";
             this.buttoneditprofile.UseVisualStyleBackColor = true;
@@ -46,7 +46,7 @@
             // 
             this.buttonreserve.Location = new System.Drawing.Point(216, 177);
             this.buttonreserve.Name = "buttonreserve";
-            this.buttonreserve.Size = new System.Drawing.Size(116, 46);
+            this.buttonreserve.Size = new System.Drawing.Size(148, 46);
             this.buttonreserve.TabIndex = 3;
             this.buttonreserve.Text = "Reserve";
             this.buttonreserve.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             // 
             // UserHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.buttonreserve);

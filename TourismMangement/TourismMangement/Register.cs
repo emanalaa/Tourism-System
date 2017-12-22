@@ -35,9 +35,10 @@ namespace TourismMangement
 
             SqlCommand cmd = new SqlCommand(Insetstr, con);
 
-            while (EnterPassWord != ConPassWord && EnterPassWord.Length!=0)
+            if (EnterPassWord != ConPassWord && EnterPassWord.Length!=0)
             {
-                MessageBox.Show("Inavlid Input", "Please Re-Enter the Correct Password");
+                MessageBox.Show("Please Re-Enter the Correct Password." , "Inavlid Input");
+                return;
 
             }
             SqlParameter UserName = new SqlParameter("@UserName", textBoxUsername.Text);
@@ -58,7 +59,7 @@ namespace TourismMangement
 
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Welcome ! ");
+            MessageBox.Show("Welcome!");
             //the user should go to UserHome form
         }
 

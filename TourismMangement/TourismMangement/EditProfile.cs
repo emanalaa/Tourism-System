@@ -21,7 +21,7 @@ namespace TourismMangement
             while (string.IsNullOrWhiteSpace(textBoxCurrentPassword.Text))
                 UpdateButton.Enabled = false;
 
-           // textBoxUsername.Text = currentUsername;
+            textBoxUsername.Text = Login.currentUsername;
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)

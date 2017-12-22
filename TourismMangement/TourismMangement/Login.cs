@@ -13,9 +13,9 @@ namespace TourismMangement
 {
     public partial class Login : Form
     {
-        public string AdminUsername = "admin";
-        public string AdminPassword = "admin";
-        public string currentUsername;
+        public static string AdminUsername = "admin";
+        public static string AdminPassword = "admin";
+        public static string currentUsername;
 
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         
