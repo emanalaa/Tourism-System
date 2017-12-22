@@ -18,10 +18,12 @@ namespace TourismMangement
         public EditProfile()
         {
             InitializeComponent();
-            while (string.IsNullOrWhiteSpace(textBoxCurrentPassword.Text))
-                UpdateButton.Enabled = false;
-
             textBoxUsername.Text = Login.currentUsername;
+        }
+
+        private void textBoxCurrentPassword_TextChanged(object sender, EventArgs e)
+        {
+            UpdateButton.Enabled = !string.IsNullOrWhiteSpace(textBoxCurrentPassword.Text);
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
@@ -61,7 +63,7 @@ namespace TourismMangement
 
             string Query = @"SELECT Password
                             FROM Users
-                            WHERE Username = " + textBoxUsername;
+                            WHERE Username = '" + textBoxUsername + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             SqlDataReader rdr = cmd.ExecuteReader();
@@ -84,7 +86,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE INTO Users 
                              SET (Password = " + textBoxNewPassword + @")
-                             WHERE Username = " + textBoxUsername;
+                             WHERE Username = '" + textBoxUsername + "'";
             MessageBox.Show(Query);          
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -98,7 +100,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE INTO Users
                              SET (Mail = " + textBoxEmail + @")
-                             WHERE Username = " + textBoxUsername;
+                             WHERE Username = '" + textBoxUsername + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -112,7 +114,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE INTO Users
                              SET (Phone = " + textBoxPhone + @")
-                             WHERE Username = " + textBoxUsername;
+                             WHERE Username = '" + textBoxUsername + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -126,14 +128,12 @@ namespace TourismMangement
 
             string Query = @"UPDATE Users
                              SET(WayofPayment = " + comboBoxWayOfPayment.Text + @")
-                             WHERE Username = " + textBoxUsername;
+                             WHERE Username = '" + textBoxUsername + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
 
             con.Close();
         }
-
-
     }
 }

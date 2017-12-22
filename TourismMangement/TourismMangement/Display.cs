@@ -13,7 +13,7 @@ namespace TourismMangement
 {
     public partial class Display : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=IS Project;Integrated Security=True");
         public Display()
         {
             InitializeComponent();

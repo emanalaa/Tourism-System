@@ -18,6 +18,7 @@ namespace TourismMangement
         }
         public void Insert()
         {
+            string user = textBoxUsername.Text;
             string EnterPassWord = textBoxPassword.Text;
             string ConPassWord = textBoxConfirmPassword.Text;
 
@@ -57,9 +58,27 @@ namespace TourismMangement
             cmd.Parameters.Add(WayOfPayment);
 
 
+            SqlCommand comand = new SqlCommand("select  Username from Users", con);
+            SqlDataReader rdr = comand.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                if(user== rdr["Username"].ToString())
+                {
+                    MessageBox.Show("This Username Already taken.","Change Username!");
+                    rdr.Close();
+                    return;
+                }
+            }
+
+            rdr.Close();
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Welcome!");
+            UserHome h = new UserHome();
+            h.Show();
+            this.Hide();
+
             //the user should go to UserHome form
         }
 
