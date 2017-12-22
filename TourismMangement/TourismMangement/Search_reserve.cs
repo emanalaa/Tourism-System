@@ -67,7 +67,7 @@ namespace TourismMangement
             cmd.ExecuteNonQuery();
             cmd1.ExecuteNonQuery();
 
-            SqlParameter userID = new SqlParameter("@UserID",currentUsername);
+            SqlParameter userID = new SqlParameter("@UserID",Login.currentUsername);
             SqlParameter TourID = new SqlParameter("@TourPlaceID",TourPlaceID());
             SqlParameter TranID = new SqlParameter("@TransportationID",TransportationID());
 
@@ -77,6 +77,8 @@ namespace TourismMangement
 
 
             con.Close();
+
+            MessageBox.Show("Congratualtions, you have reserved a visit to "+SearchTourPlaceComboBox.Text+". Have fun.");
         }
         private int TourPlaceID()
         {

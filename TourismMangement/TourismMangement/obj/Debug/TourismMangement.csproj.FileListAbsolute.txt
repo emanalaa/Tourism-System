@@ -34,3 +34,5 @@ C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Register.resources
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Update.resources
 C:\Users\Menna\Source\Repos\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.UserHome.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Login.resources
+C:\Users\Eman\Documents\Visual Studio 2017\Projects\TourismSystems\TourismMangement\TourismMangement\obj\Debug\TourismMangement.Search_reserve.resources
