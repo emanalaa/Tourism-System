@@ -52,7 +52,7 @@ namespace TourismMangement
             SqlParameter Phone = new SqlParameter("@Phone", textBoxPhone.Text);
             cmd.Parameters.Add(Phone);
 
-            SqlParameter WayOfPayment = new SqlParameter("@WayOfPayment", domainUpDownWayOfPayment.Text);
+            SqlParameter WayOfPayment = new SqlParameter("@WayOfPayment", comboBoxWayOfPayment.Text);
             cmd.Parameters.Add(WayOfPayment);
 
 
