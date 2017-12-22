@@ -164,6 +164,9 @@
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Display.resx">
+      <DependentUpon>Display.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
