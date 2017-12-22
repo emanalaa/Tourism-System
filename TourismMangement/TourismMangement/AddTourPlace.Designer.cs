@@ -66,21 +66,21 @@
             // 
             // textBoxname
             // 
-            this.textBoxname.Location = new System.Drawing.Point(199, 76);
+            this.textBoxname.Location = new System.Drawing.Point(199, 84);
             this.textBoxname.Name = "textBoxname";
             this.textBoxname.Size = new System.Drawing.Size(300, 27);
             this.textBoxname.TabIndex = 4;
             // 
             // textBoxlocation
             // 
-            this.textBoxlocation.Location = new System.Drawing.Point(199, 180);
+            this.textBoxlocation.Location = new System.Drawing.Point(199, 188);
             this.textBoxlocation.Name = "textBoxlocation";
             this.textBoxlocation.Size = new System.Drawing.Size(300, 27);
             this.textBoxlocation.TabIndex = 5;
             // 
             // textBoxticketprice
             // 
-            this.textBoxticketprice.Location = new System.Drawing.Point(199, 293);
+            this.textBoxticketprice.Location = new System.Drawing.Point(199, 301);
             this.textBoxticketprice.Name = "textBoxticketprice";
             this.textBoxticketprice.Size = new System.Drawing.Size(300, 27);
             this.textBoxticketprice.TabIndex = 6;
@@ -93,6 +93,7 @@
             this.add.TabIndex = 7;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // AddTourPlace
             // 

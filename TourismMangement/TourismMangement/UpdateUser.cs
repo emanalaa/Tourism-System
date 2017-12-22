@@ -16,5 +16,30 @@ namespace TourismMangement
         {
             InitializeComponent();
         }
+
+        private void UsernameUpdate()
+        {
+
+        }
+
+        private void PasswordUpdate()
+        {
+
+        }
+
+        private void MailUpdate()
+        {
+
+        }
+
+        private void WayofpaymentUpdate()
+        {
+
+        }
+
+        private void PhoneUpdate()
+        {
+
+        }
     }
 }
