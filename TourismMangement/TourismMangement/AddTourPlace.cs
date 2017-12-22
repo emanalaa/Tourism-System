@@ -17,7 +17,6 @@ namespace TourismMangement
         public AddTourPlace()
         {
             InitializeComponent();
-            InsertTourPlace();
         }
 
         private void InsertTourPlace()
@@ -44,6 +43,11 @@ namespace TourismMangement
             {
                 MessageBox.Show("Please make sure you filled all slots.");
             }
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+            InsertTourPlace();
         }
     }
 }

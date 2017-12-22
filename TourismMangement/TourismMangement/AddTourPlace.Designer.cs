@@ -93,6 +93,7 @@
             this.add.TabIndex = 7;
             this.add.Text = "Add";
             this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.add_Click);
             // 
             // AddTourPlace
             // 
