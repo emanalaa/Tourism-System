@@ -18,14 +18,15 @@ namespace TourismMangement
         }
         public void Insert()
         {
+            string user = textBoxUsername.Text;
             string EnterPassWord = textBoxPassword.Text;
             string ConPassWord = textBoxConfirmPassword.Text;
 
             //mai con
-            //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie con
-            SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
+           // SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
 
             con.Open();
 
@@ -57,9 +58,25 @@ namespace TourismMangement
             cmd.Parameters.Add(WayOfPayment);
 
 
+            SqlCommand comand = new SqlCommand("select  Username from Users", con);
+            SqlDataReader rdr = comand.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                if(user== rdr["Username"].ToString())
+                {
+                    MessageBox.Show("This Username Already taken.","Change Username!");
+                    rdr.Close();
+                    return;
+                }
+            }
+            
+          
             cmd.ExecuteNonQuery();
+            rdr.Close();
             con.Close();
             MessageBox.Show("Welcome!");
+
             //the user should go to UserHome form
         }
 
