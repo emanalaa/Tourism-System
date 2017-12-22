@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.AddUserButton = new System.Windows.Forms.Button();
-            this.AddUserdomainUpDownWayOfPayment = new System.Windows.Forms.DomainUpDown();
             this.AddUserPhoneTextbox = new System.Windows.Forms.TextBox();
             this.AdduserEmailtextbox = new System.Windows.Forms.TextBox();
             this.Adduserpasswordtextbox = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.AddusertextBoxUsername = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // AddUserButton
@@ -58,24 +58,7 @@
             this.AddUserButton.TabIndex = 42;
             this.AddUserButton.Text = "Add";
             this.AddUserButton.UseVisualStyleBackColor = false;
-            // 
-            // AddUserdomainUpDownWayOfPayment
-            // 
-            this.AddUserdomainUpDownWayOfPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.AddUserdomainUpDownWayOfPayment.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.AddUserdomainUpDownWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddUserdomainUpDownWayOfPayment.Items.Add("Cash");
-            this.AddUserdomainUpDownWayOfPayment.Items.Add("Credit Card");
-            this.AddUserdomainUpDownWayOfPayment.Items.Add("Visa Card");
-            this.AddUserdomainUpDownWayOfPayment.Location = new System.Drawing.Point(245, 279);
-            this.AddUserdomainUpDownWayOfPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.AddUserdomainUpDownWayOfPayment.Name = "AddUserdomainUpDownWayOfPayment";
-            this.AddUserdomainUpDownWayOfPayment.ReadOnly = true;
-            this.AddUserdomainUpDownWayOfPayment.Size = new System.Drawing.Size(248, 27);
-            this.AddUserdomainUpDownWayOfPayment.Sorted = true;
-            this.AddUserdomainUpDownWayOfPayment.TabIndex = 41;
-            this.AddUserdomainUpDownWayOfPayment.Text = "Select way of payment";
-            this.AddUserdomainUpDownWayOfPayment.Wrap = true;
+            this.AddUserButton.Click += new System.EventHandler(this.AddUserButton_Click);
             // 
             // AddUserPhoneTextbox
             // 
@@ -86,6 +69,7 @@
             this.AddUserPhoneTextbox.Name = "AddUserPhoneTextbox";
             this.AddUserPhoneTextbox.Size = new System.Drawing.Size(245, 27);
             this.AddUserPhoneTextbox.TabIndex = 40;
+            this.AddUserPhoneTextbox.TextChanged += new System.EventHandler(this.AddUserPhoneTextbox_TextChanged);
             // 
             // AdduserEmailtextbox
             // 
@@ -177,13 +161,25 @@
             this.AddusertextBoxUsername.Size = new System.Drawing.Size(245, 27);
             this.AddusertextBoxUsername.TabIndex = 32;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Cash",
+            "Credit Card",
+            "Visa Card"});
+            this.comboBox1.Location = new System.Drawing.Point(248, 273);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(245, 27);
+            this.comboBox1.TabIndex = 43;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.AddUserButton);
-            this.Controls.Add(this.AddUserdomainUpDownWayOfPayment);
             this.Controls.Add(this.AddUserPhoneTextbox);
             this.Controls.Add(this.AdduserEmailtextbox);
             this.Controls.Add(this.Adduserpasswordtextbox);
@@ -206,7 +202,6 @@
         #endregion
 
         private System.Windows.Forms.Button AddUserButton;
-        private System.Windows.Forms.DomainUpDown AddUserdomainUpDownWayOfPayment;
         private System.Windows.Forms.TextBox AddUserPhoneTextbox;
         private System.Windows.Forms.TextBox AdduserEmailtextbox;
         private System.Windows.Forms.TextBox Adduserpasswordtextbox;
@@ -216,5 +211,6 @@
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox AddusertextBoxUsername;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
