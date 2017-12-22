@@ -12,9 +12,14 @@ namespace TourismMangement
 {
     public partial class Login : Form
     {
+        public string AdminUsername = "admin";
+        public string AdminPassword = "admin";
+
         public Login()
         {
             InitializeComponent();
         }
+
+        
     }
 }
