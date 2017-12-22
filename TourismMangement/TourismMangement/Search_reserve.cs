@@ -48,11 +48,10 @@ namespace TourismMangement
             SqlCommand cmd = new SqlCommand(ReserveTourPlace,con);
             SqlCommand cmd1 = new SqlCommand(ReserveTransport,con);
 
-            SqlParameter UserID = new SqlParameter("@UserID",Login.currentUsername);
+            SqlParameter UserID = new SqlParameter("@UserID",findID());
             SqlParameter TourID = new SqlParameter("@TourPlaceID",TourPlaceID());
             SqlParameter TransID = new SqlParameter("@TransID",TransportationID());
-
-            SqlParameter userID = new SqlParameter("@UserID", Login.currentUsername);
+            SqlParameter userID = new SqlParameter("@UserID",findID());
 
             cmd.Parameters.Add(UserID);
             cmd.Parameters.Add(TourID);
@@ -107,6 +106,18 @@ namespace TourismMangement
             }
             reader.Close();
             con.Close();
+
+            TransportationComboBoxSearch.Items.Clear();
         }
+
+        private int findID()
+        {
+            SqlCommand command = new SqlCommand("select ID from User where Username='"+Login.currentUsername+"'",con);
+            SqlDataReader reader = command.ExecuteReader();
+            reader.Read();
+            int ID = (int)reader["ID"];
+            return ID; 
+        }
+
     }
 }
