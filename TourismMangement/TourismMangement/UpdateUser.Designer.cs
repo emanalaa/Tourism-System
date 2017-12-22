@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.UpdateUserButton = new System.Windows.Forms.Button();
-            this.UpdateUserdomainUpDownWayOfPayment = new System.Windows.Forms.DomainUpDown();
             this.UpdateUserPhoneTextbox = new System.Windows.Forms.TextBox();
             this.UpdateuserEmailtextbox = new System.Windows.Forms.TextBox();
             this.Updateuserpasswordtextbox = new System.Windows.Forms.TextBox();
@@ -39,6 +38,7 @@
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
             this.UpdateusertextBoxUsername = new System.Windows.Forms.TextBox();
+            this.comboBoxWayOfPayment = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // UpdateUserButton
@@ -58,24 +58,6 @@
             this.UpdateUserButton.TabIndex = 42;
             this.UpdateUserButton.Text = "Update";
             this.UpdateUserButton.UseVisualStyleBackColor = false;
-            // 
-            // UpdateUserdomainUpDownWayOfPayment
-            // 
-            this.UpdateUserdomainUpDownWayOfPayment.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UpdateUserdomainUpDownWayOfPayment.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.UpdateUserdomainUpDownWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateUserdomainUpDownWayOfPayment.Items.Add("Cash");
-            this.UpdateUserdomainUpDownWayOfPayment.Items.Add("Credit Card");
-            this.UpdateUserdomainUpDownWayOfPayment.Items.Add("Visa Card");
-            this.UpdateUserdomainUpDownWayOfPayment.Location = new System.Drawing.Point(245, 279);
-            this.UpdateUserdomainUpDownWayOfPayment.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateUserdomainUpDownWayOfPayment.Name = "UpdateUserdomainUpDownWayOfPayment";
-            this.UpdateUserdomainUpDownWayOfPayment.ReadOnly = true;
-            this.UpdateUserdomainUpDownWayOfPayment.Size = new System.Drawing.Size(248, 27);
-            this.UpdateUserdomainUpDownWayOfPayment.Sorted = true;
-            this.UpdateUserdomainUpDownWayOfPayment.TabIndex = 41;
-            this.UpdateUserdomainUpDownWayOfPayment.Text = "Select way of payment";
-            this.UpdateUserdomainUpDownWayOfPayment.Wrap = true;
             // 
             // UpdateUserPhoneTextbox
             // 
@@ -177,13 +159,28 @@
             this.UpdateusertextBoxUsername.Size = new System.Drawing.Size(245, 27);
             this.UpdateusertextBoxUsername.TabIndex = 32;
             // 
+            // comboBoxWayOfPayment
+            // 
+            this.comboBoxWayOfPayment.BackColor = System.Drawing.Color.White;
+            this.comboBoxWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxWayOfPayment.FormattingEnabled = true;
+            this.comboBoxWayOfPayment.Items.AddRange(new object[] {
+            "Cash",
+            "Credit Card",
+            "Visa Card"});
+            this.comboBoxWayOfPayment.Location = new System.Drawing.Point(248, 281);
+            this.comboBoxWayOfPayment.Name = "comboBoxWayOfPayment";
+            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(242, 27);
+            this.comboBoxWayOfPayment.TabIndex = 43;
+            this.comboBoxWayOfPayment.Text = "Select";
+            // 
             // UpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.comboBoxWayOfPayment);
             this.Controls.Add(this.UpdateUserButton);
-            this.Controls.Add(this.UpdateUserdomainUpDownWayOfPayment);
             this.Controls.Add(this.UpdateUserPhoneTextbox);
             this.Controls.Add(this.UpdateuserEmailtextbox);
             this.Controls.Add(this.Updateuserpasswordtextbox);
@@ -206,7 +203,6 @@
         #endregion
 
         private System.Windows.Forms.Button UpdateUserButton;
-        private System.Windows.Forms.DomainUpDown UpdateUserdomainUpDownWayOfPayment;
         private System.Windows.Forms.TextBox UpdateUserPhoneTextbox;
         private System.Windows.Forms.TextBox UpdateuserEmailtextbox;
         private System.Windows.Forms.TextBox Updateuserpasswordtextbox;
@@ -216,5 +212,6 @@
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox UpdateusertextBoxUsername;
+        private System.Windows.Forms.ComboBox comboBoxWayOfPayment;
     }
 }
