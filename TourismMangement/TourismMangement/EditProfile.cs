@@ -55,6 +55,8 @@ namespace TourismMangement
                     UpdateUserPayment();
 
             }
+
+            MessageBox.Show("Your information has been updated successfully.", "Updated");
         }
 
         private bool checkPassword()
@@ -63,7 +65,7 @@ namespace TourismMangement
 
             string Query = @"SELECT Password
                             FROM Users
-                            WHERE Username = '" + textBoxUsername + "'";
+                            WHERE Username = '" + textBoxUsername.Text + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             SqlDataReader rdr = cmd.ExecuteReader();
@@ -84,9 +86,9 @@ namespace TourismMangement
         { 
             con.Open();
 
-            string Query = @"UPDATE INTO Users 
-                             SET (Password = " + textBoxNewPassword + @")
-                             WHERE Username = '" + textBoxUsername + "'";
+            string Query = @"UPDATE Users 
+                             SET Password = '" + textBoxNewPassword.Text + @"'
+                             WHERE Username = '" + textBoxUsername.Text + "'";
             MessageBox.Show(Query);          
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -98,9 +100,9 @@ namespace TourismMangement
         {
             con.Open();
 
-            string Query = @"UPDATE INTO Users
-                             SET (Mail = " + textBoxEmail + @")
-                             WHERE Username = '" + textBoxUsername + "'";
+            string Query = @"UPDATE Users
+                             SET Mail = '" + textBoxEmail.Text + @"'
+                             WHERE Username = '" + textBoxUsername.Text + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -112,9 +114,9 @@ namespace TourismMangement
         {
             con.Open();
 
-            string Query = @"UPDATE INTO Users
-                             SET (Phone = " + textBoxPhone + @")
-                             WHERE Username = '" + textBoxUsername + "'";
+            string Query = @"UPDATE Users
+                             SET Phone = '" + textBoxPhone.Text + @"'
+                             WHERE Username = '" + textBoxUsername.Text + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -127,8 +129,8 @@ namespace TourismMangement
             con.Open();
 
             string Query = @"UPDATE Users
-                             SET(WayofPayment = " + comboBoxWayOfPayment.Text + @")
-                             WHERE Username = '" + textBoxUsername + "'";
+                             SET WayofPayment = '" + comboBoxWayOfPayment.Text + @"'
+                             WHERE Username = '" + textBoxUsername.Text + "'";
             MessageBox.Show(Query);
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
