@@ -21,8 +21,12 @@ namespace TourismMangement
             string EnterPassWord = textBoxPassword.Text;
             string ConPassWord = textBoxConfirmPassword.Text;
 
+            //mai con
             //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
-            SqlConnection con = new SqlConnection("");
+
+            //mohie con
+            SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
+
             con.Open();
 
             string Insetstr = @"insert into Users (Username ,Mail,Phone,WayofPayment,password)
