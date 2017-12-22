@@ -161,6 +161,9 @@
     <EmbeddedResource Include="AddTourPlace.resx">
       <DependentUpon>AddTourPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddTransportation.resx">
+      <DependentUpon>AddTransportation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>

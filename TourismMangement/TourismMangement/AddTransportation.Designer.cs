@@ -67,6 +67,7 @@
             this.textBoxType.Name = "textBoxType";
             this.textBoxType.Size = new System.Drawing.Size(253, 30);
             this.textBoxType.TabIndex = 44;
+            this.textBoxType.TextChanged += new System.EventHandler(this.textBoxType_TextChanged);
             // 
             // label7
             // 
@@ -175,10 +176,11 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Location = new System.Drawing.Point(281, 426);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(154, 63);
+            this.buttonAdd.Size = new System.Drawing.Size(147, 50);
             this.buttonAdd.TabIndex = 32;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // AddTransportation
             // 
