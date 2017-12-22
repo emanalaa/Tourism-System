@@ -74,12 +74,14 @@ namespace TourismMangement
             rdr.Close();
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("Welcome!");
+            MessageBox.Show("Welcome!","New User");
+
+            //the user should go to UserHome form
             UserHome h = new UserHome();
             h.Show();
             this.Hide();
 
-            //the user should go to UserHome form
+       
         }
 
         private void buttonContinue_Click(object sender, EventArgs e)

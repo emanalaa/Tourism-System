@@ -33,7 +33,7 @@ namespace TourismMangement
         private void ButtonLogin_Click(object sender, EventArgs e)
         {
             //mai's con
-            //  SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+              SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie's con
             // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
