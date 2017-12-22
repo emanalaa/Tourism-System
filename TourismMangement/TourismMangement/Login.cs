@@ -17,9 +17,9 @@ namespace TourismMangement
         public static string AdminPassword = "admin";
         public static string currentUsername;
 
-        //SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public Login()
         {
             InitializeComponent();
