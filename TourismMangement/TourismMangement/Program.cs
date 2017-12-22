@@ -11,6 +11,7 @@ namespace TourismMangement
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// CON STRING "Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True"
         [STAThread]
         static void Main()
         {
