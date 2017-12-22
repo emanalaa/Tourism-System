@@ -194,7 +194,7 @@
             this.comboBoxWayOfPayment.Size = new System.Drawing.Size(286, 32);
             this.comboBoxWayOfPayment.TabIndex = 33;
             this.comboBoxWayOfPayment.Text = "Select";
-            this.comboBoxWayOfPayment.SelectedIndexChanged += new System.EventHandler(this.comboBoxWayOfPayment_SelectedIndexChanged);
+            //this.comboBoxWayOfPayment.SelectedIndexChanged += new System.EventHandler(this.comboBoxWayOfPayment_SelectedIndexChanged);
             // 
             // Register
             // 
