@@ -25,7 +25,7 @@ namespace TourismMangement
             //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie con
-            SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
 
             con.Open();
 
@@ -66,6 +66,11 @@ namespace TourismMangement
         private void buttonContinue_Click(object sender, EventArgs e)
         {
             Insert();
+        }
+
+        private void comboBoxWayOfPayment_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
