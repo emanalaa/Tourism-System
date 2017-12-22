@@ -100,6 +100,7 @@
             this.Controls.Add(this.labelUsername);
             this.Controls.Add(this.labelPassword);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
