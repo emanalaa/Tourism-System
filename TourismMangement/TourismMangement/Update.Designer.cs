@@ -87,6 +87,7 @@
             this.Controls.Add(this.ButtonUpdateTrans);
             this.Controls.Add(this.ButtonUpdateUser);
             this.Name = "Update";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update";
             this.ResumeLayout(false);
 

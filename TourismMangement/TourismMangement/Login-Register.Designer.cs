@@ -64,6 +64,7 @@
             this.Controls.Add(this.ButtonSignUp);
             this.Controls.Add(this.ButtonSignIn);
             this.Name = "Login_Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.ResumeLayout(false);
 

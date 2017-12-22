@@ -69,6 +69,7 @@
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(286, 32);
             this.textBoxConfirmPassword.TabIndex = 29;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             // 
             // textBoxPassword
             // 
@@ -78,6 +79,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(286, 32);
             this.textBoxPassword.TabIndex = 28;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // buttonContinue
             // 
@@ -95,6 +97,7 @@
             this.buttonContinue.TabIndex = 27;
             this.buttonContinue.Text = "Continue";
             this.buttonContinue.UseVisualStyleBackColor = false;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // labelPhone
             // 
@@ -213,6 +216,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.ResumeLayout(false);
             this.PerformLayout();
