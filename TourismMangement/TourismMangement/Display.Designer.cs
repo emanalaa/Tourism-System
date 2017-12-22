@@ -36,27 +36,31 @@
             // 
             // dataGridViewDisplay
             // 
+            this.dataGridViewDisplay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewDisplay.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDisplay.Location = new System.Drawing.Point(80, 152);
+            this.dataGridViewDisplay.Location = new System.Drawing.Point(5, 122);
             this.dataGridViewDisplay.Name = "dataGridViewDisplay";
             this.dataGridViewDisplay.RowTemplate.Height = 26;
-            this.dataGridViewDisplay.Size = new System.Drawing.Size(520, 366);
+            this.dataGridViewDisplay.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewDisplay.Size = new System.Drawing.Size(567, 327);
             this.dataGridViewDisplay.TabIndex = 5;
+            this.dataGridViewDisplay.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewDisplay_CellContentClick);
             // 
             // comboBoxDisplay
             // 
             this.comboBoxDisplay.FormattingEnabled = true;
-            this.comboBoxDisplay.Location = new System.Drawing.Point(260, 75);
+            this.comboBoxDisplay.Location = new System.Drawing.Point(234, 65);
             this.comboBoxDisplay.Name = "comboBoxDisplay";
-            this.comboBoxDisplay.Size = new System.Drawing.Size(265, 30);
+            this.comboBoxDisplay.Size = new System.Drawing.Size(239, 27);
             this.comboBoxDisplay.TabIndex = 4;
+            this.comboBoxDisplay.SelectedIndexChanged += new System.EventHandler(this.comboBoxDisplay_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(144, 78);
+            this.label1.Location = new System.Drawing.Point(130, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 23);
@@ -65,14 +69,14 @@
             // 
             // Display
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(681, 567);
+            this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.dataGridViewDisplay);
             this.Controls.Add(this.comboBoxDisplay);
             this.Controls.Add(this.label1);
-            this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Display";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Display";
