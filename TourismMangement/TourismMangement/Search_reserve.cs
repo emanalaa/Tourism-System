@@ -93,6 +93,8 @@ namespace TourismMangement
 
         private void SearchTourPlaceComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            TransportationComboBoxSearch.Items.Clear();
+
             con.Open();
             SqlCommand cmd = new SqlCommand("Select Type from Transportation where Destination = '" + SearchTourPlaceComboBox.Text + "';", con);
             cmd.CommandType = CommandType.Text;
@@ -106,16 +108,15 @@ namespace TourismMangement
             }
             reader.Close();
             con.Close();
-
-            TransportationComboBoxSearch.Items.Clear();
         }
 
         private int findID()
         {
-            SqlCommand command = new SqlCommand("select ID from User where Username='"+Login.currentUsername+"'",con);
+            SqlCommand command = new SqlCommand("select ID from Users where Username='"+Login.currentUsername+"'",con);
             SqlDataReader reader = command.ExecuteReader();
             reader.Read();
             int ID = (int)reader["ID"];
+            reader.Close();
             return ID; 
         }
 

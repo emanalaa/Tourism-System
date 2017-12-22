@@ -162,6 +162,7 @@
             this.textBoxConfirmPassword.BackColor = System.Drawing.Color.Silver;
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(205, 169);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.PasswordChar = '*';
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxConfirmPassword.TabIndex = 20;
             // 
@@ -170,6 +171,7 @@
             this.textBoxNewPassword.BackColor = System.Drawing.Color.Silver;
             this.textBoxNewPassword.Location = new System.Drawing.Point(205, 143);
             this.textBoxNewPassword.Name = "textBoxNewPassword";
+            this.textBoxNewPassword.PasswordChar = '*';
             this.textBoxNewPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxNewPassword.TabIndex = 19;
             // 
@@ -178,8 +180,10 @@
             this.textBoxCurrentPassword.BackColor = System.Drawing.Color.Silver;
             this.textBoxCurrentPassword.Location = new System.Drawing.Point(205, 117);
             this.textBoxCurrentPassword.Name = "textBoxCurrentPassword";
+            this.textBoxCurrentPassword.PasswordChar = '*';
             this.textBoxCurrentPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxCurrentPassword.TabIndex = 18;
+            this.textBoxCurrentPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
             // textBoxUsername
             // 
@@ -194,6 +198,7 @@
             // UpdateButton
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.Silver;
+            this.UpdateButton.Enabled = false;
             this.UpdateButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateButton.Location = new System.Drawing.Point(412, 369);
             this.UpdateButton.Name = "UpdateButton";
