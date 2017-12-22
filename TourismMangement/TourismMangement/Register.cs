@@ -23,10 +23,10 @@ namespace TourismMangement
             string ConPassWord = textBoxConfirmPassword.Text;
 
             //mai con
-            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+            //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie con
-           // SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
 
             con.Open();
 
@@ -70,12 +70,14 @@ namespace TourismMangement
                     return;
                 }
             }
-            
-          
-            cmd.ExecuteNonQuery();
+
             rdr.Close();
+            cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Welcome!");
+            UserHome h = new UserHome();
+            h.Show();
+            this.Hide();
 
             //the user should go to UserHome form
         }
