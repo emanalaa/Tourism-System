@@ -35,6 +35,7 @@
             this.textBoxlocation = new System.Windows.Forms.TextBox();
             this.textBoxticketprice = new System.Windows.Forms.TextBox();
             this.update = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -94,11 +95,26 @@
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = true;
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(238, 412);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 18;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            // 
             // UpdateTouPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.update);
             this.Controls.Add(this.textBoxticketprice);
             this.Controls.Add(this.textBoxlocation);
@@ -125,5 +141,6 @@
         private System.Windows.Forms.TextBox textBoxlocation;
         private System.Windows.Forms.TextBox textBoxticketprice;
         private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button BackButton;
     }
 }

@@ -43,6 +43,7 @@
             this.buttonAdd = new System.Windows.Forms.Button();
             this.comboBoxOrigin = new System.Windows.Forms.TextBox();
             this.comboBoxDestination = new System.Windows.Forms.TextBox();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxType
@@ -180,11 +181,26 @@
             this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
             this.comboBoxDestination.TabIndex = 48;
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(305, 482);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 49;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            // 
             // AddTransportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxDestination);
             this.Controls.Add(this.comboBoxOrigin);
             this.Controls.Add(this.textBoxType);
@@ -226,5 +242,6 @@
         private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox comboBoxOrigin;
         private System.Windows.Forms.TextBox comboBoxDestination;
+        private System.Windows.Forms.Button BackButton;
     }
 }

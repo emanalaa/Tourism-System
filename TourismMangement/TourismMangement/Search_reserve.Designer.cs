@@ -33,6 +33,7 @@
             this.ReserveButton = new System.Windows.Forms.Button();
             this.TransportationComboBoxSearch = new System.Windows.Forms.ComboBox();
             this.SearchTourPlaceComboBox = new System.Windows.Forms.ComboBox();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -41,7 +42,7 @@
             this.label2.Location = new System.Drawing.Point(111, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 24);
+            this.label2.Size = new System.Drawing.Size(137, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "Transportation:";
             // 
@@ -51,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(122, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 24);
+            this.label1.Size = new System.Drawing.Size(102, 19);
             this.label1.TabIndex = 8;
             this.label1.Text = "Tour Place:";
             // 
@@ -73,7 +74,7 @@
             this.TransportationComboBoxSearch.Location = new System.Drawing.Point(252, 196);
             this.TransportationComboBoxSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TransportationComboBoxSearch.Name = "TransportationComboBoxSearch";
-            this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 32);
+            this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 27);
             this.TransportationComboBoxSearch.TabIndex = 6;
             // 
             // SearchTourPlaceComboBox
@@ -82,15 +83,30 @@
             this.SearchTourPlaceComboBox.Location = new System.Drawing.Point(252, 103);
             this.SearchTourPlaceComboBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.SearchTourPlaceComboBox.Name = "SearchTourPlaceComboBox";
-            this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 32);
+            this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 27);
             this.SearchTourPlaceComboBox.TabIndex = 5;
             this.SearchTourPlaceComboBox.SelectedIndexChanged += new System.EventHandler(this.SearchTourPlaceComboBox_SelectedIndexChanged);
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(242, 373);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 45;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            // 
             // Search_reserve
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ReserveButton);
@@ -112,5 +128,6 @@
         private System.Windows.Forms.Button ReserveButton;
         private System.Windows.Forms.ComboBox TransportationComboBoxSearch;
         private System.Windows.Forms.ComboBox SearchTourPlaceComboBox;
+        private System.Windows.Forms.Button BackButton;
     }
 }
