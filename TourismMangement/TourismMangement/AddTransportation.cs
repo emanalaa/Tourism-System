@@ -28,8 +28,7 @@ namespace TourismMangement
                 comboBoxArrivalMinutes.Items.Add(i);
                 comboBoxDepartureMinutes.Items.Add(i);
             }
-            comboBoxDestination.Items.Add("sharm el sheikh");
-            comboBoxOrigin.Items.Add("CairoAirport");
+            
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
