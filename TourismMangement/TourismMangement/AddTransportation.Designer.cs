@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxDestination = new System.Windows.Forms.ComboBox();
-            this.comboBoxOrigin = new System.Windows.Forms.ComboBox();
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxArrivalMinutes = new System.Windows.Forms.ComboBox();
@@ -43,23 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.comboBoxOrigin = new System.Windows.Forms.TextBox();
+            this.comboBoxDestination = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // comboBoxDestination
-            // 
-            this.comboBoxDestination.FormattingEnabled = true;
-            this.comboBoxDestination.Location = new System.Drawing.Point(281, 331);
-            this.comboBoxDestination.Name = "comboBoxDestination";
-            this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
-            this.comboBoxDestination.TabIndex = 46;
-            // 
-            // comboBoxOrigin
-            // 
-            this.comboBoxOrigin.FormattingEnabled = true;
-            this.comboBoxOrigin.Location = new System.Drawing.Point(281, 276);
-            this.comboBoxOrigin.Name = "comboBoxOrigin";
-            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
-            this.comboBoxOrigin.TabIndex = 45;
             // 
             // textBoxType
             // 
@@ -182,6 +166,20 @@
             this.buttonAdd.UseVisualStyleBackColor = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
+            // comboBoxOrigin
+            // 
+            this.comboBoxOrigin.Location = new System.Drawing.Point(281, 273);
+            this.comboBoxOrigin.Name = "comboBoxOrigin";
+            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxOrigin.TabIndex = 47;
+            // 
+            // comboBoxDestination
+            // 
+            this.comboBoxDestination.Location = new System.Drawing.Point(281, 324);
+            this.comboBoxDestination.Name = "comboBoxDestination";
+            this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxDestination.TabIndex = 48;
+            // 
             // AddTransportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -213,9 +211,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBoxDestination;
-        private System.Windows.Forms.ComboBox comboBoxOrigin;
         private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxArrivalMinutes;
@@ -229,5 +224,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.TextBox comboBoxOrigin;
+        private System.Windows.Forms.TextBox comboBoxDestination;
     }
 }
