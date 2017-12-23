@@ -17,9 +17,8 @@ namespace TourismMangement
         public static string AdminPassword = "admin";
         public static string currentUsername;
 
-        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
-        //connection_awad
-        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+       
+        
         public Login()
         {
             InitializeComponent();
@@ -37,10 +36,12 @@ namespace TourismMangement
             //  SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie's con
-            SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+           // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+            //connection_awad
+            SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
 
             con.Open();
-            if (AdminUsername==TextBoxUsername.Text || AdminPassword==TextBoxPassword.Text )
+            if (AdminUsername==TextBoxUsername.Text && AdminPassword==TextBoxPassword.Text )
             {
                 AdminHome admin_home = new AdminHome();
                 admin_home.Show();
@@ -79,6 +80,13 @@ namespace TourismMangement
             }
 
             con.Close();
+        }
+
+        private void buttonregister_Click(object sender, EventArgs e)
+        {
+            Register reg = new Register();
+            reg.Show();
+            this.Close();
         }
     }
 }

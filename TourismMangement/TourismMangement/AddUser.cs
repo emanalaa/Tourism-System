@@ -12,9 +12,9 @@ namespace TourismMangement
 {
     public partial class AddUser : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+       // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
-       // SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public AddUser()
         {
             InitializeComponent();
@@ -30,10 +30,18 @@ namespace TourismMangement
             add_user.Parameters.Add(new SqlParameter("@mail", AdduserEmailtextbox.Text));
             add_user.Parameters.Add(new SqlParameter("@phone", AddUserPhoneTextbox.Text));
             add_user.Parameters.Add(new SqlParameter("@wayofpayment", comboBox1.Text));
-            add_user.ExecuteNonQuery();
-            con.Close();
-            MessageBox.Show("The User is added");
+            if (AddUserPhoneTextbox.Text.Count() < 11 || AddUserPhoneTextbox.Text.Count() > 12)
+            {
+                MessageBox.Show("The phone number is incorrect please try again");
+            }
             
+           else 
+            {
+                add_user.ExecuteNonQuery();
+                MessageBox.Show("The User is added");
+            }
+            con.Close();
+
         }
 
         private void AddUserPhoneTextbox_TextChanged(object sender, EventArgs e)
