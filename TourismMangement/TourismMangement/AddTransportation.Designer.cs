@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxDestination = new System.Windows.Forms.ComboBox();
-            this.comboBoxOrigin = new System.Windows.Forms.ComboBox();
             this.textBoxType = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.comboBoxArrivalMinutes = new System.Windows.Forms.ComboBox();
@@ -43,23 +41,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonAdd = new System.Windows.Forms.Button();
+            this.comboBoxOrigin = new System.Windows.Forms.TextBox();
+            this.comboBoxDestination = new System.Windows.Forms.TextBox();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // comboBoxDestination
-            // 
-            this.comboBoxDestination.FormattingEnabled = true;
-            this.comboBoxDestination.Location = new System.Drawing.Point(281, 331);
-            this.comboBoxDestination.Name = "comboBoxDestination";
-            this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
-            this.comboBoxDestination.TabIndex = 46;
-            // 
-            // comboBoxOrigin
-            // 
-            this.comboBoxOrigin.FormattingEnabled = true;
-            this.comboBoxOrigin.Location = new System.Drawing.Point(281, 276);
-            this.comboBoxOrigin.Name = "comboBoxOrigin";
-            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
-            this.comboBoxOrigin.TabIndex = 45;
             // 
             // textBoxType
             // 
@@ -67,6 +52,7 @@
             this.textBoxType.Name = "textBoxType";
             this.textBoxType.Size = new System.Drawing.Size(253, 30);
             this.textBoxType.TabIndex = 44;
+            this.textBoxType.TextChanged += new System.EventHandler(this.textBoxType_TextChanged);
             // 
             // label7
             // 
@@ -175,16 +161,46 @@
             this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAdd.Location = new System.Drawing.Point(281, 426);
             this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(154, 63);
+            this.buttonAdd.Size = new System.Drawing.Size(147, 50);
             this.buttonAdd.TabIndex = 32;
             this.buttonAdd.Text = "Add";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
+            // comboBoxOrigin
+            // 
+            this.comboBoxOrigin.Location = new System.Drawing.Point(281, 273);
+            this.comboBoxOrigin.Name = "comboBoxOrigin";
+            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxOrigin.TabIndex = 47;
+            // 
+            // comboBoxDestination
+            // 
+            this.comboBoxDestination.Location = new System.Drawing.Point(281, 324);
+            this.comboBoxDestination.Name = "comboBoxDestination";
+            this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxDestination.TabIndex = 48;
+            // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(305, 482);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 49;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
             // 
             // AddTransportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxDestination);
             this.Controls.Add(this.comboBoxOrigin);
             this.Controls.Add(this.textBoxType);
@@ -211,9 +227,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBoxDestination;
-        private System.Windows.Forms.ComboBox comboBoxOrigin;
         private System.Windows.Forms.TextBox textBoxType;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox comboBoxArrivalMinutes;
@@ -227,5 +240,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonAdd;
+        private System.Windows.Forms.TextBox comboBoxOrigin;
+        private System.Windows.Forms.TextBox comboBoxDestination;
+        private System.Windows.Forms.Button BackButton;
     }
 }

@@ -31,10 +31,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textBoxname = new System.Windows.Forms.TextBox();
             this.textBoxlocation = new System.Windows.Forms.TextBox();
             this.textBoxticketprice = new System.Windows.Forms.TextBox();
             this.update = new System.Windows.Forms.Button();
-            this.comboBoxName = new System.Windows.Forms.ComboBox();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,6 +65,13 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Ticket Price :";
             // 
+            // textBoxname
+            // 
+            this.textBoxname.Location = new System.Drawing.Point(185, 81);
+            this.textBoxname.Name = "textBoxname";
+            this.textBoxname.Size = new System.Drawing.Size(300, 27);
+            this.textBoxname.TabIndex = 3;
+            // 
             // textBoxlocation
             // 
             this.textBoxlocation.Location = new System.Drawing.Point(185, 169);
@@ -86,25 +94,31 @@
             this.update.TabIndex = 6;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = true;
-            this.update.Click += new System.EventHandler(this.update_Click);
             // 
-            // comboBoxName
+            // BackButton
             // 
-            this.comboBoxName.FormattingEnabled = true;
-            this.comboBoxName.Location = new System.Drawing.Point(185, 89);
-            this.comboBoxName.Name = "comboBoxName";
-            this.comboBoxName.Size = new System.Drawing.Size(300, 27);
-            this.comboBoxName.TabIndex = 7;
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(238, 412);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 18;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
             // 
             // UpdateTouPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
-            this.Controls.Add(this.comboBoxName);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.update);
             this.Controls.Add(this.textBoxticketprice);
             this.Controls.Add(this.textBoxlocation);
+            this.Controls.Add(this.textBoxname);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -123,9 +137,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxname;
         private System.Windows.Forms.TextBox textBoxlocation;
         private System.Windows.Forms.TextBox textBoxticketprice;
         private System.Windows.Forms.Button update;
-        private System.Windows.Forms.ComboBox comboBoxName;
+        private System.Windows.Forms.Button BackButton;
     }
 }

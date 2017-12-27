@@ -66,7 +66,7 @@ namespace TourismMangement
             string Query = @"SELECT Password
                             FROM Users
                             WHERE Username = '" + textBoxUsername.Text + "'";
-            MessageBox.Show(Query);
+            
             SqlCommand cmd = new SqlCommand(Query, con);
             SqlDataReader rdr = cmd.ExecuteReader();
             rdr.Read();
@@ -89,7 +89,7 @@ namespace TourismMangement
             string Query = @"UPDATE Users 
                              SET Password = '" + textBoxNewPassword.Text + @"'
                              WHERE Username = '" + textBoxUsername.Text + "'";
-            MessageBox.Show(Query);          
+                     
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
 
@@ -103,7 +103,7 @@ namespace TourismMangement
             string Query = @"UPDATE Users
                              SET Mail = '" + textBoxEmail.Text + @"'
                              WHERE Username = '" + textBoxUsername.Text + "'";
-            MessageBox.Show(Query);
+            
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
 
@@ -117,7 +117,7 @@ namespace TourismMangement
             string Query = @"UPDATE Users
                              SET Phone = '" + textBoxPhone.Text + @"'
                              WHERE Username = '" + textBoxUsername.Text + "'";
-            MessageBox.Show(Query);
+            
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
 
@@ -131,7 +131,7 @@ namespace TourismMangement
             string Query = @"UPDATE Users
                              SET WayofPayment = '" + comboBoxWayOfPayment.Text + @"'
                              WHERE Username = '" + textBoxUsername.Text + "'";
-            MessageBox.Show(Query);
+            
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
 

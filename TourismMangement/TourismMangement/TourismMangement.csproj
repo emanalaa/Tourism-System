@@ -161,11 +161,17 @@
     <EmbeddedResource Include="AddTourPlace.resx">
       <DependentUpon>AddTourPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddTransportation.resx">
+      <DependentUpon>AddTransportation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display.resx">
       <DependentUpon>Display.cs</DependentUpon>
@@ -200,6 +206,9 @@
     <EmbeddedResource Include="UpdateTouPlace.resx">
       <DependentUpon>UpdateTouPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTransportation.resx">
+      <DependentUpon>UpdateTransportation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateUser.resx">
       <DependentUpon>UpdateUser.cs</DependentUpon>
     </EmbeddedResource>
@@ -217,7 +226,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

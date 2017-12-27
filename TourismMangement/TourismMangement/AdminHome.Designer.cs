@@ -32,6 +32,7 @@
             this.buttonupdate = new System.Windows.Forms.Button();
             this.buttondelete = new System.Windows.Forms.Button();
             this.buttondisplay = new System.Windows.Forms.Button();
+            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonadd
@@ -74,11 +75,26 @@
             this.buttondisplay.UseVisualStyleBackColor = true;
             this.buttondisplay.Click += new System.EventHandler(this.buttondisplay_Click);
             // 
+            // BackButton
+            // 
+            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.ForeColor = System.Drawing.Color.White;
+            this.BackButton.Location = new System.Drawing.Point(461, 409);
+            this.BackButton.Name = "BackButton";
+            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.TabIndex = 45;
+            this.BackButton.Text = "Back";
+            this.BackButton.UseVisualStyleBackColor = false;
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.buttondisplay);
             this.Controls.Add(this.buttondelete);
             this.Controls.Add(this.buttonupdate);
@@ -99,5 +115,6 @@
         private System.Windows.Forms.Button buttonupdate;
         private System.Windows.Forms.Button buttondelete;
         private System.Windows.Forms.Button buttondisplay;
+        private System.Windows.Forms.Button BackButton;
     }
 }
