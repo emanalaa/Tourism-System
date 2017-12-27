@@ -35,6 +35,7 @@
             this.textBoxlocation = new System.Windows.Forms.TextBox();
             this.textBoxticketprice = new System.Windows.Forms.TextBox();
             this.update = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,18 +88,36 @@
             // 
             // update
             // 
+            this.update.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update.ForeColor = System.Drawing.Color.White;
             this.update.Location = new System.Drawing.Point(217, 364);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(137, 42);
+            this.update.Size = new System.Drawing.Size(140, 47);
             this.update.TabIndex = 6;
             this.update.Text = "Update";
-            this.update.UseVisualStyleBackColor = true;
+            this.update.UseVisualStyleBackColor = false;
+            this.update.Click += new System.EventHandler(this.update_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 48;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UpdateTouPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.update);
             this.Controls.Add(this.textBoxticketprice);
             this.Controls.Add(this.textBoxlocation);
@@ -125,5 +144,6 @@
         private System.Windows.Forms.TextBox textBoxlocation;
         private System.Windows.Forms.TextBox textBoxticketprice;
         private System.Windows.Forms.Button update;
+        private System.Windows.Forms.Button button1;
     }
 }

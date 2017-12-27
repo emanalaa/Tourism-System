@@ -31,6 +31,7 @@
             this.ButtonUpdateTouplace = new System.Windows.Forms.Button();
             this.ButtonUpdateTrans = new System.Windows.Forms.Button();
             this.ButtonUpdateUser = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonUpdateTouplace
@@ -78,11 +79,25 @@
             this.ButtonUpdateUser.UseVisualStyleBackColor = false;
             this.ButtonUpdateUser.Click += new System.EventHandler(this.ButtonUpdateUser_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 47;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonUpdateTouplace);
             this.Controls.Add(this.ButtonUpdateTrans);
             this.Controls.Add(this.ButtonUpdateUser);
@@ -98,5 +113,6 @@
         private System.Windows.Forms.Button ButtonUpdateTouplace;
         private System.Windows.Forms.Button ButtonUpdateTrans;
         private System.Windows.Forms.Button ButtonUpdateUser;
+        private System.Windows.Forms.Button button1;
     }
 }

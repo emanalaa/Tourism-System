@@ -120,5 +120,11 @@ namespace TourismMangement
             return ID; 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserHome userhome = new UserHome();
+            userhome.Show();
+            this.Hide();
+        }
     }
 }

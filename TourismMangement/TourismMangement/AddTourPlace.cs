@@ -49,5 +49,12 @@ namespace TourismMangement
         {
             InsertTourPlace();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Add add = new Add();
+            add.Show();
+            this.Hide();
+        }
     }
 }

@@ -137,5 +137,22 @@ namespace TourismMangement
 
             con.Close();
         }
+
+        private void Homebutton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ConfirmPasswordlabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserHome userhome = new UserHome();
+            userhome.Show();
+            this.Hide();
+        }
     }
 }

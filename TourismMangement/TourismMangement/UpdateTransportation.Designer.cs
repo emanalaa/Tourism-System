@@ -43,12 +43,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.buttonUpdate = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // comboBoxDestination
             // 
             this.comboBoxDestination.FormattingEnabled = true;
-            this.comboBoxDestination.Location = new System.Drawing.Point(226, 270);
+            this.comboBoxDestination.Location = new System.Drawing.Point(254, 305);
             this.comboBoxDestination.Name = "comboBoxDestination";
             this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
             this.comboBoxDestination.TabIndex = 61;
@@ -56,14 +57,14 @@
             // comboBoxOrigin
             // 
             this.comboBoxOrigin.FormattingEnabled = true;
-            this.comboBoxOrigin.Location = new System.Drawing.Point(226, 215);
+            this.comboBoxOrigin.Location = new System.Drawing.Point(254, 237);
             this.comboBoxOrigin.Name = "comboBoxOrigin";
             this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
             this.comboBoxOrigin.TabIndex = 60;
             // 
             // textBoxType
             // 
-            this.textBoxType.Location = new System.Drawing.Point(226, 46);
+            this.textBoxType.Location = new System.Drawing.Point(254, 60);
             this.textBoxType.Name = "textBoxType";
             this.textBoxType.Size = new System.Drawing.Size(253, 30);
             this.textBoxType.TabIndex = 59;
@@ -72,7 +73,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(401, 165);
+            this.label7.Location = new System.Drawing.Point(413, 182);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(17, 23);
             this.label7.TabIndex = 58;
@@ -81,7 +82,7 @@
             // comboBoxArrivalMinutes
             // 
             this.comboBoxArrivalMinutes.FormattingEnabled = true;
-            this.comboBoxArrivalMinutes.Location = new System.Drawing.Point(428, 162);
+            this.comboBoxArrivalMinutes.Location = new System.Drawing.Point(445, 179);
             this.comboBoxArrivalMinutes.Name = "comboBoxArrivalMinutes";
             this.comboBoxArrivalMinutes.Size = new System.Drawing.Size(51, 30);
             this.comboBoxArrivalMinutes.TabIndex = 57;
@@ -89,7 +90,7 @@
             // comboBoxArrivalHours
             // 
             this.comboBoxArrivalHours.FormattingEnabled = true;
-            this.comboBoxArrivalHours.Location = new System.Drawing.Point(344, 162);
+            this.comboBoxArrivalHours.Location = new System.Drawing.Point(344, 179);
             this.comboBoxArrivalHours.Name = "comboBoxArrivalHours";
             this.comboBoxArrivalHours.Size = new System.Drawing.Size(51, 30);
             this.comboBoxArrivalHours.TabIndex = 56;
@@ -98,7 +99,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(401, 103);
+            this.label6.Location = new System.Drawing.Point(413, 125);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 23);
             this.label6.TabIndex = 55;
@@ -107,7 +108,7 @@
             // comboBoxDepartureMinutes
             // 
             this.comboBoxDepartureMinutes.FormattingEnabled = true;
-            this.comboBoxDepartureMinutes.Location = new System.Drawing.Point(428, 100);
+            this.comboBoxDepartureMinutes.Location = new System.Drawing.Point(445, 122);
             this.comboBoxDepartureMinutes.Name = "comboBoxDepartureMinutes";
             this.comboBoxDepartureMinutes.Size = new System.Drawing.Size(51, 30);
             this.comboBoxDepartureMinutes.TabIndex = 54;
@@ -115,7 +116,7 @@
             // comboBoxDepartureHour
             // 
             this.comboBoxDepartureHour.FormattingEnabled = true;
-            this.comboBoxDepartureHour.Location = new System.Drawing.Point(344, 100);
+            this.comboBoxDepartureHour.Location = new System.Drawing.Point(344, 122);
             this.comboBoxDepartureHour.Name = "comboBoxDepartureHour";
             this.comboBoxDepartureHour.Size = new System.Drawing.Size(51, 30);
             this.comboBoxDepartureHour.TabIndex = 53;
@@ -124,7 +125,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(70, 103);
+            this.label5.Location = new System.Drawing.Point(70, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(149, 23);
             this.label5.TabIndex = 52;
@@ -134,7 +135,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(70, 162);
+            this.label4.Location = new System.Drawing.Point(70, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 23);
             this.label4.TabIndex = 51;
@@ -144,7 +145,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(70, 215);
+            this.label3.Location = new System.Drawing.Point(76, 244);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 23);
             this.label3.TabIndex = 50;
@@ -154,7 +155,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(70, 270);
+            this.label2.Location = new System.Drawing.Point(76, 312);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(110, 23);
             this.label2.TabIndex = 49;
@@ -164,7 +165,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(70, 49);
+            this.label1.Location = new System.Drawing.Point(91, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 23);
             this.label1.TabIndex = 48;
@@ -172,19 +173,37 @@
             // 
             // buttonUpdate
             // 
+            this.buttonUpdate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonUpdate.Location = new System.Drawing.Point(226, 365);
+            this.buttonUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdate.ForeColor = System.Drawing.Color.White;
+            this.buttonUpdate.Location = new System.Drawing.Point(215, 378);
             this.buttonUpdate.Name = "buttonUpdate";
-            this.buttonUpdate.Size = new System.Drawing.Size(154, 63);
+            this.buttonUpdate.Size = new System.Drawing.Size(140, 47);
             this.buttonUpdate.TabIndex = 47;
             this.buttonUpdate.Text = "Update";
-            this.buttonUpdate.UseVisualStyleBackColor = true;
+            this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.buttonUpdate_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 62;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UpdateTransportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(582, 453);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBoxDestination);
             this.Controls.Add(this.comboBoxOrigin);
             this.Controls.Add(this.textBoxType);
@@ -228,5 +247,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonUpdate;
+        private System.Windows.Forms.Button button1;
     }
 }

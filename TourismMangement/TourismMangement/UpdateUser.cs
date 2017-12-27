@@ -41,5 +41,17 @@ namespace TourismMangement
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Update update = new Update();
+            update.Show();
+            this.Hide();
+        }
+
+        private void UpdateUserButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

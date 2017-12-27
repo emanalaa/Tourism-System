@@ -31,6 +31,7 @@
             this.ButtonAddTourplace = new System.Windows.Forms.Button();
             this.ButtonAddUser = new System.Windows.Forms.Button();
             this.ButtonAddTrans = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonAddTourplace
@@ -78,11 +79,25 @@
             this.ButtonAddTrans.UseVisualStyleBackColor = false;
             this.ButtonAddTrans.Click += new System.EventHandler(this.ButtonAddTrans_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Add
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonAddTourplace);
             this.Controls.Add(this.ButtonAddUser);
             this.Controls.Add(this.ButtonAddTrans);
@@ -98,5 +113,6 @@
         private System.Windows.Forms.Button ButtonAddTourplace;
         private System.Windows.Forms.Button ButtonAddUser;
         private System.Windows.Forms.Button ButtonAddTrans;
+        private System.Windows.Forms.Button button1;
     }
 }

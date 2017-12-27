@@ -38,14 +38,14 @@
             // 
             // ButtonLogin
             // 
-            this.ButtonLogin.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonLogin.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ButtonLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.ButtonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonLogin.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLogin.ForeColor = System.Drawing.Color.White;
-            this.ButtonLogin.Location = new System.Drawing.Point(254, 350);
+            this.ButtonLogin.Location = new System.Drawing.Point(210, 357);
             this.ButtonLogin.Name = "ButtonLogin";
-            this.ButtonLogin.Size = new System.Drawing.Size(100, 41);
+            this.ButtonLogin.Size = new System.Drawing.Size(140, 47);
             this.ButtonLogin.TabIndex = 13;
             this.ButtonLogin.Text = "LOGIN";
             this.ButtonLogin.UseVisualStyleBackColor = false;
@@ -95,12 +95,15 @@
             // 
             // buttonregister
             // 
-            this.buttonregister.Location = new System.Drawing.Point(461, 412);
+            this.buttonregister.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonregister.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonregister.ForeColor = System.Drawing.Color.White;
+            this.buttonregister.Location = new System.Drawing.Point(490, 416);
             this.buttonregister.Name = "buttonregister";
-            this.buttonregister.Size = new System.Drawing.Size(75, 23);
+            this.buttonregister.Size = new System.Drawing.Size(82, 33);
             this.buttonregister.TabIndex = 14;
             this.buttonregister.Text = "Register";
-            this.buttonregister.UseVisualStyleBackColor = true;
+            this.buttonregister.UseVisualStyleBackColor = false;
             this.buttonregister.Click += new System.EventHandler(this.buttonregister_Click);
             // 
             // Login

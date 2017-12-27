@@ -46,6 +46,7 @@ namespace TourismMangement
                 AdminHome admin_home = new AdminHome();
                 admin_home.Show();
                 this.Close();
+                
             }
 
             else

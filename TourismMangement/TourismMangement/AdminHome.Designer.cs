@@ -32,11 +32,12 @@
             this.buttonupdate = new System.Windows.Forms.Button();
             this.buttondelete = new System.Windows.Forms.Button();
             this.buttondisplay = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonadd
             // 
-            this.buttonadd.Location = new System.Drawing.Point(230, 76);
+            this.buttonadd.Location = new System.Drawing.Point(230, 51);
             this.buttonadd.Name = "buttonadd";
             this.buttonadd.Size = new System.Drawing.Size(116, 46);
             this.buttonadd.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // buttonupdate
             // 
-            this.buttonupdate.Location = new System.Drawing.Point(230, 169);
+            this.buttonupdate.Location = new System.Drawing.Point(230, 136);
             this.buttonupdate.Name = "buttonupdate";
             this.buttonupdate.Size = new System.Drawing.Size(116, 46);
             this.buttonupdate.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // buttondelete
             // 
-            this.buttondelete.Location = new System.Drawing.Point(230, 264);
+            this.buttondelete.Location = new System.Drawing.Point(230, 219);
             this.buttondelete.Name = "buttondelete";
             this.buttondelete.Size = new System.Drawing.Size(116, 46);
             this.buttondelete.TabIndex = 2;
@@ -66,7 +67,7 @@
             // 
             // buttondisplay
             // 
-            this.buttondisplay.Location = new System.Drawing.Point(230, 355);
+            this.buttondisplay.Location = new System.Drawing.Point(230, 302);
             this.buttondisplay.Name = "buttondisplay";
             this.buttondisplay.Size = new System.Drawing.Size(116, 46);
             this.buttondisplay.TabIndex = 3;
@@ -74,11 +75,22 @@
             this.buttondisplay.UseVisualStyleBackColor = true;
             this.buttondisplay.Click += new System.EventHandler(this.buttondisplay_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(230, 390);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 46);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Log out";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttondisplay);
             this.Controls.Add(this.buttondelete);
             this.Controls.Add(this.buttonupdate);
@@ -99,5 +111,6 @@
         private System.Windows.Forms.Button buttonupdate;
         private System.Windows.Forms.Button buttondelete;
         private System.Windows.Forms.Button buttondisplay;
+        private System.Windows.Forms.Button button1;
     }
 }
