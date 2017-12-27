@@ -21,5 +21,10 @@ namespace TourismMangement
         {
 
         }
+
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -13,9 +13,10 @@ namespace TourismMangement
 {
     public partial class Display : Form
     {
-        //SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //mohie
+       SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
-         SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public Display()
         {
             InitializeComponent();
@@ -111,9 +112,11 @@ namespace TourismMangement
             }
         }
 
-        private void dataGridViewDisplay_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
-           
+            AdminHome AH = new AdminHome();
+            AH.Show();
+            this.Hide();
         }
     }
 }

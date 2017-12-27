@@ -30,7 +30,7 @@ namespace TourismMangement
             add_user.Parameters.Add(new SqlParameter("@mail", AdduserEmailtextbox.Text));
             add_user.Parameters.Add(new SqlParameter("@phone", AddUserPhoneTextbox.Text));
             add_user.Parameters.Add(new SqlParameter("@wayofpayment", comboBox1.Text));
-            if (AddUserPhoneTextbox.Text.Count() < 11 || AddUserPhoneTextbox.Text.Count() > 12)
+            if (AddUserPhoneTextbox.Text.Count() < 11 || AddUserPhoneTextbox.Text.Count() >= 12)
             {
                 MessageBox.Show("The phone number is incorrect please try again");
             }
@@ -47,6 +47,13 @@ namespace TourismMangement
         private void AddUserPhoneTextbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            AdminHome adminHome = new AdminHome();
+            adminHome.Show();
+            this.Hide();
         }
     }
 }

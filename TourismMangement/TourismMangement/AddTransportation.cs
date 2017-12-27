@@ -39,13 +39,15 @@ namespace TourismMangement
             add_transp.Parameters.Add(new SqlParameter("@type", textBoxType.Text));
             add_transp.Parameters.Add(new SqlParameter("@origin", comboBoxOrigin.Text));
             add_transp.Parameters.Add(new SqlParameter("@destination", comboBoxDestination.Text));
+
             string dep_time = Convert.ToString(comboBoxDepartureHour.Text) + ":" + Convert.ToString(comboBoxDepartureMinutes.Text);
             TimeSpan departuretime = TimeSpan.Parse(dep_time);
             string arr_time = Convert.ToString(comboBoxArrivalHours.Text) + ":" + Convert.ToString(comboBoxArrivalMinutes.Text);
-           
             TimeSpan arrivaltime = TimeSpan.Parse(arr_time);
+
             add_transp.Parameters.Add(new SqlParameter("@arrivaltime", arrivaltime));
             add_transp.Parameters.Add(new SqlParameter("@departuretime", departuretime));
+
             add_transp.ExecuteNonQuery();
             MessageBox.Show("Transportaion is added");
             con.Close();
@@ -55,6 +57,13 @@ namespace TourismMangement
         private void textBoxType_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            AdminHome adminHome = new AdminHome();
+            adminHome.Show();
+            this.Hide();
         }
     }
 }

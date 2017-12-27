@@ -50,7 +50,7 @@
             // 
             this.textBoxType.Location = new System.Drawing.Point(281, 107);
             this.textBoxType.Name = "textBoxType";
-            this.textBoxType.Size = new System.Drawing.Size(253, 30);
+            this.textBoxType.Size = new System.Drawing.Size(253, 35);
             this.textBoxType.TabIndex = 44;
             this.textBoxType.TextChanged += new System.EventHandler(this.textBoxType_TextChanged);
             // 
@@ -60,7 +60,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(456, 226);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(17, 23);
+            this.label7.Size = new System.Drawing.Size(21, 29);
             this.label7.TabIndex = 43;
             this.label7.Text = ":";
             // 
@@ -69,7 +69,7 @@
             this.comboBoxArrivalMinutes.FormattingEnabled = true;
             this.comboBoxArrivalMinutes.Location = new System.Drawing.Point(483, 223);
             this.comboBoxArrivalMinutes.Name = "comboBoxArrivalMinutes";
-            this.comboBoxArrivalMinutes.Size = new System.Drawing.Size(51, 30);
+            this.comboBoxArrivalMinutes.Size = new System.Drawing.Size(51, 36);
             this.comboBoxArrivalMinutes.TabIndex = 42;
             // 
             // comboBoxArrivalHours
@@ -77,7 +77,7 @@
             this.comboBoxArrivalHours.FormattingEnabled = true;
             this.comboBoxArrivalHours.Location = new System.Drawing.Point(399, 223);
             this.comboBoxArrivalHours.Name = "comboBoxArrivalHours";
-            this.comboBoxArrivalHours.Size = new System.Drawing.Size(51, 30);
+            this.comboBoxArrivalHours.Size = new System.Drawing.Size(51, 36);
             this.comboBoxArrivalHours.TabIndex = 41;
             // 
             // label6
@@ -86,7 +86,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Location = new System.Drawing.Point(456, 164);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 23);
+            this.label6.Size = new System.Drawing.Size(21, 29);
             this.label6.TabIndex = 40;
             this.label6.Text = ":";
             // 
@@ -95,7 +95,7 @@
             this.comboBoxDepartureMinutes.FormattingEnabled = true;
             this.comboBoxDepartureMinutes.Location = new System.Drawing.Point(483, 161);
             this.comboBoxDepartureMinutes.Name = "comboBoxDepartureMinutes";
-            this.comboBoxDepartureMinutes.Size = new System.Drawing.Size(51, 30);
+            this.comboBoxDepartureMinutes.Size = new System.Drawing.Size(51, 36);
             this.comboBoxDepartureMinutes.TabIndex = 39;
             // 
             // comboBoxDepartureHour
@@ -103,7 +103,7 @@
             this.comboBoxDepartureHour.FormattingEnabled = true;
             this.comboBoxDepartureHour.Location = new System.Drawing.Point(399, 161);
             this.comboBoxDepartureHour.Name = "comboBoxDepartureHour";
-            this.comboBoxDepartureHour.Size = new System.Drawing.Size(51, 30);
+            this.comboBoxDepartureHour.Size = new System.Drawing.Size(51, 36);
             this.comboBoxDepartureHour.TabIndex = 38;
             // 
             // label5
@@ -112,7 +112,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(125, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 23);
+            this.label5.Size = new System.Drawing.Size(188, 29);
             this.label5.TabIndex = 37;
             this.label5.Text = "Departure Time:";
             // 
@@ -122,7 +122,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(125, 223);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(116, 23);
+            this.label4.Size = new System.Drawing.Size(148, 29);
             this.label4.TabIndex = 36;
             this.label4.Text = "Arrival Time:";
             // 
@@ -132,7 +132,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(125, 276);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 23);
+            this.label3.Size = new System.Drawing.Size(91, 29);
             this.label3.TabIndex = 35;
             this.label3.Text = "Origin: ";
             // 
@@ -142,7 +142,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(125, 331);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 23);
+            this.label2.Size = new System.Drawing.Size(139, 29);
             this.label2.TabIndex = 34;
             this.label2.Text = "Destination:";
             // 
@@ -152,7 +152,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(125, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 23);
+            this.label1.Size = new System.Drawing.Size(73, 29);
             this.label1.TabIndex = 33;
             this.label1.Text = "Type:";
             // 
@@ -171,14 +171,14 @@
             // 
             this.comboBoxOrigin.Location = new System.Drawing.Point(281, 273);
             this.comboBoxOrigin.Name = "comboBoxOrigin";
-            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxOrigin.Size = new System.Drawing.Size(253, 35);
             this.comboBoxOrigin.TabIndex = 47;
             // 
             // comboBoxDestination
             // 
             this.comboBoxDestination.Location = new System.Drawing.Point(281, 324);
             this.comboBoxDestination.Name = "comboBoxDestination";
-            this.comboBoxDestination.Size = new System.Drawing.Size(253, 30);
+            this.comboBoxDestination.Size = new System.Drawing.Size(253, 35);
             this.comboBoxDestination.TabIndex = 48;
             // 
             // BackButton
@@ -194,10 +194,11 @@
             this.BackButton.TabIndex = 49;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // AddTransportation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.BackButton);
