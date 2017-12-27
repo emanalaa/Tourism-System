@@ -41,6 +41,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.adduserconfirmpasswordtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.backbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddUserButton
@@ -197,11 +198,24 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "Confirm Password:";
             // 
+            // backbutton
+            // 
+            this.backbutton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.backbutton.ForeColor = System.Drawing.Color.White;
+            this.backbutton.Location = new System.Drawing.Point(12, 12);
+            this.backbutton.Name = "backbutton";
+            this.backbutton.Size = new System.Drawing.Size(83, 27);
+            this.backbutton.TabIndex = 46;
+            this.backbutton.Text = "Back";
+            this.backbutton.UseVisualStyleBackColor = false;
+            this.backbutton.Click += new System.EventHandler(this.backbutton_Click);
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.backbutton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.adduserconfirmpasswordtextBox);
             this.Controls.Add(this.comboBox1);
@@ -240,5 +254,6 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox adduserconfirmpasswordtextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button backbutton;
     }
 }

@@ -130,6 +130,7 @@
             this.Name = "AddTourPlace";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddTourPlace";
+            this.Load += new System.EventHandler(this.AddTourPlace_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

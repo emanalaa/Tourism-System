@@ -14,6 +14,8 @@ namespace TourismMangement
     public partial class Delete : Form
     {
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //connection_awad
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader rdr;
 
@@ -71,6 +73,7 @@ namespace TourismMangement
 
                 rdr.Close();
             }
+            con.Close();
         }
 
         private void buttonDelete_Click(object sender, EventArgs e)

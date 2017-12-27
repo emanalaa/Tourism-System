@@ -41,6 +41,7 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.comboBoxWayOfPayment = new System.Windows.Forms.ComboBox();
+            this.buttonback = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxPhone
@@ -195,11 +196,24 @@
             this.comboBoxWayOfPayment.TabIndex = 33;
             this.comboBoxWayOfPayment.Text = "Select";
             // 
+            // buttonback
+            // 
+            this.buttonback.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonback.ForeColor = System.Drawing.Color.White;
+            this.buttonback.Location = new System.Drawing.Point(12, 12);
+            this.buttonback.Name = "buttonback";
+            this.buttonback.Size = new System.Drawing.Size(76, 33);
+            this.buttonback.TabIndex = 34;
+            this.buttonback.Text = "Back";
+            this.buttonback.UseVisualStyleBackColor = false;
+            this.buttonback.Click += new System.EventHandler(this.buttonback_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
+            this.Controls.Add(this.buttonback);
             this.Controls.Add(this.comboBoxWayOfPayment);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.textBoxEmail);
@@ -238,5 +252,6 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.ComboBox comboBoxWayOfPayment;
+        private System.Windows.Forms.Button buttonback;
     }
 }

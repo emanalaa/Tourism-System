@@ -26,8 +26,10 @@ namespace TourismMangement
             //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
             //mohie con
-            SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
+             SqlConnection con = new SqlConnection("Data Source = LELOUCH; Initial Catalog =\"IS Project\";Integrated Security=True");
 
+            //connection_awad
+            //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
             con.Open();
 
             string Insetstr = @"insert into Users (Username ,Mail,Phone,WayofPayment,password)
@@ -87,6 +89,13 @@ namespace TourismMangement
         private void buttonContinue_Click(object sender, EventArgs e)
         {
             Insert();
+        }
+
+        private void buttonback_Click(object sender, EventArgs e)
+        {
+            Login_Register logorreg = new Login_Register();
+            logorreg.Show();
+            this.Hide();
         }
     }
 }

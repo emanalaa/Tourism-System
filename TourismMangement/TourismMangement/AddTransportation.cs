@@ -12,9 +12,9 @@ namespace TourismMangement
 {
     public partial class AddTransportation : Form
     {
-        //SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
-         SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+         //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public AddTransportation()
         {
             InitializeComponent();
@@ -61,8 +61,8 @@ namespace TourismMangement
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            AdminHome adminHome = new AdminHome();
-            adminHome.Show();
+            Add add = new Add();
+            add.Show();
             this.Hide();
         }
     }
