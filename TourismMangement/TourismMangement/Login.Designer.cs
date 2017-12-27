@@ -102,7 +102,7 @@
             this.buttonregister.TabIndex = 14;
             this.buttonregister.Text = "Register";
             this.buttonregister.UseVisualStyleBackColor = true;
-            this.buttonregister.Click += new System.EventHandler(this.buttonregister_Click);
+            //this.buttonregister.Click += new System.EventHandler(this.buttonregister_Click);
             // 
             // BackButton
             // 

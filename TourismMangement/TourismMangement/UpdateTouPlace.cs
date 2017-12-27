@@ -17,7 +17,7 @@ namespace TourismMangement
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
 
         //mai's con
-       //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+      // SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
 
 
@@ -34,7 +34,7 @@ namespace TourismMangement
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                comboBoxName.Items.Add(rdr["Name"].ToString());
+                ComboName.Items.Add(rdr["Name"].ToString());
             }
             con.Close();
             rdr.Close();
@@ -46,12 +46,12 @@ namespace TourismMangement
             con.Open();
             string str = @"update TourPlace
                          set Location='" + textBoxlocation.Text + @"'
-                         where Name= '" + comboBoxName.Text + "'";
+                         where Name= '" + ComboName.Text + "'";
 
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("successfully updated The Location of " + comboBoxName.Text + ".", "Done!");
+            MessageBox.Show("successfully updated The Location of " + ComboName.Text + ".", "Done!");
 
         }
         private void UpdateTicketPrice()
@@ -59,13 +59,13 @@ namespace TourismMangement
             con.Open();
             string str = @"update TourPlace
                          set TicketPrice='" + textBoxticketprice.Text + @"'
-                         where Name= '" + comboBoxName.Text + "'";
+                         where Name= '" + ComboName.Text + "'";
 
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.ExecuteNonQuery();
             con.Close();
-            MessageBox.Show("The Ticket Price of " + comboBoxName.Text + " is successfully updated.", "Done!");
-
+            MessageBox.Show("The Ticket Price of " + ComboName.Text + " is successfully updated.", "Done!");
+            
         }
 
         private void update_Click(object sender, EventArgs e)
@@ -117,6 +117,5 @@ namespace TourismMangement
                 UpdateTicketPrice();
 
         }
-
     }
 }
