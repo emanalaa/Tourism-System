@@ -35,7 +35,6 @@
             this.textBoxlocation = new System.Windows.Forms.TextBox();
             this.textBoxticketprice = new System.Windows.Forms.TextBox();
             this.update = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,25 +98,11 @@
             this.update.UseVisualStyleBackColor = false;
             this.update.Click += new System.EventHandler(this.update_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
-            this.button1.TabIndex = 48;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // UpdateTouPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.update);
             this.Controls.Add(this.textBoxticketprice);
             this.Controls.Add(this.textBoxlocation);
@@ -144,6 +129,5 @@
         private System.Windows.Forms.TextBox textBoxlocation;
         private System.Windows.Forms.TextBox textBoxticketprice;
         private System.Windows.Forms.Button update;
-        private System.Windows.Forms.Button button1;
     }
 }

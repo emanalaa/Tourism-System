@@ -93,18 +93,7 @@
             this.labelPassword.TabIndex = 9;
             this.labelPassword.Text = "Password :";
             // 
-            // buttonregister
-            // 
-            this.buttonregister.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonregister.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonregister.ForeColor = System.Drawing.Color.White;
-            this.buttonregister.Location = new System.Drawing.Point(490, 416);
-            this.buttonregister.Name = "buttonregister";
-            this.buttonregister.Size = new System.Drawing.Size(82, 33);
-            this.buttonregister.TabIndex = 14;
-            this.buttonregister.Text = "Register";
-            this.buttonregister.UseVisualStyleBackColor = false;
-            this.buttonregister.Click += new System.EventHandler(this.buttonregister_Click);
+            
             // 
             // Login
             // 
