@@ -30,13 +30,14 @@
         {
             this.buttoneditprofile = new System.Windows.Forms.Button();
             this.buttonreserve = new System.Windows.Forms.Button();
+            this.logoutbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttoneditprofile
             // 
-            this.buttoneditprofile.Location = new System.Drawing.Point(216, 289);
+            this.buttoneditprofile.Location = new System.Drawing.Point(216, 237);
             this.buttoneditprofile.Name = "buttoneditprofile";
-            this.buttoneditprofile.Size = new System.Drawing.Size(148, 46);
+            this.buttoneditprofile.Size = new System.Drawing.Size(140, 47);
             this.buttoneditprofile.TabIndex = 2;
             this.buttoneditprofile.Text = "Edit Profile";
             this.buttoneditprofile.UseVisualStyleBackColor = true;
@@ -44,19 +45,30 @@
             // 
             // buttonreserve
             // 
-            this.buttonreserve.Location = new System.Drawing.Point(216, 177);
+            this.buttonreserve.Location = new System.Drawing.Point(216, 142);
             this.buttonreserve.Name = "buttonreserve";
-            this.buttonreserve.Size = new System.Drawing.Size(148, 46);
+            this.buttonreserve.Size = new System.Drawing.Size(140, 47);
             this.buttonreserve.TabIndex = 3;
             this.buttonreserve.Text = "Reserve";
             this.buttonreserve.UseVisualStyleBackColor = true;
             this.buttonreserve.Click += new System.EventHandler(this.buttonreserve_Click);
+            // 
+            // logoutbutton
+            // 
+            this.logoutbutton.Location = new System.Drawing.Point(216, 342);
+            this.logoutbutton.Name = "logoutbutton";
+            this.logoutbutton.Size = new System.Drawing.Size(140, 47);
+            this.logoutbutton.TabIndex = 4;
+            this.logoutbutton.Text = "Log out";
+            this.logoutbutton.UseVisualStyleBackColor = true;
+            this.logoutbutton.Click += new System.EventHandler(this.logoutbutton_Click);
             // 
             // UserHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.logoutbutton);
             this.Controls.Add(this.buttonreserve);
             this.Controls.Add(this.buttoneditprofile);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,5 +84,6 @@
 
         private System.Windows.Forms.Button buttoneditprofile;
         private System.Windows.Forms.Button buttonreserve;
+        private System.Windows.Forms.Button logoutbutton;
     }
 }

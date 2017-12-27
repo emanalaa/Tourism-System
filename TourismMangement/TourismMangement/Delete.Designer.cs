@@ -32,7 +32,7 @@
             this.comboBoxDelete = new System.Windows.Forms.ComboBox();
             this.comboBoxSelectDelete = new System.Windows.Forms.ComboBox();
             this.buttonDelete = new System.Windows.Forms.Button();
-            this.BackButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,32 +73,31 @@
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
             this.buttonDelete.Location = new System.Drawing.Point(245, 359);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(165, 56);
+            this.buttonDelete.Size = new System.Drawing.Size(140, 47);
             this.buttonDelete.TabIndex = 3;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
             this.buttonDelete.Click += new System.EventHandler(this.buttonDelete_Click);
             // 
-            // BackButton
+            // button1
             // 
-            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(284, 421);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(99, 40);
-            this.BackButton.TabIndex = 45;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 25);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
-            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.comboBoxSelectDelete);
             this.Controls.Add(this.comboBoxDelete);
@@ -120,6 +119,6 @@
         private System.Windows.Forms.ComboBox comboBoxDelete;
         private System.Windows.Forms.ComboBox comboBoxSelectDelete;
         private System.Windows.Forms.Button buttonDelete;
-        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button button1;
     }
 }

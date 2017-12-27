@@ -40,8 +40,8 @@ namespace TourismMangement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AdminHome home = new AdminHome();
-            home.Show();
+            AdminHome adminhome = new AdminHome();
+            adminhome.Show();
             this.Hide();
         }
     }

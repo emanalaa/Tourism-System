@@ -39,7 +39,9 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.AddusertextBoxUsername = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.BackButton = new System.Windows.Forms.Button();
+            this.adduserconfirmpasswordtextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddUserButton
@@ -52,10 +54,10 @@
             this.AddUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddUserButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddUserButton.ForeColor = System.Drawing.Color.White;
-            this.AddUserButton.Location = new System.Drawing.Point(245, 371);
+            this.AddUserButton.Location = new System.Drawing.Point(222, 394);
             this.AddUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddUserButton.Name = "AddUserButton";
-            this.AddUserButton.Size = new System.Drawing.Size(102, 40);
+            this.AddUserButton.Size = new System.Drawing.Size(140, 47);
             this.AddUserButton.TabIndex = 42;
             this.AddUserButton.Text = "Add";
             this.AddUserButton.UseVisualStyleBackColor = false;
@@ -65,7 +67,7 @@
             // 
             this.AddUserPhoneTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AddUserPhoneTextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddUserPhoneTextbox.Location = new System.Drawing.Point(248, 223);
+            this.AddUserPhoneTextbox.Location = new System.Drawing.Point(245, 268);
             this.AddUserPhoneTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddUserPhoneTextbox.Name = "AddUserPhoneTextbox";
             this.AddUserPhoneTextbox.Size = new System.Drawing.Size(245, 32);
@@ -76,7 +78,7 @@
             // 
             this.AdduserEmailtextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AdduserEmailtextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdduserEmailtextbox.Location = new System.Drawing.Point(245, 163);
+            this.AdduserEmailtextbox.Location = new System.Drawing.Point(245, 222);
             this.AdduserEmailtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AdduserEmailtextbox.Name = "AdduserEmailtextbox";
             this.AdduserEmailtextbox.Size = new System.Drawing.Size(245, 32);
@@ -98,7 +100,7 @@
             this.labelPhone.BackColor = System.Drawing.Color.Transparent;
             this.labelPhone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhone.ForeColor = System.Drawing.Color.Black;
-            this.labelPhone.Location = new System.Drawing.Point(148, 231);
+            this.labelPhone.Location = new System.Drawing.Point(114, 276);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(80, 24);
             this.labelPhone.TabIndex = 37;
@@ -110,7 +112,7 @@
             this.labelWayOfPayment.BackColor = System.Drawing.Color.Transparent;
             this.labelWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWayOfPayment.ForeColor = System.Drawing.Color.Black;
-            this.labelWayOfPayment.Location = new System.Drawing.Point(92, 281);
+            this.labelWayOfPayment.Location = new System.Drawing.Point(79, 328);
             this.labelWayOfPayment.Name = "labelWayOfPayment";
             this.labelWayOfPayment.Size = new System.Drawing.Size(183, 24);
             this.labelWayOfPayment.TabIndex = 36;
@@ -122,7 +124,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
-            this.labelPassword.Location = new System.Drawing.Point(133, 118);
+            this.labelPassword.Location = new System.Drawing.Point(104, 118);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(114, 24);
             this.labelPassword.TabIndex = 35;
@@ -134,7 +136,7 @@
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
-            this.labelEmail.Location = new System.Drawing.Point(154, 171);
+            this.labelEmail.Location = new System.Drawing.Point(114, 230);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(72, 24);
             this.labelEmail.TabIndex = 34;
@@ -146,7 +148,7 @@
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Black;
-            this.labelUsername.Location = new System.Drawing.Point(133, 50);
+            this.labelUsername.Location = new System.Drawing.Point(104, 52);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(119, 24);
             this.labelUsername.TabIndex = 33;
@@ -169,17 +171,37 @@
             "Cash",
             "Credit Card",
             "Visa Card"});
-            this.comboBox1.Location = new System.Drawing.Point(248, 273);
+            this.comboBox1.Location = new System.Drawing.Point(248, 320);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(245, 32);
             this.comboBox1.TabIndex = 43;
             // 
-            // BackButton
+            // adduserconfirmpasswordtextBox
+            // 
+            this.adduserconfirmpasswordtextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.adduserconfirmpasswordtextBox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adduserconfirmpasswordtextBox.Location = new System.Drawing.Point(245, 167);
+            this.adduserconfirmpasswordtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.adduserconfirmpasswordtextBox.Name = "adduserconfirmpasswordtextBox";
+            this.adduserconfirmpasswordtextBox.Size = new System.Drawing.Size(245, 27);
+            this.adduserconfirmpasswordtextBox.TabIndex = 44;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 175);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 19);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Confirm Password:";
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
             this.BackButton.Location = new System.Drawing.Point(245, 416);
             this.BackButton.Name = "BackButton";
@@ -187,14 +209,15 @@
             this.BackButton.TabIndex = 44;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
-            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
-            this.Controls.Add(this.BackButton);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.adduserconfirmpasswordtextBox);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.AddUserButton);
             this.Controls.Add(this.AddUserPhoneTextbox);
@@ -229,6 +252,8 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox AddusertextBoxUsername;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.TextBox adduserconfirmpasswordtextBox;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

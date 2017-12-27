@@ -118,5 +118,12 @@ namespace TourismMangement
             AH.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdminHome admin_home = new AdminHome();
+            admin_home.Show();
+            this.Hide();
+        }
     }
 }

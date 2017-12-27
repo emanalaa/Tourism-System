@@ -41,7 +41,6 @@
             this.labelUsername = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
             this.comboBoxWayOfPayment = new System.Windows.Forms.ComboBox();
-            this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxPhone
@@ -92,9 +91,9 @@
             this.buttonContinue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonContinue.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonContinue.ForeColor = System.Drawing.Color.White;
-            this.buttonContinue.Location = new System.Drawing.Point(370, 480);
+            this.buttonContinue.Location = new System.Drawing.Point(286, 479);
             this.buttonContinue.Name = "buttonContinue";
-            this.buttonContinue.Size = new System.Drawing.Size(119, 49);
+            this.buttonContinue.Size = new System.Drawing.Size(140, 47);
             this.buttonContinue.TabIndex = 27;
             this.buttonContinue.Text = "Continue";
             this.buttonContinue.UseVisualStyleBackColor = false;
@@ -196,26 +195,11 @@
             this.comboBoxWayOfPayment.TabIndex = 33;
             this.comboBoxWayOfPayment.Text = "Select";
             // 
-            // BackButton
-            // 
-            this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackButton.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(207, 480);
-            this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(122, 49);
-            this.BackButton.TabIndex = 45;
-            this.BackButton.Text = "Back";
-            this.BackButton.UseVisualStyleBackColor = false;
-            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
-            this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxWayOfPayment);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.textBoxEmail);
@@ -254,6 +238,5 @@
         private System.Windows.Forms.Label labelUsername;
         private System.Windows.Forms.TextBox textBoxUsername;
         private System.Windows.Forms.ComboBox comboBoxWayOfPayment;
-        private System.Windows.Forms.Button BackButton;
     }
 }
