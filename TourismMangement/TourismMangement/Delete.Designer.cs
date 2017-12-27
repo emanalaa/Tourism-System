@@ -40,7 +40,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(164, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.Size = new System.Drawing.Size(97, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Delete: ";
             // 
@@ -53,7 +53,7 @@
             "Transportation"});
             this.comboBoxDelete.Location = new System.Drawing.Point(299, 156);
             this.comboBoxDelete.Name = "comboBoxDelete";
-            this.comboBoxDelete.Size = new System.Drawing.Size(228, 30);
+            this.comboBoxDelete.Size = new System.Drawing.Size(228, 36);
             this.comboBoxDelete.TabIndex = 1;
             this.comboBoxDelete.SelectedIndexChanged += new System.EventHandler(this.comboBoxDelete_SelectedIndexChanged);
             // 
@@ -62,7 +62,7 @@
             this.comboBoxSelectDelete.FormattingEnabled = true;
             this.comboBoxSelectDelete.Location = new System.Drawing.Point(169, 253);
             this.comboBoxSelectDelete.Name = "comboBoxSelectDelete";
-            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 30);
+            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 36);
             this.comboBoxSelectDelete.TabIndex = 2;
             this.comboBoxSelectDelete.Visible = false;
             // 
@@ -94,7 +94,7 @@
             // 
             // Delete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
@@ -107,6 +107,7 @@
             this.Name = "Delete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Delete_FormClosing);
             this.Load += new System.EventHandler(this.Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
