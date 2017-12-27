@@ -81,5 +81,17 @@ namespace TourismMangement
 
             con.Close();
         }
+
+        private void buttonregister_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1register_Click(object sender, EventArgs e)
+        {
+            Register reg = new Register();
+            reg.Show();
+            this.Hide();
+        }
     }
 }

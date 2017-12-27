@@ -79,20 +79,19 @@
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(461, 409);
+            this.BackButton.Location = new System.Drawing.Point(486, 418);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(99, 40);
+            this.BackButton.Size = new System.Drawing.Size(86, 31);
             this.BackButton.TabIndex = 45;
-            this.BackButton.Text = "Back";
+            this.BackButton.Text = "Log out";
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
             // AdminHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.BackButton);
