@@ -40,7 +40,7 @@ namespace TourismMangement
            // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
 
             con.Open();
-            if (AdminUsername==TextBoxUsername.Text || AdminPassword==TextBoxPassword.Text )
+            if (AdminUsername==TextBoxUsername.Text && AdminPassword==TextBoxPassword.Text )
             {
                 AdminHome admin_home = new AdminHome();
                 admin_home.Show();
