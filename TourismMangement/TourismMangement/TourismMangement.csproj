@@ -161,6 +161,9 @@
     <EmbeddedResource Include="AddTourPlace.resx">
       <DependentUpon>AddTourPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -194,8 +197,8 @@
     <EmbeddedResource Include="Update.resx">
       <DependentUpon>Update.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateTouPlace.resx">
-      <DependentUpon>UpdateTouPlace.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateUser.resx">
+      <DependentUpon>UpdateUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
