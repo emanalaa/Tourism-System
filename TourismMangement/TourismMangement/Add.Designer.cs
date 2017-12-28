@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add));
             this.ButtonAddTourplace = new System.Windows.Forms.Button();
             this.ButtonAddUser = new System.Windows.Forms.Button();
             this.ButtonAddTrans = new System.Windows.Forms.Button();
@@ -36,15 +37,15 @@
             // 
             // ButtonAddTourplace
             // 
-            this.ButtonAddTourplace.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonAddTourplace.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonAddTourplace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonAddTourplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAddTourplace.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAddTourplace.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddTourplace.Location = new System.Drawing.Point(133, 421);
+            this.ButtonAddTourplace.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAddTourplace.ForeColor = System.Drawing.Color.Black;
+            this.ButtonAddTourplace.Location = new System.Drawing.Point(190, 322);
             this.ButtonAddTourplace.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonAddTourplace.Name = "ButtonAddTourplace";
-            this.ButtonAddTourplace.Size = new System.Drawing.Size(418, 74);
+            this.ButtonAddTourplace.Size = new System.Drawing.Size(298, 74);
             this.ButtonAddTourplace.TabIndex = 15;
             this.ButtonAddTourplace.Text = "Add TourPlace";
             this.ButtonAddTourplace.UseVisualStyleBackColor = false;
@@ -52,15 +53,15 @@
             // 
             // ButtonAddUser
             // 
-            this.ButtonAddUser.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonAddUser.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonAddUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonAddUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAddUser.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAddUser.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddUser.Location = new System.Drawing.Point(133, 166);
+            this.ButtonAddUser.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAddUser.ForeColor = System.Drawing.Color.Black;
+            this.ButtonAddUser.Location = new System.Drawing.Point(190, 129);
             this.ButtonAddUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonAddUser.Name = "ButtonAddUser";
-            this.ButtonAddUser.Size = new System.Drawing.Size(418, 74);
+            this.ButtonAddUser.Size = new System.Drawing.Size(298, 76);
             this.ButtonAddUser.TabIndex = 14;
             this.ButtonAddUser.Text = "Add User";
             this.ButtonAddUser.UseVisualStyleBackColor = false;
@@ -68,15 +69,15 @@
             // 
             // ButtonAddTrans
             // 
-            this.ButtonAddTrans.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonAddTrans.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonAddTrans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonAddTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonAddTrans.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonAddTrans.ForeColor = System.Drawing.Color.White;
-            this.ButtonAddTrans.Location = new System.Drawing.Point(133, 295);
+            this.ButtonAddTrans.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonAddTrans.ForeColor = System.Drawing.Color.Black;
+            this.ButtonAddTrans.Location = new System.Drawing.Point(190, 228);
             this.ButtonAddTrans.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonAddTrans.Name = "ButtonAddTrans";
-            this.ButtonAddTrans.Size = new System.Drawing.Size(418, 74);
+            this.ButtonAddTrans.Size = new System.Drawing.Size(298, 71);
             this.ButtonAddTrans.TabIndex = 13;
             this.ButtonAddTrans.Text = "Add Transportation";
             this.ButtonAddTrans.UseVisualStyleBackColor = false;
@@ -100,6 +101,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonAddTourplace);
@@ -109,7 +112,6 @@
             this.Name = "Add";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add";
-            this.Load += new System.EventHandler(this.Add_Load);
             this.ResumeLayout(false);
 
         }

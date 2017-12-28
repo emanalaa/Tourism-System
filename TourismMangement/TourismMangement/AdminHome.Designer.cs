@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminHome));
             this.buttonadd = new System.Windows.Forms.Button();
             this.buttonupdate = new System.Windows.Forms.Button();
             this.buttondelete = new System.Windows.Forms.Button();
@@ -37,7 +38,8 @@
             // 
             // buttonadd
             // 
-            this.buttonadd.Location = new System.Drawing.Point(230, 76);
+            this.buttonadd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonadd.Location = new System.Drawing.Point(279, 117);
             this.buttonadd.Name = "buttonadd";
             this.buttonadd.Size = new System.Drawing.Size(116, 46);
             this.buttonadd.TabIndex = 0;
@@ -47,7 +49,8 @@
             // 
             // buttonupdate
             // 
-            this.buttonupdate.Location = new System.Drawing.Point(230, 169);
+            this.buttonupdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonupdate.Location = new System.Drawing.Point(279, 169);
             this.buttonupdate.Name = "buttonupdate";
             this.buttonupdate.Size = new System.Drawing.Size(116, 46);
             this.buttonupdate.TabIndex = 1;
@@ -57,7 +60,8 @@
             // 
             // buttondelete
             // 
-            this.buttondelete.Location = new System.Drawing.Point(230, 264);
+            this.buttondelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttondelete.Location = new System.Drawing.Point(279, 221);
             this.buttondelete.Name = "buttondelete";
             this.buttondelete.Size = new System.Drawing.Size(116, 46);
             this.buttondelete.TabIndex = 2;
@@ -67,7 +71,8 @@
             // 
             // buttondisplay
             // 
-            this.buttondisplay.Location = new System.Drawing.Point(230, 355);
+            this.buttondisplay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttondisplay.Location = new System.Drawing.Point(279, 273);
             this.buttondisplay.Name = "buttondisplay";
             this.buttondisplay.Size = new System.Drawing.Size(116, 46);
             this.buttondisplay.TabIndex = 3;
@@ -81,9 +86,9 @@
             this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BackButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(486, 418);
+            this.BackButton.Location = new System.Drawing.Point(254, 360);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(86, 31);
+            this.BackButton.Size = new System.Drawing.Size(169, 67);
             this.BackButton.TabIndex = 45;
             this.BackButton.Text = "Log out";
             this.BackButton.UseVisualStyleBackColor = false;
@@ -93,7 +98,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.buttondisplay);
             this.Controls.Add(this.buttondelete);

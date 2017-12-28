@@ -21,6 +21,7 @@ namespace TourismMangement
         {
             InitializeComponent();
             fillTourPlaceComboBox();
+            this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
         }
 
         public void fillTourPlaceComboBox()

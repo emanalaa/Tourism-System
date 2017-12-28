@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditProfile));
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.ConfirmPasswordlabel7 = new System.Windows.Forms.Label();
@@ -48,16 +49,16 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.BackColor = System.Drawing.Color.Silver;
-            this.textBoxEmail.Location = new System.Drawing.Point(205, 251);
+            this.textBoxEmail.BackColor = System.Drawing.Color.White;
+            this.textBoxEmail.Location = new System.Drawing.Point(368, 246);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(185, 32);
             this.textBoxEmail.TabIndex = 30;
             // 
             // textBoxPhone
             // 
-            this.textBoxPhone.BackColor = System.Drawing.Color.Silver;
-            this.textBoxPhone.Location = new System.Drawing.Point(205, 208);
+            this.textBoxPhone.BackColor = System.Drawing.Color.White;
+            this.textBoxPhone.Location = new System.Drawing.Point(368, 208);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(185, 32);
             this.textBoxPhone.TabIndex = 29;
@@ -68,7 +69,7 @@
             this.ConfirmPasswordlabel7.BackColor = System.Drawing.Color.Transparent;
             this.ConfirmPasswordlabel7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordlabel7.ForeColor = System.Drawing.Color.White;
-            this.ConfirmPasswordlabel7.Location = new System.Drawing.Point(28, 167);
+            this.ConfirmPasswordlabel7.Location = new System.Drawing.Point(169, 173);
             this.ConfirmPasswordlabel7.Name = "ConfirmPasswordlabel7";
             this.ConfirmPasswordlabel7.Size = new System.Drawing.Size(193, 24);
             this.ConfirmPasswordlabel7.TabIndex = 28;
@@ -80,7 +81,7 @@
             this.Newpasswordlabel6.BackColor = System.Drawing.Color.Transparent;
             this.Newpasswordlabel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Newpasswordlabel6.ForeColor = System.Drawing.Color.White;
-            this.Newpasswordlabel6.Location = new System.Drawing.Point(28, 141);
+            this.Newpasswordlabel6.Location = new System.Drawing.Point(201, 134);
             this.Newpasswordlabel6.Name = "Newpasswordlabel6";
             this.Newpasswordlabel6.Size = new System.Drawing.Size(158, 24);
             this.Newpasswordlabel6.TabIndex = 27;
@@ -92,7 +93,7 @@
             this.Emaillabel5.BackColor = System.Drawing.Color.Transparent;
             this.Emaillabel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Emaillabel5.ForeColor = System.Drawing.Color.White;
-            this.Emaillabel5.Location = new System.Drawing.Point(28, 252);
+            this.Emaillabel5.Location = new System.Drawing.Point(288, 249);
             this.Emaillabel5.Name = "Emaillabel5";
             this.Emaillabel5.Size = new System.Drawing.Size(74, 24);
             this.Emaillabel5.TabIndex = 26;
@@ -104,7 +105,7 @@
             this.WayofPaymentlabel4.BackColor = System.Drawing.Color.Transparent;
             this.WayofPaymentlabel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WayofPaymentlabel4.ForeColor = System.Drawing.Color.White;
-            this.WayofPaymentlabel4.Location = new System.Drawing.Point(28, 293);
+            this.WayofPaymentlabel4.Location = new System.Drawing.Point(186, 287);
             this.WayofPaymentlabel4.Name = "WayofPaymentlabel4";
             this.WayofPaymentlabel4.Size = new System.Drawing.Size(176, 24);
             this.WayofPaymentlabel4.TabIndex = 25;
@@ -116,7 +117,7 @@
             this.Phonelabel3.BackColor = System.Drawing.Color.Transparent;
             this.Phonelabel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Phonelabel3.ForeColor = System.Drawing.Color.White;
-            this.Phonelabel3.Location = new System.Drawing.Point(28, 206);
+            this.Phonelabel3.Location = new System.Drawing.Point(289, 211);
             this.Phonelabel3.Name = "Phonelabel3";
             this.Phonelabel3.Size = new System.Drawing.Size(73, 24);
             this.Phonelabel3.TabIndex = 24;
@@ -128,7 +129,7 @@
             this.Currentpasswordlabel2.BackColor = System.Drawing.Color.Transparent;
             this.Currentpasswordlabel2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Currentpasswordlabel2.ForeColor = System.Drawing.Color.White;
-            this.Currentpasswordlabel2.Location = new System.Drawing.Point(30, 118);
+            this.Currentpasswordlabel2.Location = new System.Drawing.Point(153, 94);
             this.Currentpasswordlabel2.Name = "Currentpasswordlabel2";
             this.Currentpasswordlabel2.Size = new System.Drawing.Size(209, 24);
             this.Currentpasswordlabel2.TabIndex = 23;
@@ -140,7 +141,7 @@
             this.UsernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.UsernameLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameLabel.ForeColor = System.Drawing.Color.White;
-            this.UsernameLabel.Location = new System.Drawing.Point(30, 55);
+            this.UsernameLabel.Location = new System.Drawing.Point(250, 55);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(112, 24);
             this.UsernameLabel.TabIndex = 22;
@@ -148,17 +149,18 @@
             // 
             // textBoxConfirmPassword
             // 
-            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.Silver;
-            this.textBoxConfirmPassword.Location = new System.Drawing.Point(205, 169);
+            this.textBoxConfirmPassword.BackColor = System.Drawing.Color.White;
+            this.textBoxConfirmPassword.Location = new System.Drawing.Point(368, 170);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.PasswordChar = '*';
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxConfirmPassword.TabIndex = 20;
+            this.textBoxConfirmPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
             // textBoxNewPassword
             // 
-            this.textBoxNewPassword.BackColor = System.Drawing.Color.Silver;
-            this.textBoxNewPassword.Location = new System.Drawing.Point(205, 143);
+            this.textBoxNewPassword.BackColor = System.Drawing.Color.White;
+            this.textBoxNewPassword.Location = new System.Drawing.Point(368, 131);
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.PasswordChar = '*';
             this.textBoxNewPassword.Size = new System.Drawing.Size(185, 32);
@@ -166,8 +168,8 @@
             // 
             // textBoxCurrentPassword
             // 
-            this.textBoxCurrentPassword.BackColor = System.Drawing.Color.Silver;
-            this.textBoxCurrentPassword.Location = new System.Drawing.Point(205, 117);
+            this.textBoxCurrentPassword.BackColor = System.Drawing.Color.White;
+            this.textBoxCurrentPassword.Location = new System.Drawing.Point(368, 91);
             this.textBoxCurrentPassword.Name = "textBoxCurrentPassword";
             this.textBoxCurrentPassword.PasswordChar = '*';
             this.textBoxCurrentPassword.Size = new System.Drawing.Size(185, 32);
@@ -176,9 +178,9 @@
             // 
             // textBoxUsername
             // 
-            this.textBoxUsername.BackColor = System.Drawing.Color.Silver;
+            this.textBoxUsername.BackColor = System.Drawing.Color.White;
             this.textBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBoxUsername.Location = new System.Drawing.Point(205, 54);
+            this.textBoxUsername.Location = new System.Drawing.Point(368, 53);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.ReadOnly = true;
             this.textBoxUsername.Size = new System.Drawing.Size(185, 32);
@@ -188,10 +190,11 @@
             // 
             this.UpdateButton.BackColor = System.Drawing.Color.Silver;
             this.UpdateButton.Enabled = false;
+            this.UpdateButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.UpdateButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateButton.Location = new System.Drawing.Point(368, 360);
+            this.UpdateButton.Location = new System.Drawing.Point(279, 344);
             this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(150, 38);
+            this.UpdateButton.Size = new System.Drawing.Size(163, 48);
             this.UpdateButton.TabIndex = 16;
             this.UpdateButton.Text = "Save changes";
             this.UpdateButton.UseVisualStyleBackColor = false;
@@ -199,14 +202,14 @@
             // 
             // comboBoxWayOfPayment
             // 
-            this.comboBoxWayOfPayment.BackColor = System.Drawing.Color.Silver;
+            this.comboBoxWayOfPayment.BackColor = System.Drawing.Color.White;
             this.comboBoxWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxWayOfPayment.FormattingEnabled = true;
             this.comboBoxWayOfPayment.Items.AddRange(new object[] {
             "Cash",
             "Credit Card",
             "Visa Card"});
-            this.comboBoxWayOfPayment.Location = new System.Drawing.Point(205, 293);
+            this.comboBoxWayOfPayment.Location = new System.Drawing.Point(368, 284);
             this.comboBoxWayOfPayment.Name = "comboBoxWayOfPayment";
             this.comboBoxWayOfPayment.Size = new System.Drawing.Size(185, 32);
             this.comboBoxWayOfPayment.TabIndex = 32;
@@ -216,9 +219,10 @@
             // 
             this.BackButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.BackButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(32, 409);
+            this.BackButton.Location = new System.Drawing.Point(12, 12);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(90, 40);
             this.BackButton.TabIndex = 45;
@@ -230,7 +234,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxWayOfPayment);
             this.Controls.Add(this.textBoxEmail);

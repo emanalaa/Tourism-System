@@ -21,6 +21,7 @@ namespace TourismMangement
         {
             InitializeComponent();
             textBoxUsername.Text = Login.currentUsername;
+            this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
         }
 
         private void textBoxCurrentPassword_TextChanged(object sender, EventArgs e)
@@ -146,6 +147,5 @@ namespace TourismMangement
             UH.Show();
             this.Hide();
         }
-
     }
 }

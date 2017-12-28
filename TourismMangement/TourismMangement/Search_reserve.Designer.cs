@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Search_reserve));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ReserveButton = new System.Windows.Forms.Button();
@@ -39,7 +40,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(111, 196);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(193, 191);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(166, 24);
@@ -49,7 +52,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 106);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(236, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 24);
@@ -59,9 +64,9 @@
             // ReserveButton
             // 
             this.ReserveButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ReserveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ReserveButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ReserveButton.ForeColor = System.Drawing.Color.White;
-            this.ReserveButton.Location = new System.Drawing.Point(229, 323);
+            this.ReserveButton.Location = new System.Drawing.Point(310, 270);
             this.ReserveButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ReserveButton.Name = "ReserveButton";
             this.ReserveButton.Size = new System.Drawing.Size(140, 47);
@@ -73,7 +78,7 @@
             // TransportationComboBoxSearch
             // 
             this.TransportationComboBoxSearch.FormattingEnabled = true;
-            this.TransportationComboBoxSearch.Location = new System.Drawing.Point(252, 196);
+            this.TransportationComboBoxSearch.Location = new System.Drawing.Point(369, 188);
             this.TransportationComboBoxSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TransportationComboBoxSearch.Name = "TransportationComboBoxSearch";
             this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 32);
@@ -82,7 +87,7 @@
             // SearchTourPlaceComboBox
             // 
             this.SearchTourPlaceComboBox.FormattingEnabled = true;
-            this.SearchTourPlaceComboBox.Location = new System.Drawing.Point(252, 103);
+            this.SearchTourPlaceComboBox.Location = new System.Drawing.Point(369, 103);
             this.SearchTourPlaceComboBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.SearchTourPlaceComboBox.Name = "SearchTourPlaceComboBox";
             this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 32);
@@ -92,6 +97,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(12, 12);
@@ -106,7 +112,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -116,6 +124,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "Search_reserve";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search_reserve";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,6 +15,7 @@ namespace TourismMangement
         public UserHome()
         {
             InitializeComponent();
+            this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
         }
 
         private void buttonreserve_Click(object sender, EventArgs e)

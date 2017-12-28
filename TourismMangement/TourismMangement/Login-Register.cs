@@ -15,7 +15,7 @@ namespace TourismMangement
         public Login_Register()
         {
             InitializeComponent();
-
+            this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
 
             //this.BackgroundImage = Properties.Resources.LoginBackGround__1_;
             //Timer tim = new Timer();

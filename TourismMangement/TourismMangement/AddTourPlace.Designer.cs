@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddTourPlace));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 100);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(159, 132);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 24);
             this.label1.TabIndex = 1;
@@ -50,7 +52,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(72, 204);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(141, 199);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 24);
             this.label2.TabIndex = 2;
@@ -59,7 +62,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(60, 309);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(108, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 24);
             this.label3.TabIndex = 3;
@@ -67,21 +71,21 @@
             // 
             // textBoxname
             // 
-            this.textBoxname.Location = new System.Drawing.Point(199, 92);
+            this.textBoxname.Location = new System.Drawing.Point(255, 129);
             this.textBoxname.Name = "textBoxname";
             this.textBoxname.Size = new System.Drawing.Size(300, 32);
             this.textBoxname.TabIndex = 4;
             // 
             // textBoxlocation
             // 
-            this.textBoxlocation.Location = new System.Drawing.Point(199, 196);
+            this.textBoxlocation.Location = new System.Drawing.Point(255, 196);
             this.textBoxlocation.Name = "textBoxlocation";
             this.textBoxlocation.Size = new System.Drawing.Size(300, 32);
             this.textBoxlocation.TabIndex = 5;
             // 
             // textBoxticketprice
             // 
-            this.textBoxticketprice.Location = new System.Drawing.Point(199, 301);
+            this.textBoxticketprice.Location = new System.Drawing.Point(255, 272);
             this.textBoxticketprice.Name = "textBoxticketprice";
             this.textBoxticketprice.Size = new System.Drawing.Size(300, 32);
             this.textBoxticketprice.TabIndex = 6;
@@ -89,9 +93,8 @@
             // add
             // 
             this.add.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.add.ForeColor = System.Drawing.Color.White;
-            this.add.Location = new System.Drawing.Point(209, 387);
+            this.add.Location = new System.Drawing.Point(270, 363);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(140, 47);
             this.add.TabIndex = 7;
@@ -116,7 +119,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.add);
             this.Controls.Add(this.textBoxticketprice);

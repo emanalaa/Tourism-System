@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserHome));
             this.buttoneditprofile = new System.Windows.Forms.Button();
             this.buttonreserve = new System.Windows.Forms.Button();
             this.logoutbutton = new System.Windows.Forms.Button();
@@ -35,7 +36,7 @@
             // 
             // buttoneditprofile
             // 
-            this.buttoneditprofile.Location = new System.Drawing.Point(216, 237);
+            this.buttoneditprofile.Location = new System.Drawing.Point(297, 240);
             this.buttoneditprofile.Name = "buttoneditprofile";
             this.buttoneditprofile.Size = new System.Drawing.Size(140, 47);
             this.buttoneditprofile.TabIndex = 2;
@@ -45,7 +46,7 @@
             // 
             // buttonreserve
             // 
-            this.buttonreserve.Location = new System.Drawing.Point(216, 142);
+            this.buttonreserve.Location = new System.Drawing.Point(297, 154);
             this.buttonreserve.Name = "buttonreserve";
             this.buttonreserve.Size = new System.Drawing.Size(140, 47);
             this.buttonreserve.TabIndex = 3;
@@ -55,7 +56,7 @@
             // 
             // logoutbutton
             // 
-            this.logoutbutton.Location = new System.Drawing.Point(216, 342);
+            this.logoutbutton.Location = new System.Drawing.Point(297, 326);
             this.logoutbutton.Name = "logoutbutton";
             this.logoutbutton.Size = new System.Drawing.Size(140, 47);
             this.logoutbutton.TabIndex = 4;
@@ -65,9 +66,11 @@
             // 
             // UserHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.logoutbutton);
             this.Controls.Add(this.buttonreserve);
             this.Controls.Add(this.buttoneditprofile);

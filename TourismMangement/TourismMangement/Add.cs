@@ -44,10 +44,5 @@ namespace TourismMangement
             admin_home.Show();
             this.Hide();
         }
-
-        private void Add_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

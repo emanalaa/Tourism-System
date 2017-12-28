@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Delete));
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxDelete = new System.Windows.Forms.ComboBox();
             this.comboBoxSelectDelete = new System.Windows.Forms.ComboBox();
@@ -38,9 +39,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(164, 159);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(187, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 29);
+            this.label1.Size = new System.Drawing.Size(106, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Delete: ";
             // 
@@ -62,18 +65,18 @@
             this.comboBoxSelectDelete.FormattingEnabled = true;
             this.comboBoxSelectDelete.Location = new System.Drawing.Point(169, 253);
             this.comboBoxSelectDelete.Name = "comboBoxSelectDelete";
-            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 36);
+            this.comboBoxSelectDelete.Size = new System.Drawing.Size(377, 36);
             this.comboBoxSelectDelete.TabIndex = 2;
             this.comboBoxSelectDelete.Visible = false;
             // 
             // buttonDelete
             // 
             this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonDelete.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(274, 367);
+            this.buttonDelete.Location = new System.Drawing.Point(274, 358);
             this.buttonDelete.Name = "buttonDelete";
-            this.buttonDelete.Size = new System.Drawing.Size(140, 47);
+            this.buttonDelete.Size = new System.Drawing.Size(140, 56);
             this.buttonDelete.TabIndex = 3;
             this.buttonDelete.Text = "Delete";
             this.buttonDelete.UseVisualStyleBackColor = false;
@@ -96,6 +99,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonDelete);
