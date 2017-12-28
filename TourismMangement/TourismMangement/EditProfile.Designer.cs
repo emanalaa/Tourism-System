@@ -165,6 +165,7 @@
             this.textBoxNewPassword.PasswordChar = '*';
             this.textBoxNewPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxNewPassword.TabIndex = 19;
+            this.textBoxNewPassword.UseSystemPasswordChar = true;
             // 
             // textBoxCurrentPassword
             // 
@@ -174,6 +175,7 @@
             this.textBoxCurrentPassword.PasswordChar = '*';
             this.textBoxCurrentPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxCurrentPassword.TabIndex = 18;
+            this.textBoxCurrentPassword.UseSystemPasswordChar = true;
             this.textBoxCurrentPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
             // textBoxUsername

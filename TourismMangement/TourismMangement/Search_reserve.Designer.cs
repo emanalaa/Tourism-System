@@ -35,6 +35,8 @@
             this.TransportationComboBoxSearch = new System.Windows.Forms.ComboBox();
             this.SearchTourPlaceComboBox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridViewTrans = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTrans)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -66,7 +68,7 @@
             this.ReserveButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ReserveButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.ReserveButton.ForeColor = System.Drawing.Color.White;
-            this.ReserveButton.Location = new System.Drawing.Point(310, 270);
+            this.ReserveButton.Location = new System.Drawing.Point(305, 386);
             this.ReserveButton.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ReserveButton.Name = "ReserveButton";
             this.ReserveButton.Size = new System.Drawing.Size(140, 47);
@@ -83,6 +85,7 @@
             this.TransportationComboBoxSearch.Name = "TransportationComboBoxSearch";
             this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 32);
             this.TransportationComboBoxSearch.TabIndex = 6;
+            this.TransportationComboBoxSearch.SelectedIndexChanged += new System.EventHandler(this.TransportationComboBoxSearch_SelectedIndexChanged);
             // 
             // SearchTourPlaceComboBox
             // 
@@ -108,6 +111,18 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridViewTrans
+            // 
+            this.dataGridViewTrans.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewTrans.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridViewTrans.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewTrans.GridColor = System.Drawing.Color.White;
+            this.dataGridViewTrans.Location = new System.Drawing.Point(187, 245);
+            this.dataGridViewTrans.Name = "dataGridViewTrans";
+            this.dataGridViewTrans.RowTemplate.Height = 26;
+            this.dataGridViewTrans.Size = new System.Drawing.Size(403, 87);
+            this.dataGridViewTrans.TabIndex = 35;
+            // 
             // Search_reserve
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
@@ -115,6 +130,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 567);
+            this.Controls.Add(this.dataGridViewTrans);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -127,6 +143,7 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Search_reserve";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTrans)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +157,6 @@
         private System.Windows.Forms.ComboBox TransportationComboBoxSearch;
         private System.Windows.Forms.ComboBox SearchTourPlaceComboBox;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridViewTrans;
     }
 }

@@ -20,6 +20,7 @@ namespace TourismMangement
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
         //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+
         public Login()
         {
             InitializeComponent();    
@@ -64,15 +65,14 @@ namespace TourismMangement
                     }
                     else if ((string)username_password["username"] == TextBoxUsername.Text && (string)username_password["password"] != TextBoxPassword.Text)
                     {
-                        MessageBox.Show("The Username or Password is incorrect please try again or Register");
+                        MessageBox.Show("The Username or Password is incorrect please retry.");
                         alreadyuser = true;
-                       
-                    }
-                    
+                    }                   
                 }
+
                 if (alreadyuser==false)
                 {
-                    MessageBox.Show("The Username or Password is incorrect please try again or Register");
+                    MessageBox.Show("The Username or Password is incorrect please retry or Register.");
                 }
                 username_password.Close();
 

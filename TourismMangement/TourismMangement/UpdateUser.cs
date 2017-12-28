@@ -110,25 +110,31 @@ namespace TourismMangement
 
         private void UpdateUserButton_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(UpdateUserPhoneTextbox.Text))
-                PhoneUpdate();
+            if (string.IsNullOrEmpty(comboBoxUsername.Text))
+                MessageBox.Show("Please select the username of the user you want to update.");
 
-            if (!string.IsNullOrWhiteSpace(UpdateuserEmailtextbox.Text))
-                MailUpdate();
+            else
+            {
+                if (!string.IsNullOrWhiteSpace(UpdateUserPhoneTextbox.Text))
+                    PhoneUpdate();
 
-            if (comboBoxWayOfPayment.Text != "Select")
-                WayofpaymentUpdate();
+                if (!string.IsNullOrWhiteSpace(UpdateuserEmailtextbox.Text))
+                    MailUpdate();
 
-            if (!string.IsNullOrWhiteSpace(UpdateUserPhoneTextbox.Text))
-                PhoneUpdate();
+                if (comboBoxWayOfPayment.Text != "Select")
+                    WayofpaymentUpdate();
 
-            if (!string.IsNullOrWhiteSpace(Updateuserpasswordtextbox.Text))
-                PasswordUpdate();
+                if (!string.IsNullOrWhiteSpace(UpdateUserPhoneTextbox.Text))
+                    PhoneUpdate();
 
-            if (!string.IsNullOrWhiteSpace(textBox1.Text))
-                UpdateUsername();
+                if (!string.IsNullOrWhiteSpace(Updateuserpasswordtextbox.Text))
+                    PasswordUpdate();
 
-            MessageBox.Show("Data for user " + comboBoxUsername.Text + " updated successfully.");
+                if (!string.IsNullOrWhiteSpace(textBox1.Text))
+                    UpdateUsername();
+
+                MessageBox.Show("Data for user " + comboBoxUsername.Text + " updated successfully.");
+            }
         }
 
         private void BackButton_Click(object sender, EventArgs e)

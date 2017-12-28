@@ -91,8 +91,10 @@
             this.Adduserpasswordtextbox.Location = new System.Drawing.Point(303, 139);
             this.Adduserpasswordtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Adduserpasswordtextbox.Name = "Adduserpasswordtextbox";
+            this.Adduserpasswordtextbox.PasswordChar = '*';
             this.Adduserpasswordtextbox.Size = new System.Drawing.Size(245, 32);
             this.Adduserpasswordtextbox.TabIndex = 38;
+            this.Adduserpasswordtextbox.UseSystemPasswordChar = true;
             // 
             // labelPhone
             // 
@@ -183,8 +185,10 @@
             this.adduserconfirmpasswordtextBox.Location = new System.Drawing.Point(303, 186);
             this.adduserconfirmpasswordtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.adduserconfirmpasswordtextBox.Name = "adduserconfirmpasswordtextBox";
+            this.adduserconfirmpasswordtextBox.PasswordChar = '*';
             this.adduserconfirmpasswordtextBox.Size = new System.Drawing.Size(245, 32);
             this.adduserconfirmpasswordtextBox.TabIndex = 44;
+            this.adduserconfirmpasswordtextBox.UseSystemPasswordChar = true;
             // 
             // label1
             // 

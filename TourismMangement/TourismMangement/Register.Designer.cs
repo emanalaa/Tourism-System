@@ -69,6 +69,7 @@
             this.textBoxConfirmPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(277, 213);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
+            this.textBoxConfirmPassword.PasswordChar = '*';
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(264, 32);
             this.textBoxConfirmPassword.TabIndex = 29;
             this.textBoxConfirmPassword.UseSystemPasswordChar = true;
@@ -79,6 +80,7 @@
             this.textBoxPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(277, 161);
             this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(264, 32);
             this.textBoxPassword.TabIndex = 28;
             this.textBoxPassword.UseSystemPasswordChar = true;

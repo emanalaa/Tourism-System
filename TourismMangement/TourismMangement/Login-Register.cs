@@ -16,30 +16,8 @@ namespace TourismMangement
         {
             InitializeComponent();
             this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
-
-            //this.BackgroundImage = Properties.Resources.LoginBackGround__1_;
-            //Timer tim = new Timer();
-            //tim.Interval = 2500;
-            //tim.Tick += new EventHandler(changeimage);
-            //tim.Start();
         }
-
-        //private void changeimage(object sender, EventArgs e)
-        //{
-
-        //    List<Bitmap> b1 = new List<Bitmap>();
-        //    b1.Add(Properties.Resources.LoginBackGround__2_);
-        //    b1.Add(Properties.Resources.LoginBackGround__3_);
-        //    b1.Add(Properties.Resources.LoginBackGround__4_);
-        //    b1.Add(Properties.Resources.LoginBackGround__5_);
-        //    b1.Add(Properties.Resources.LoginBackGround__6_);
-        //    b1.Add(Properties.Resources.LoginBackGround__7_);
-        //    b1.Add(Properties.Resources.Background8);
-
-        //    int index = DateTime.Now.Second % b1.Count;
-        //    this.BackgroundImage = b1[index];
-        //}
-
+       
         private void ButtonSignIn_Click(object sender, EventArgs e)
         {
             Login login = new Login();

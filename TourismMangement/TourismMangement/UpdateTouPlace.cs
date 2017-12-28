@@ -14,18 +14,17 @@ namespace TourismMangement
     public partial class UpdateTouPlace : Form
     {
         //mohie's con
-       // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
 
         //mai's con
-       SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
-
-
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
         public UpdateTouPlace()
         {
             InitializeComponent();
             LoadTourplaceNames();
         }
+
         private void LoadTourplaceNames()
         {
             con.Open();
@@ -51,8 +50,6 @@ namespace TourismMangement
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.ExecuteNonQuery();
             con.Close();
-          //  MessageBox.Show("successfully updated The Location of " + ComboName.Text + ".", "Done!");
-
         }
         private void UpdateTicketPrice()
         {
@@ -64,12 +61,10 @@ namespace TourismMangement
             SqlCommand cmd = new SqlCommand(str, con);
             cmd.ExecuteNonQuery();
             con.Close();
-          //  MessageBox.Show("The Ticket Price of " + ComboName.Text + " is successfully updated.", "Done!");
-            
         }
 
         private void update_Click(object sender, EventArgs e)
-        {//we have to check also the name combo box first
+        {   //we have to check also the name combo box first
             if (!string.IsNullOrWhiteSpace(ComboName.Text))
             {
                 //if both are empty
@@ -81,22 +76,18 @@ namespace TourismMangement
                 //if one text box is filled or both are filled
                 else 
                 {
-                    bool updated = false;
 
                     if (!string.IsNullOrEmpty(textBoxticketprice.Text))
                     {
                         CheckTicketPriceAndUpdateIt();
-                        updated = true;
                     }
 
                     if (!string.IsNullOrEmpty(textBoxlocation.Text))
                     {
                         UpdateLocation();
-                        updated = true;
                     }
 
-                    if (updated)
-                        MessageBox.Show("successfully updated The Data of " + ComboName.Text + ".", "Done!");
+                    MessageBox.Show("successfully updated The Data of " + ComboName.Text + ".", "Done!");
 
                     return; 
                 }

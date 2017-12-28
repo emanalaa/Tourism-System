@@ -130,5 +130,51 @@ namespace TourismMangement
             userhome.Show();
             this.Hide();
         }
+
+        private void showReservationInfo()
+        {
+            con.Open();
+
+            string ticketPrice;
+            SqlCommand cmd = new SqlCommand("SELECT TicketPrice FROM TourPlace WHERE Name = '" + SearchTourPlaceComboBox.Text + "'", con);
+            SqlDataReader transportaion_data = cmd.ExecuteReader();
+            transportaion_data.Read();
+            ticketPrice = transportaion_data["TicketPrice"].ToString();
+            transportaion_data.Close();
+
+            cmd = new SqlCommand("select * from Transportation WHERE Type = '" + TransportationComboBoxSearch.Text + "'", con);
+            transportaion_data = cmd.ExecuteReader();
+            DataTable transportations = new DataTable();
+            transportations.Columns.Add("TicketPrice");
+            transportations.Columns.Add("ID");
+            transportations.Columns.Add("Type");
+            transportations.Columns.Add("DepartureTime");
+            transportations.Columns.Add("ArrivalTime");
+            transportations.Columns.Add("Origin");
+            transportations.Columns.Add("Destination");
+            DataRow row;
+            while (transportaion_data.Read())
+            {
+                row = transportations.NewRow();
+                row["TicketPrice"] = ticketPrice;
+                row["ID"] = transportaion_data["ID"];
+                row["Type"] = transportaion_data["Type"];
+                row["DepartureTime"] = transportaion_data["DepartureTime"];
+                row["ArrivalTime"] = transportaion_data["ArrivalTime"];
+                row["Origin"] = transportaion_data["Origin"];
+                row["Destination"] = transportaion_data["Destination"];
+                transportations.Rows.Add(row);
+            }
+
+            transportaion_data.Close();          
+         
+            dataGridViewTrans.DataSource = transportations;
+            con.Close();
+        }
+
+        private void TransportationComboBoxSearch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            showReservationInfo();
+        }
     }
 }
