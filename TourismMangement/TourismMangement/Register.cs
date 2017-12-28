@@ -89,6 +89,7 @@ namespace TourismMangement
                 rdr.Close();
                 cmd.ExecuteNonQuery();
                 con.Close();
+                Login.currentUsername = textBoxUsername.Text;
                 MessageBox.Show("Welcome!", "New User");
 
                 //the user should go to UserHome form

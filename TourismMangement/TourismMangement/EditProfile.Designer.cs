@@ -155,6 +155,7 @@
             this.textBoxConfirmPassword.PasswordChar = '*';
             this.textBoxConfirmPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxConfirmPassword.TabIndex = 20;
+            this.textBoxConfirmPassword.UseSystemPasswordChar = true;
             this.textBoxConfirmPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
             // textBoxNewPassword
