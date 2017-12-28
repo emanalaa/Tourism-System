@@ -13,7 +13,10 @@ namespace TourismMangement
 {
     public partial class Delete : Form
     {
-        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //mai's con
+        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
+        //mohie's con
+      //  SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         SqlCommand cmd;
         SqlDataReader rdr;
 
@@ -22,10 +25,6 @@ namespace TourismMangement
             InitializeComponent();
         }
 
-        private void Delete_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBoxDelete_SelectedIndexChanged(object sender, EventArgs e)
         {

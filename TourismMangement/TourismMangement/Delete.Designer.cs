@@ -71,7 +71,7 @@
             this.buttonDelete.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.buttonDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDelete.ForeColor = System.Drawing.Color.White;
-            this.buttonDelete.Location = new System.Drawing.Point(245, 359);
+            this.buttonDelete.Location = new System.Drawing.Point(274, 367);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(140, 47);
             this.buttonDelete.TabIndex = 3;
@@ -107,7 +107,6 @@
             this.Name = "Delete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Delete";
-            this.Load += new System.EventHandler(this.Delete_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
