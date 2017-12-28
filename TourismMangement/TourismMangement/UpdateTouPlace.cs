@@ -81,14 +81,22 @@ namespace TourismMangement
                 //if one text box is filled or both are filled
                 else 
                 {
+                    bool updated = false;
 
-                   if (!string.IsNullOrEmpty(textBoxticketprice.Text))
+                    if (!string.IsNullOrEmpty(textBoxticketprice.Text))
+                    {
                         CheckTicketPriceAndUpdateIt();
-                       
-                   if(!string.IsNullOrEmpty(textBoxlocation.Text))
-                        UpdateLocation();
+                        updated = true;
+                    }
 
-                    MessageBox.Show("successfully updated The Data of " + ComboName.Text + ".", "Done!");
+                    if (!string.IsNullOrEmpty(textBoxlocation.Text))
+                    {
+                        UpdateLocation();
+                        updated = true;
+                    }
+
+                    if (updated)
+                        MessageBox.Show("successfully updated The Data of " + ComboName.Text + ".", "Done!");
 
                     return; 
                 }
@@ -100,21 +108,29 @@ namespace TourismMangement
           
         }
        
-        private void CheckTicketPriceAndUpdateIt()
+        private bool CheckTicketPriceAndUpdateIt()
         {
             bool IsCorrect = true;
             for (int i = 0; i < textBoxticketprice.Text.Length; i++)
             {
-                if (!char.IsNumber(textBoxticketprice.Text[i]))
+                if (!char.IsNumber(textBoxticketprice.Text[i]) && textBoxticketprice.Text[i]!='.')
                 {
                     MessageBox.Show("Please Enter Numbers Only in Ticket Price Text Box.", "Invalid Input");
                     IsCorrect = false;
-                    return;
+                    return IsCorrect;
                 }
             }
             if (IsCorrect)
                 UpdateTicketPrice();
+            return IsCorrect;
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Update U = new Update();
+            U.Show();
+            this.Hide();
         }
     }
 }

@@ -42,7 +42,7 @@
             this.label2.Location = new System.Drawing.Point(111, 196);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 19);
+            this.label2.Size = new System.Drawing.Size(166, 24);
             this.label2.TabIndex = 9;
             this.label2.Text = "Transportation:";
             // 
@@ -52,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(122, 106);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 19);
+            this.label1.Size = new System.Drawing.Size(123, 24);
             this.label1.TabIndex = 8;
             this.label1.Text = "Tour Place:";
             // 
@@ -76,7 +76,7 @@
             this.TransportationComboBoxSearch.Location = new System.Drawing.Point(252, 196);
             this.TransportationComboBoxSearch.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TransportationComboBoxSearch.Name = "TransportationComboBoxSearch";
-            this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 27);
+            this.TransportationComboBoxSearch.Size = new System.Drawing.Size(221, 32);
             this.TransportationComboBoxSearch.TabIndex = 6;
             // 
             // SearchTourPlaceComboBox
@@ -85,7 +85,7 @@
             this.SearchTourPlaceComboBox.Location = new System.Drawing.Point(252, 103);
             this.SearchTourPlaceComboBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.SearchTourPlaceComboBox.Name = "SearchTourPlaceComboBox";
-            this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 27);
+            this.SearchTourPlaceComboBox.Size = new System.Drawing.Size(221, 32);
             this.SearchTourPlaceComboBox.TabIndex = 5;
             this.SearchTourPlaceComboBox.SelectedIndexChanged += new System.EventHandler(this.SearchTourPlaceComboBox_SelectedIndexChanged);
             // 
@@ -96,7 +96,7 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.Size = new System.Drawing.Size(98, 47);
             this.button1.TabIndex = 34;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -104,7 +104,7 @@
             // 
             // Search_reserve
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.button1);

@@ -40,7 +40,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(164, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.Size = new System.Drawing.Size(97, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Delete: ";
             // 
@@ -53,7 +53,7 @@
             "Transportation"});
             this.comboBoxDelete.Location = new System.Drawing.Point(299, 156);
             this.comboBoxDelete.Name = "comboBoxDelete";
-            this.comboBoxDelete.Size = new System.Drawing.Size(228, 30);
+            this.comboBoxDelete.Size = new System.Drawing.Size(228, 36);
             this.comboBoxDelete.TabIndex = 1;
             this.comboBoxDelete.SelectedIndexChanged += new System.EventHandler(this.comboBoxDelete_SelectedIndexChanged);
             // 
@@ -62,7 +62,7 @@
             this.comboBoxSelectDelete.FormattingEnabled = true;
             this.comboBoxSelectDelete.Location = new System.Drawing.Point(169, 253);
             this.comboBoxSelectDelete.Name = "comboBoxSelectDelete";
-            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 30);
+            this.comboBoxSelectDelete.Size = new System.Drawing.Size(358, 36);
             this.comboBoxSelectDelete.TabIndex = 2;
             this.comboBoxSelectDelete.Visible = false;
             // 
@@ -84,9 +84,9 @@
             this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.button1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(12, 25);
+            this.button1.Location = new System.Drawing.Point(12, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 27);
+            this.button1.Size = new System.Drawing.Size(95, 44);
             this.button1.TabIndex = 18;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = false;
@@ -94,7 +94,7 @@
             // 
             // Delete
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);

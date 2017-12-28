@@ -70,7 +70,7 @@
             this.AddUserPhoneTextbox.Location = new System.Drawing.Point(245, 268);
             this.AddUserPhoneTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddUserPhoneTextbox.Name = "AddUserPhoneTextbox";
-            this.AddUserPhoneTextbox.Size = new System.Drawing.Size(245, 27);
+            this.AddUserPhoneTextbox.Size = new System.Drawing.Size(245, 32);
             this.AddUserPhoneTextbox.TabIndex = 40;
             this.AddUserPhoneTextbox.TextChanged += new System.EventHandler(this.AddUserPhoneTextbox_TextChanged);
             // 
@@ -81,7 +81,7 @@
             this.AdduserEmailtextbox.Location = new System.Drawing.Point(245, 222);
             this.AdduserEmailtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AdduserEmailtextbox.Name = "AdduserEmailtextbox";
-            this.AdduserEmailtextbox.Size = new System.Drawing.Size(245, 27);
+            this.AdduserEmailtextbox.Size = new System.Drawing.Size(245, 32);
             this.AdduserEmailtextbox.TabIndex = 39;
             // 
             // Adduserpasswordtextbox
@@ -91,7 +91,7 @@
             this.Adduserpasswordtextbox.Location = new System.Drawing.Point(245, 110);
             this.Adduserpasswordtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Adduserpasswordtextbox.Name = "Adduserpasswordtextbox";
-            this.Adduserpasswordtextbox.Size = new System.Drawing.Size(245, 27);
+            this.Adduserpasswordtextbox.Size = new System.Drawing.Size(245, 32);
             this.Adduserpasswordtextbox.TabIndex = 38;
             // 
             // labelPhone
@@ -102,7 +102,7 @@
             this.labelPhone.ForeColor = System.Drawing.Color.Black;
             this.labelPhone.Location = new System.Drawing.Point(114, 276);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(66, 19);
+            this.labelPhone.Size = new System.Drawing.Size(80, 24);
             this.labelPhone.TabIndex = 37;
             this.labelPhone.Text = "Phone:";
             // 
@@ -114,7 +114,7 @@
             this.labelWayOfPayment.ForeColor = System.Drawing.Color.Black;
             this.labelWayOfPayment.Location = new System.Drawing.Point(79, 328);
             this.labelWayOfPayment.Name = "labelWayOfPayment";
-            this.labelWayOfPayment.Size = new System.Drawing.Size(147, 19);
+            this.labelWayOfPayment.Size = new System.Drawing.Size(183, 24);
             this.labelWayOfPayment.TabIndex = 36;
             this.labelWayOfPayment.Text = "Way of payment:";
             // 
@@ -126,7 +126,7 @@
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
             this.labelPassword.Location = new System.Drawing.Point(104, 118);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(93, 19);
+            this.labelPassword.Size = new System.Drawing.Size(114, 24);
             this.labelPassword.TabIndex = 35;
             this.labelPassword.Text = "Password:";
             // 
@@ -138,7 +138,7 @@
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
             this.labelEmail.Location = new System.Drawing.Point(114, 230);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(60, 19);
+            this.labelEmail.Size = new System.Drawing.Size(72, 24);
             this.labelEmail.TabIndex = 34;
             this.labelEmail.Text = "Email:";
             // 
@@ -150,7 +150,7 @@
             this.labelUsername.ForeColor = System.Drawing.Color.Black;
             this.labelUsername.Location = new System.Drawing.Point(104, 52);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(97, 19);
+            this.labelUsername.Size = new System.Drawing.Size(119, 24);
             this.labelUsername.TabIndex = 33;
             this.labelUsername.Text = "Username:";
             // 
@@ -161,7 +161,7 @@
             this.AddusertextBoxUsername.Location = new System.Drawing.Point(245, 50);
             this.AddusertextBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddusertextBoxUsername.Name = "AddusertextBoxUsername";
-            this.AddusertextBoxUsername.Size = new System.Drawing.Size(245, 27);
+            this.AddusertextBoxUsername.Size = new System.Drawing.Size(245, 32);
             this.AddusertextBoxUsername.TabIndex = 32;
             // 
             // comboBox1
@@ -173,7 +173,7 @@
             "Visa Card"});
             this.comboBox1.Location = new System.Drawing.Point(248, 320);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(245, 27);
+            this.comboBox1.Size = new System.Drawing.Size(245, 32);
             this.comboBox1.TabIndex = 43;
             // 
             // adduserconfirmpasswordtextBox
@@ -183,7 +183,7 @@
             this.adduserconfirmpasswordtextBox.Location = new System.Drawing.Point(245, 167);
             this.adduserconfirmpasswordtextBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.adduserconfirmpasswordtextBox.Name = "adduserconfirmpasswordtextBox";
-            this.adduserconfirmpasswordtextBox.Size = new System.Drawing.Size(245, 27);
+            this.adduserconfirmpasswordtextBox.Size = new System.Drawing.Size(245, 32);
             this.adduserconfirmpasswordtextBox.TabIndex = 44;
             // 
             // label1
@@ -194,7 +194,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(64, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 19);
+            this.label1.Size = new System.Drawing.Size(200, 24);
             this.label1.TabIndex = 45;
             this.label1.Text = "Confirm Password:";
             // 
@@ -204,7 +204,7 @@
             this.backbutton.ForeColor = System.Drawing.Color.White;
             this.backbutton.Location = new System.Drawing.Point(12, 12);
             this.backbutton.Name = "backbutton";
-            this.backbutton.Size = new System.Drawing.Size(83, 27);
+            this.backbutton.Size = new System.Drawing.Size(78, 44);
             this.backbutton.TabIndex = 46;
             this.backbutton.Text = "Back";
             this.backbutton.UseVisualStyleBackColor = false;
@@ -212,7 +212,7 @@
             // 
             // AddUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.backbutton);

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Homebutton1 = new System.Windows.Forms.Button();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.ConfirmPasswordlabel7 = new System.Windows.Forms.Label();
@@ -47,23 +46,12 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Homebutton1
-            // 
-            this.Homebutton1.BackColor = System.Drawing.Color.Silver;
-            this.Homebutton1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Homebutton1.Location = new System.Drawing.Point(23, 369);
-            this.Homebutton1.Name = "Homebutton1";
-            this.Homebutton1.Size = new System.Drawing.Size(98, 31);
-            this.Homebutton1.TabIndex = 31;
-            this.Homebutton1.Text = "Go home";
-            this.Homebutton1.UseVisualStyleBackColor = false;
-            // 
             // textBoxEmail
             // 
             this.textBoxEmail.BackColor = System.Drawing.Color.Silver;
             this.textBoxEmail.Location = new System.Drawing.Point(205, 251);
             this.textBoxEmail.Name = "textBoxEmail";
-            this.textBoxEmail.Size = new System.Drawing.Size(185, 27);
+            this.textBoxEmail.Size = new System.Drawing.Size(185, 32);
             this.textBoxEmail.TabIndex = 30;
             // 
             // textBoxPhone
@@ -71,7 +59,7 @@
             this.textBoxPhone.BackColor = System.Drawing.Color.Silver;
             this.textBoxPhone.Location = new System.Drawing.Point(205, 208);
             this.textBoxPhone.Name = "textBoxPhone";
-            this.textBoxPhone.Size = new System.Drawing.Size(185, 27);
+            this.textBoxPhone.Size = new System.Drawing.Size(185, 32);
             this.textBoxPhone.TabIndex = 29;
             // 
             // ConfirmPasswordlabel7
@@ -82,7 +70,7 @@
             this.ConfirmPasswordlabel7.ForeColor = System.Drawing.Color.White;
             this.ConfirmPasswordlabel7.Location = new System.Drawing.Point(28, 167);
             this.ConfirmPasswordlabel7.Name = "ConfirmPasswordlabel7";
-            this.ConfirmPasswordlabel7.Size = new System.Drawing.Size(155, 19);
+            this.ConfirmPasswordlabel7.Size = new System.Drawing.Size(193, 24);
             this.ConfirmPasswordlabel7.TabIndex = 28;
             this.ConfirmPasswordlabel7.Text = "Confirm password";
             // 
@@ -94,7 +82,7 @@
             this.Newpasswordlabel6.ForeColor = System.Drawing.Color.White;
             this.Newpasswordlabel6.Location = new System.Drawing.Point(28, 141);
             this.Newpasswordlabel6.Name = "Newpasswordlabel6";
-            this.Newpasswordlabel6.Size = new System.Drawing.Size(127, 19);
+            this.Newpasswordlabel6.Size = new System.Drawing.Size(158, 24);
             this.Newpasswordlabel6.TabIndex = 27;
             this.Newpasswordlabel6.Text = "New password";
             // 
@@ -106,7 +94,7 @@
             this.Emaillabel5.ForeColor = System.Drawing.Color.White;
             this.Emaillabel5.Location = new System.Drawing.Point(28, 252);
             this.Emaillabel5.Name = "Emaillabel5";
-            this.Emaillabel5.Size = new System.Drawing.Size(61, 19);
+            this.Emaillabel5.Size = new System.Drawing.Size(74, 24);
             this.Emaillabel5.TabIndex = 26;
             this.Emaillabel5.Text = "E-mail";
             // 
@@ -118,7 +106,7 @@
             this.WayofPaymentlabel4.ForeColor = System.Drawing.Color.White;
             this.WayofPaymentlabel4.Location = new System.Drawing.Point(28, 293);
             this.WayofPaymentlabel4.Name = "WayofPaymentlabel4";
-            this.WayofPaymentlabel4.Size = new System.Drawing.Size(141, 19);
+            this.WayofPaymentlabel4.Size = new System.Drawing.Size(176, 24);
             this.WayofPaymentlabel4.TabIndex = 25;
             this.WayofPaymentlabel4.Text = "Way of payment";
             // 
@@ -130,7 +118,7 @@
             this.Phonelabel3.ForeColor = System.Drawing.Color.White;
             this.Phonelabel3.Location = new System.Drawing.Point(28, 206);
             this.Phonelabel3.Name = "Phonelabel3";
-            this.Phonelabel3.Size = new System.Drawing.Size(60, 19);
+            this.Phonelabel3.Size = new System.Drawing.Size(73, 24);
             this.Phonelabel3.TabIndex = 24;
             this.Phonelabel3.Text = "Phone";
             // 
@@ -142,7 +130,7 @@
             this.Currentpasswordlabel2.ForeColor = System.Drawing.Color.White;
             this.Currentpasswordlabel2.Location = new System.Drawing.Point(30, 118);
             this.Currentpasswordlabel2.Name = "Currentpasswordlabel2";
-            this.Currentpasswordlabel2.Size = new System.Drawing.Size(168, 19);
+            this.Currentpasswordlabel2.Size = new System.Drawing.Size(209, 24);
             this.Currentpasswordlabel2.TabIndex = 23;
             this.Currentpasswordlabel2.Text = "Current password *";
             // 
@@ -154,7 +142,7 @@
             this.UsernameLabel.ForeColor = System.Drawing.Color.White;
             this.UsernameLabel.Location = new System.Drawing.Point(30, 55);
             this.UsernameLabel.Name = "UsernameLabel";
-            this.UsernameLabel.Size = new System.Drawing.Size(91, 19);
+            this.UsernameLabel.Size = new System.Drawing.Size(112, 24);
             this.UsernameLabel.TabIndex = 22;
             this.UsernameLabel.Text = "Username";
             // 
@@ -164,7 +152,7 @@
             this.textBoxConfirmPassword.Location = new System.Drawing.Point(205, 169);
             this.textBoxConfirmPassword.Name = "textBoxConfirmPassword";
             this.textBoxConfirmPassword.PasswordChar = '*';
-            this.textBoxConfirmPassword.Size = new System.Drawing.Size(185, 27);
+            this.textBoxConfirmPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxConfirmPassword.TabIndex = 20;
             // 
             // textBoxNewPassword
@@ -173,7 +161,7 @@
             this.textBoxNewPassword.Location = new System.Drawing.Point(205, 143);
             this.textBoxNewPassword.Name = "textBoxNewPassword";
             this.textBoxNewPassword.PasswordChar = '*';
-            this.textBoxNewPassword.Size = new System.Drawing.Size(185, 27);
+            this.textBoxNewPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxNewPassword.TabIndex = 19;
             // 
             // textBoxCurrentPassword
@@ -182,7 +170,7 @@
             this.textBoxCurrentPassword.Location = new System.Drawing.Point(205, 117);
             this.textBoxCurrentPassword.Name = "textBoxCurrentPassword";
             this.textBoxCurrentPassword.PasswordChar = '*';
-            this.textBoxCurrentPassword.Size = new System.Drawing.Size(185, 27);
+            this.textBoxCurrentPassword.Size = new System.Drawing.Size(185, 32);
             this.textBoxCurrentPassword.TabIndex = 18;
             this.textBoxCurrentPassword.TextChanged += new System.EventHandler(this.textBoxCurrentPassword_TextChanged);
             // 
@@ -193,7 +181,7 @@
             this.textBoxUsername.Location = new System.Drawing.Point(205, 54);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.ReadOnly = true;
-            this.textBoxUsername.Size = new System.Drawing.Size(185, 27);
+            this.textBoxUsername.Size = new System.Drawing.Size(185, 32);
             this.textBoxUsername.TabIndex = 17;
             // 
             // UpdateButton
@@ -201,7 +189,7 @@
             this.UpdateButton.BackColor = System.Drawing.Color.Silver;
             this.UpdateButton.Enabled = false;
             this.UpdateButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateButton.Location = new System.Drawing.Point(412, 369);
+            this.UpdateButton.Location = new System.Drawing.Point(368, 360);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(150, 38);
             this.UpdateButton.TabIndex = 16;
@@ -220,7 +208,7 @@
             "Visa Card"});
             this.comboBoxWayOfPayment.Location = new System.Drawing.Point(205, 293);
             this.comboBoxWayOfPayment.Name = "comboBoxWayOfPayment";
-            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(185, 27);
+            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(185, 32);
             this.comboBoxWayOfPayment.TabIndex = 32;
             this.comboBoxWayOfPayment.Text = "Select";
             // 
@@ -230,9 +218,9 @@
             this.BackButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BackButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BackButton.ForeColor = System.Drawing.Color.White;
-            this.BackButton.Location = new System.Drawing.Point(12, 12);
+            this.BackButton.Location = new System.Drawing.Point(32, 409);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(79, 27);
+            this.BackButton.Size = new System.Drawing.Size(90, 40);
             this.BackButton.TabIndex = 45;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
@@ -240,12 +228,11 @@
             // 
             // EditProfile
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxWayOfPayment);
-            this.Controls.Add(this.Homebutton1);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxPhone);
             this.Controls.Add(this.ConfirmPasswordlabel7);
@@ -271,8 +258,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Homebutton1;
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label ConfirmPasswordlabel7;

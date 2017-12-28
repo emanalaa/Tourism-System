@@ -166,5 +166,12 @@ namespace TourismMangement
                 }
             }
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            Update u = new Update();
+            u.Show();
+            this.Hide();
+        }
     }
 }

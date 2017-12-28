@@ -52,7 +52,7 @@
             this.comboBoxDisplay.FormattingEnabled = true;
             this.comboBoxDisplay.Location = new System.Drawing.Point(234, 65);
             this.comboBoxDisplay.Name = "comboBoxDisplay";
-            this.comboBoxDisplay.Size = new System.Drawing.Size(239, 27);
+            this.comboBoxDisplay.Size = new System.Drawing.Size(239, 32);
             this.comboBoxDisplay.TabIndex = 4;
             this.comboBoxDisplay.SelectedIndexChanged += new System.EventHandler(this.comboBoxDisplay_SelectedIndexChanged);
             // 
@@ -63,7 +63,7 @@
             this.label1.Location = new System.Drawing.Point(130, 67);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 23);
+            this.label1.Size = new System.Drawing.Size(96, 29);
             this.label1.TabIndex = 3;
             this.label1.Text = "Display:";
             // 
@@ -75,7 +75,7 @@
             this.BackButton.ForeColor = System.Drawing.Color.White;
             this.BackButton.Location = new System.Drawing.Point(12, 12);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(79, 27);
+            this.BackButton.Size = new System.Drawing.Size(86, 41);
             this.BackButton.TabIndex = 45;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
@@ -83,7 +83,7 @@
             // 
             // Display
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
             this.Controls.Add(this.BackButton);
