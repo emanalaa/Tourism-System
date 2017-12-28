@@ -22,9 +22,7 @@ namespace TourismMangement
         //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public Login()
         {
-            InitializeComponent();
-            this.BackgroundImage.RotateFlip(RotateFlipType.Rotate90FlipNone);
-            
+            InitializeComponent();    
         }
 
         private void Login_Load(object sender, EventArgs e)
