@@ -61,6 +61,7 @@
             this.UpdateUserButton.TabIndex = 42;
             this.UpdateUserButton.Text = "Update";
             this.UpdateUserButton.UseVisualStyleBackColor = false;
+            this.UpdateUserButton.Click += new System.EventHandler(this.UpdateUserButton_Click);
             // 
             // UpdateUserPhoneTextbox
             // 

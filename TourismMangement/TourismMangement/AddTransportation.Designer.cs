@@ -40,10 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonAdd = new System.Windows.Forms.Button();
             this.comboBoxOrigin = new System.Windows.Forms.TextBox();
             this.comboBoxDestination = new System.Windows.Forms.TextBox();
             this.BackButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxType
@@ -52,13 +52,12 @@
             this.textBoxType.Name = "textBoxType";
             this.textBoxType.Size = new System.Drawing.Size(253, 30);
             this.textBoxType.TabIndex = 44;
-            this.textBoxType.TextChanged += new System.EventHandler(this.textBoxType_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(456, 226);
+            this.label7.Location = new System.Drawing.Point(395, 223);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(17, 23);
             this.label7.TabIndex = 43;
@@ -67,7 +66,7 @@
             // comboBoxArrivalMinutes
             // 
             this.comboBoxArrivalMinutes.FormattingEnabled = true;
-            this.comboBoxArrivalMinutes.Location = new System.Drawing.Point(483, 223);
+            this.comboBoxArrivalMinutes.Location = new System.Drawing.Point(422, 220);
             this.comboBoxArrivalMinutes.Name = "comboBoxArrivalMinutes";
             this.comboBoxArrivalMinutes.Size = new System.Drawing.Size(51, 30);
             this.comboBoxArrivalMinutes.TabIndex = 42;
@@ -75,7 +74,7 @@
             // comboBoxArrivalHours
             // 
             this.comboBoxArrivalHours.FormattingEnabled = true;
-            this.comboBoxArrivalHours.Location = new System.Drawing.Point(399, 223);
+            this.comboBoxArrivalHours.Location = new System.Drawing.Point(338, 220);
             this.comboBoxArrivalHours.Name = "comboBoxArrivalHours";
             this.comboBoxArrivalHours.Size = new System.Drawing.Size(51, 30);
             this.comboBoxArrivalHours.TabIndex = 41;
@@ -84,7 +83,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Location = new System.Drawing.Point(456, 164);
+            this.label6.Location = new System.Drawing.Point(395, 161);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(17, 23);
             this.label6.TabIndex = 40;
@@ -93,7 +92,7 @@
             // comboBoxDepartureMinutes
             // 
             this.comboBoxDepartureMinutes.FormattingEnabled = true;
-            this.comboBoxDepartureMinutes.Location = new System.Drawing.Point(483, 161);
+            this.comboBoxDepartureMinutes.Location = new System.Drawing.Point(422, 158);
             this.comboBoxDepartureMinutes.Name = "comboBoxDepartureMinutes";
             this.comboBoxDepartureMinutes.Size = new System.Drawing.Size(51, 30);
             this.comboBoxDepartureMinutes.TabIndex = 39;
@@ -101,7 +100,7 @@
             // comboBoxDepartureHour
             // 
             this.comboBoxDepartureHour.FormattingEnabled = true;
-            this.comboBoxDepartureHour.Location = new System.Drawing.Point(399, 161);
+            this.comboBoxDepartureHour.Location = new System.Drawing.Point(338, 158);
             this.comboBoxDepartureHour.Name = "comboBoxDepartureHour";
             this.comboBoxDepartureHour.Size = new System.Drawing.Size(51, 30);
             this.comboBoxDepartureHour.TabIndex = 38;
@@ -156,17 +155,6 @@
             this.label1.TabIndex = 33;
             this.label1.Text = "Type:";
             // 
-            // buttonAdd
-            // 
-            this.buttonAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonAdd.Location = new System.Drawing.Point(281, 426);
-            this.buttonAdd.Name = "buttonAdd";
-            this.buttonAdd.Size = new System.Drawing.Size(147, 50);
-            this.buttonAdd.TabIndex = 32;
-            this.buttonAdd.Text = "Add";
-            this.buttonAdd.UseVisualStyleBackColor = true;
-            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
-            // 
             // comboBoxOrigin
             // 
             this.comboBoxOrigin.Location = new System.Drawing.Point(281, 273);
@@ -195,11 +183,31 @@
             this.BackButton.UseVisualStyleBackColor = false;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // AddButton
+            // 
+            this.AddButton.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AddButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AddButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.AddButton.FlatAppearance.BorderSize = 2;
+            this.AddButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddButton.ForeColor = System.Drawing.Color.White;
+            this.AddButton.Location = new System.Drawing.Point(272, 418);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(140, 47);
+            this.AddButton.TabIndex = 50;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.buttonAdd_Click);
+            // 
             // AddTransportation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(681, 567);
+            this.Controls.Add(this.AddButton);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.comboBoxDestination);
             this.Controls.Add(this.comboBoxOrigin);
@@ -215,7 +223,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonAdd);
             this.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "AddTransportation";
@@ -239,9 +246,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button buttonAdd;
         private System.Windows.Forms.TextBox comboBoxOrigin;
         private System.Windows.Forms.TextBox comboBoxDestination;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Button AddButton;
     }
 }
