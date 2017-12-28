@@ -19,8 +19,8 @@ namespace TourismMangement
 
         private void ButtonUpdateUser_Click(object sender, EventArgs e)
         {
-            Update update = new Update();
-            update.Show();
+            UpdateUser US = new UpdateUser();
+            US.Show();
             this.Hide();
         }
 

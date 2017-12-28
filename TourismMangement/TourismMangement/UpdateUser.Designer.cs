@@ -37,11 +37,11 @@
             this.labelPassword = new System.Windows.Forms.Label();
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelUsername = new System.Windows.Forms.Label();
-            this.UpdateusertextBoxUsername = new System.Windows.Forms.TextBox();
             this.comboBoxWayOfPayment = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
+            this.comboBoxUsername = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // UpdateUserButton
@@ -69,7 +69,7 @@
             this.UpdateUserPhoneTextbox.Location = new System.Drawing.Point(248, 284);
             this.UpdateUserPhoneTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateUserPhoneTextbox.Name = "UpdateUserPhoneTextbox";
-            this.UpdateUserPhoneTextbox.Size = new System.Drawing.Size(245, 27);
+            this.UpdateUserPhoneTextbox.Size = new System.Drawing.Size(245, 32);
             this.UpdateUserPhoneTextbox.TabIndex = 40;
             // 
             // UpdateuserEmailtextbox
@@ -79,7 +79,7 @@
             this.UpdateuserEmailtextbox.Location = new System.Drawing.Point(248, 231);
             this.UpdateuserEmailtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateuserEmailtextbox.Name = "UpdateuserEmailtextbox";
-            this.UpdateuserEmailtextbox.Size = new System.Drawing.Size(245, 27);
+            this.UpdateuserEmailtextbox.Size = new System.Drawing.Size(245, 32);
             this.UpdateuserEmailtextbox.TabIndex = 39;
             // 
             // Updateuserpasswordtextbox
@@ -89,7 +89,7 @@
             this.Updateuserpasswordtextbox.Location = new System.Drawing.Point(248, 170);
             this.Updateuserpasswordtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Updateuserpasswordtextbox.Name = "Updateuserpasswordtextbox";
-            this.Updateuserpasswordtextbox.Size = new System.Drawing.Size(245, 27);
+            this.Updateuserpasswordtextbox.Size = new System.Drawing.Size(245, 32);
             this.Updateuserpasswordtextbox.TabIndex = 38;
             // 
             // labelPhone
@@ -100,7 +100,7 @@
             this.labelPhone.ForeColor = System.Drawing.Color.Black;
             this.labelPhone.Location = new System.Drawing.Point(154, 292);
             this.labelPhone.Name = "labelPhone";
-            this.labelPhone.Size = new System.Drawing.Size(66, 19);
+            this.labelPhone.Size = new System.Drawing.Size(80, 24);
             this.labelPhone.TabIndex = 37;
             this.labelPhone.Text = "Phone:";
             // 
@@ -112,7 +112,7 @@
             this.labelWayOfPayment.ForeColor = System.Drawing.Color.Black;
             this.labelWayOfPayment.Location = new System.Drawing.Point(83, 338);
             this.labelWayOfPayment.Name = "labelWayOfPayment";
-            this.labelWayOfPayment.Size = new System.Drawing.Size(147, 19);
+            this.labelWayOfPayment.Size = new System.Drawing.Size(183, 24);
             this.labelWayOfPayment.TabIndex = 36;
             this.labelWayOfPayment.Text = "Way of payment:";
             // 
@@ -124,7 +124,7 @@
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
             this.labelPassword.Location = new System.Drawing.Point(133, 178);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(93, 19);
+            this.labelPassword.Size = new System.Drawing.Size(114, 24);
             this.labelPassword.TabIndex = 35;
             this.labelPassword.Text = "Password:";
             // 
@@ -136,7 +136,7 @@
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
             this.labelEmail.Location = new System.Drawing.Point(160, 239);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(60, 19);
+            this.labelEmail.Size = new System.Drawing.Size(72, 24);
             this.labelEmail.TabIndex = 34;
             this.labelEmail.Text = "Email:";
             // 
@@ -148,19 +148,9 @@
             this.labelUsername.ForeColor = System.Drawing.Color.Black;
             this.labelUsername.Location = new System.Drawing.Point(68, 58);
             this.labelUsername.Name = "labelUsername";
-            this.labelUsername.Size = new System.Drawing.Size(162, 19);
+            this.labelUsername.Size = new System.Drawing.Size(200, 24);
             this.labelUsername.TabIndex = 33;
             this.labelUsername.Text = "Current username:";
-            // 
-            // UpdateusertextBoxUsername
-            // 
-            this.UpdateusertextBoxUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.UpdateusertextBoxUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateusertextBoxUsername.Location = new System.Drawing.Point(245, 50);
-            this.UpdateusertextBoxUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.UpdateusertextBoxUsername.Name = "UpdateusertextBoxUsername";
-            this.UpdateusertextBoxUsername.Size = new System.Drawing.Size(245, 27);
-            this.UpdateusertextBoxUsername.TabIndex = 32;
             // 
             // comboBoxWayOfPayment
             // 
@@ -173,7 +163,7 @@
             "Visa Card"});
             this.comboBoxWayOfPayment.Location = new System.Drawing.Point(251, 330);
             this.comboBoxWayOfPayment.Name = "comboBoxWayOfPayment";
-            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(242, 27);
+            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(242, 32);
             this.comboBoxWayOfPayment.TabIndex = 43;
             this.comboBoxWayOfPayment.Text = "Select";
             // 
@@ -184,7 +174,7 @@
             this.textBox1.Location = new System.Drawing.Point(245, 110);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(245, 27);
+            this.textBox1.Size = new System.Drawing.Size(245, 32);
             this.textBox1.TabIndex = 44;
             // 
             // label1
@@ -195,7 +185,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(90, 118);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 19);
+            this.label1.Size = new System.Drawing.Size(168, 24);
             this.label1.TabIndex = 45;
             this.label1.Text = "New username:";
             // 
@@ -211,12 +201,22 @@
             this.BackButton.TabIndex = 46;
             this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = false;
+            this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // comboBoxUsername
+            // 
+            this.comboBoxUsername.FormattingEnabled = true;
+            this.comboBoxUsername.Location = new System.Drawing.Point(251, 55);
+            this.comboBoxUsername.Name = "comboBoxUsername";
+            this.comboBoxUsername.Size = new System.Drawing.Size(239, 32);
+            this.comboBoxUsername.TabIndex = 47;
             // 
             // UpdateUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 461);
+            this.Controls.Add(this.comboBoxUsername);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -230,7 +230,6 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.labelUsername);
-            this.Controls.Add(this.UpdateusertextBoxUsername);
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "UpdateUser";
@@ -252,10 +251,10 @@
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Label labelEmail;
         private System.Windows.Forms.Label labelUsername;
-        private System.Windows.Forms.TextBox UpdateusertextBoxUsername;
         private System.Windows.Forms.ComboBox comboBoxWayOfPayment;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.ComboBox comboBoxUsername;
     }
 }

@@ -20,6 +20,25 @@ namespace TourismMangement
         public UpdateUser()
         {
             InitializeComponent();
+            fillUsernameCombo();
+        }
+
+        private void fillUsernameCombo()
+        {
+            con.Open();
+
+            string query = @"SELECT Username
+                             FROM Users";
+
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while(rdr.Read())
+            {
+                comboBoxUsername.Items.Add(rdr["Username"]);
+            }
+
+            rdr.Close();
+            con.Close();
         }
 
         private void UpdateUsername()
@@ -27,7 +46,7 @@ namespace TourismMangement
             con.Open();
             string newUsername = @"UPDATE Users
                              SET Username = '" + textBox1.Text + @"'
-                             WHERE Username = '" + UpdateusertextBoxUsername.Text + "'";
+                             WHERE Username = '" + comboBoxUsername.Text + "'";
             SqlCommand cmd = new SqlCommand(newUsername, con);
             cmd.ExecuteNonQuery();
             con.Close();
@@ -39,7 +58,7 @@ namespace TourismMangement
 
             string updatePassword = @"UPDATE Users 
                              SET Password = '" + Updateuserpasswordtextbox.Text + @"'
-                             WHERE Username = '" + UpdateusertextBoxUsername.Text + "'";
+                             WHERE Username = '" + comboBoxUsername.Text + "'";
 
             SqlCommand cmd = new SqlCommand(updatePassword, con);
             cmd.ExecuteNonQuery();
@@ -53,7 +72,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE Users
                              SET Mail = '" + UpdateuserEmailtextbox.Text + @"'
-                             WHERE Username = '" + UpdateusertextBoxUsername.Text + "'";
+                             WHERE Username = '" + comboBoxUsername.Text + "'";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -67,7 +86,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE Users
                              SET WayofPayment = '" + comboBoxWayOfPayment.Text + @"'
-                             WHERE Username = '" + UpdateusertextBoxUsername.Text + "'";
+                             WHERE Username = '" + comboBoxUsername.Text + "'";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -81,7 +100,7 @@ namespace TourismMangement
 
             string Query = @"UPDATE Users
                              SET Phone = '" + UpdateUserPhoneTextbox.Text + @"'
-                             WHERE Username = '" + UpdateusertextBoxUsername.Text + "'";
+                             WHERE Username = '" + comboBoxUsername.Text + "'";
 
             SqlCommand cmd = new SqlCommand(Query, con);
             cmd.ExecuteNonQuery();
@@ -109,7 +128,14 @@ namespace TourismMangement
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
                 UpdateUsername();
 
-            MessageBox.Show("Data for user " + UpdateusertextBoxUsername.Text + " updated successfully.");
+            MessageBox.Show("Data for user " + comboBoxUsername.Text + " updated successfully.");
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            AdminHome AH = new AdminHome();
+            AH.Show();
+            this.Hide();
         }
     }
 }

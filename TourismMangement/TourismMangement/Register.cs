@@ -22,6 +22,12 @@ namespace TourismMangement
             string EnterPassWord = textBoxPassword.Text;
             string ConPassWord = textBoxConfirmPassword.Text;
 
+            if(textBoxPhone.Text.Count() < 11 || textBoxPhone.Text.Count() >= 12)
+            {
+                MessageBox.Show("Phone number must be 11 digits.");
+                return;
+            }
+
             //mai con
             //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=IS Project;Integrated Security=True");
 
