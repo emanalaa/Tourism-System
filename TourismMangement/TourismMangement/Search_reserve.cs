@@ -13,7 +13,10 @@ namespace TourismMangement
 {
     public partial class Search_reserve : Form
     {//add_tickket_price_and_time_of_leaving
+
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //connection_awad
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public Search_reserve()
         {
             InitializeComponent();

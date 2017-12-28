@@ -14,6 +14,8 @@ namespace TourismMangement
     public partial class AddTourPlace : Form
     {
         SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        //connection_awad
+        //SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public AddTourPlace()
         {
             InitializeComponent();
@@ -55,6 +57,11 @@ namespace TourismMangement
             Add add = new Add();
             add.Show();
             this.Hide();
+        }
+
+        private void AddTourPlace_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

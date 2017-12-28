@@ -104,6 +104,7 @@
             this.Name = "Add";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add";
+            this.Load += new System.EventHandler(this.Add_Load);
             this.ResumeLayout(false);
 
         }

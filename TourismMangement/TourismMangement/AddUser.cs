@@ -12,9 +12,9 @@ namespace TourismMangement
 {
     public partial class AddUser : Form
     {
-       // SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
+        SqlConnection con = new SqlConnection("Data Source=LELOUCH;Initial Catalog=\"IS Project\";Integrated Security=True");
         //connection_awad
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
+       // SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=\"IS Project\";Integrated Security=True");
         public AddUser()
         {
             InitializeComponent();
@@ -73,6 +73,13 @@ namespace TourismMangement
         private void AddUserPhoneTextbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void backbutton_Click(object sender, EventArgs e)
+        {
+            Add add = new Add();
+            add.Show();
+            this.Hide();
         }
     }
 }
