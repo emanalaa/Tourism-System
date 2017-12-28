@@ -69,7 +69,7 @@
             this.ConfirmPasswordlabel7.BackColor = System.Drawing.Color.Transparent;
             this.ConfirmPasswordlabel7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ConfirmPasswordlabel7.ForeColor = System.Drawing.Color.White;
-            this.ConfirmPasswordlabel7.Location = new System.Drawing.Point(169, 173);
+            this.ConfirmPasswordlabel7.Location = new System.Drawing.Point(153, 173);
             this.ConfirmPasswordlabel7.Name = "ConfirmPasswordlabel7";
             this.ConfirmPasswordlabel7.Size = new System.Drawing.Size(193, 24);
             this.ConfirmPasswordlabel7.TabIndex = 28;
@@ -81,7 +81,7 @@
             this.Newpasswordlabel6.BackColor = System.Drawing.Color.Transparent;
             this.Newpasswordlabel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Newpasswordlabel6.ForeColor = System.Drawing.Color.White;
-            this.Newpasswordlabel6.Location = new System.Drawing.Point(201, 134);
+            this.Newpasswordlabel6.Location = new System.Drawing.Point(153, 134);
             this.Newpasswordlabel6.Name = "Newpasswordlabel6";
             this.Newpasswordlabel6.Size = new System.Drawing.Size(158, 24);
             this.Newpasswordlabel6.TabIndex = 27;
@@ -93,7 +93,7 @@
             this.Emaillabel5.BackColor = System.Drawing.Color.Transparent;
             this.Emaillabel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Emaillabel5.ForeColor = System.Drawing.Color.White;
-            this.Emaillabel5.Location = new System.Drawing.Point(288, 249);
+            this.Emaillabel5.Location = new System.Drawing.Point(153, 249);
             this.Emaillabel5.Name = "Emaillabel5";
             this.Emaillabel5.Size = new System.Drawing.Size(74, 24);
             this.Emaillabel5.TabIndex = 26;
@@ -105,7 +105,7 @@
             this.WayofPaymentlabel4.BackColor = System.Drawing.Color.Transparent;
             this.WayofPaymentlabel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WayofPaymentlabel4.ForeColor = System.Drawing.Color.White;
-            this.WayofPaymentlabel4.Location = new System.Drawing.Point(186, 287);
+            this.WayofPaymentlabel4.Location = new System.Drawing.Point(153, 287);
             this.WayofPaymentlabel4.Name = "WayofPaymentlabel4";
             this.WayofPaymentlabel4.Size = new System.Drawing.Size(176, 24);
             this.WayofPaymentlabel4.TabIndex = 25;
@@ -117,7 +117,7 @@
             this.Phonelabel3.BackColor = System.Drawing.Color.Transparent;
             this.Phonelabel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Phonelabel3.ForeColor = System.Drawing.Color.White;
-            this.Phonelabel3.Location = new System.Drawing.Point(289, 211);
+            this.Phonelabel3.Location = new System.Drawing.Point(153, 211);
             this.Phonelabel3.Name = "Phonelabel3";
             this.Phonelabel3.Size = new System.Drawing.Size(73, 24);
             this.Phonelabel3.TabIndex = 24;
@@ -141,7 +141,7 @@
             this.UsernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.UsernameLabel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameLabel.ForeColor = System.Drawing.Color.White;
-            this.UsernameLabel.Location = new System.Drawing.Point(250, 55);
+            this.UsernameLabel.Location = new System.Drawing.Point(153, 55);
             this.UsernameLabel.Name = "UsernameLabel";
             this.UsernameLabel.Size = new System.Drawing.Size(112, 24);
             this.UsernameLabel.TabIndex = 22;
@@ -256,6 +256,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "EditProfile";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
             this.ResumeLayout(false);

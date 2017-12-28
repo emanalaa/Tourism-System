@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateUser));
             this.UpdateUserButton = new System.Windows.Forms.Button();
             this.UpdateUserPhoneTextbox = new System.Windows.Forms.TextBox();
             this.UpdateuserEmailtextbox = new System.Windows.Forms.TextBox();
@@ -51,13 +52,12 @@
             this.UpdateUserButton.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.UpdateUserButton.FlatAppearance.BorderSize = 2;
             this.UpdateUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.UpdateUserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.UpdateUserButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpdateUserButton.ForeColor = System.Drawing.Color.White;
-            this.UpdateUserButton.Location = new System.Drawing.Point(230, 387);
+            this.UpdateUserButton.Location = new System.Drawing.Point(243, 416);
             this.UpdateUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateUserButton.Name = "UpdateUserButton";
-            this.UpdateUserButton.Size = new System.Drawing.Size(125, 40);
+            this.UpdateUserButton.Size = new System.Drawing.Size(146, 40);
             this.UpdateUserButton.TabIndex = 42;
             this.UpdateUserButton.Text = "Update";
             this.UpdateUserButton.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@
             // 
             this.UpdateUserPhoneTextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateUserPhoneTextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateUserPhoneTextbox.Location = new System.Drawing.Point(248, 284);
+            this.UpdateUserPhoneTextbox.Location = new System.Drawing.Point(293, 284);
             this.UpdateUserPhoneTextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateUserPhoneTextbox.Name = "UpdateUserPhoneTextbox";
             this.UpdateUserPhoneTextbox.Size = new System.Drawing.Size(245, 32);
@@ -77,7 +77,7 @@
             // 
             this.UpdateuserEmailtextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UpdateuserEmailtextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UpdateuserEmailtextbox.Location = new System.Drawing.Point(248, 231);
+            this.UpdateuserEmailtextbox.Location = new System.Drawing.Point(293, 231);
             this.UpdateuserEmailtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpdateuserEmailtextbox.Name = "UpdateuserEmailtextbox";
             this.UpdateuserEmailtextbox.Size = new System.Drawing.Size(245, 32);
@@ -87,7 +87,7 @@
             // 
             this.Updateuserpasswordtextbox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Updateuserpasswordtextbox.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Updateuserpasswordtextbox.Location = new System.Drawing.Point(248, 170);
+            this.Updateuserpasswordtextbox.Location = new System.Drawing.Point(293, 178);
             this.Updateuserpasswordtextbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Updateuserpasswordtextbox.Name = "Updateuserpasswordtextbox";
             this.Updateuserpasswordtextbox.Size = new System.Drawing.Size(245, 32);
@@ -99,7 +99,7 @@
             this.labelPhone.BackColor = System.Drawing.Color.Transparent;
             this.labelPhone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhone.ForeColor = System.Drawing.Color.Black;
-            this.labelPhone.Location = new System.Drawing.Point(154, 292);
+            this.labelPhone.Location = new System.Drawing.Point(87, 286);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(80, 24);
             this.labelPhone.TabIndex = 37;
@@ -111,7 +111,7 @@
             this.labelWayOfPayment.BackColor = System.Drawing.Color.Transparent;
             this.labelWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWayOfPayment.ForeColor = System.Drawing.Color.Black;
-            this.labelWayOfPayment.Location = new System.Drawing.Point(83, 338);
+            this.labelWayOfPayment.Location = new System.Drawing.Point(87, 341);
             this.labelWayOfPayment.Name = "labelWayOfPayment";
             this.labelWayOfPayment.Size = new System.Drawing.Size(183, 24);
             this.labelWayOfPayment.TabIndex = 36;
@@ -123,7 +123,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
-            this.labelPassword.Location = new System.Drawing.Point(133, 178);
+            this.labelPassword.Location = new System.Drawing.Point(87, 180);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(114, 24);
             this.labelPassword.TabIndex = 35;
@@ -135,7 +135,7 @@
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
-            this.labelEmail.Location = new System.Drawing.Point(160, 239);
+            this.labelEmail.Location = new System.Drawing.Point(87, 233);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(72, 24);
             this.labelEmail.TabIndex = 34;
@@ -147,7 +147,7 @@
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Black;
-            this.labelUsername.Location = new System.Drawing.Point(68, 58);
+            this.labelUsername.Location = new System.Drawing.Point(87, 77);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(200, 24);
             this.labelUsername.TabIndex = 33;
@@ -162,9 +162,9 @@
             "Cash",
             "Credit Card",
             "Visa Card"});
-            this.comboBoxWayOfPayment.Location = new System.Drawing.Point(251, 330);
+            this.comboBoxWayOfPayment.Location = new System.Drawing.Point(293, 338);
             this.comboBoxWayOfPayment.Name = "comboBoxWayOfPayment";
-            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(242, 32);
+            this.comboBoxWayOfPayment.Size = new System.Drawing.Size(245, 32);
             this.comboBoxWayOfPayment.TabIndex = 43;
             this.comboBoxWayOfPayment.Text = "Select";
             // 
@@ -172,7 +172,7 @@
             // 
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(245, 110);
+            this.textBox1.Location = new System.Drawing.Point(293, 129);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(245, 32);
@@ -184,7 +184,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(90, 118);
+            this.label1.Location = new System.Drawing.Point(87, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 24);
             this.label1.TabIndex = 45;
@@ -207,16 +207,18 @@
             // comboBoxUsername
             // 
             this.comboBoxUsername.FormattingEnabled = true;
-            this.comboBoxUsername.Location = new System.Drawing.Point(251, 55);
+            this.comboBoxUsername.Location = new System.Drawing.Point(293, 74);
             this.comboBoxUsername.Name = "comboBoxUsername";
-            this.comboBoxUsername.Size = new System.Drawing.Size(239, 32);
+            this.comboBoxUsername.Size = new System.Drawing.Size(245, 32);
             this.comboBoxUsername.TabIndex = 47;
             // 
             // UpdateUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.comboBoxUsername);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label1);
@@ -234,6 +236,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "UpdateUser";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateUser";
             this.ResumeLayout(false);

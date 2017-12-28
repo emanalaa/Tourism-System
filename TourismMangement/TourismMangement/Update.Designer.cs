@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update));
             this.ButtonUpdateTouplace = new System.Windows.Forms.Button();
             this.ButtonUpdateTrans = new System.Windows.Forms.Button();
             this.ButtonUpdateUser = new System.Windows.Forms.Button();
@@ -36,15 +37,15 @@
             // 
             // ButtonUpdateTouplace
             // 
-            this.ButtonUpdateTouplace.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonUpdateTouplace.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonUpdateTouplace.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonUpdateTouplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonUpdateTouplace.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUpdateTouplace.ForeColor = System.Drawing.Color.White;
-            this.ButtonUpdateTouplace.Location = new System.Drawing.Point(129, 453);
+            this.ButtonUpdateTouplace.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUpdateTouplace.ForeColor = System.Drawing.Color.Black;
+            this.ButtonUpdateTouplace.Location = new System.Drawing.Point(174, 322);
             this.ButtonUpdateTouplace.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonUpdateTouplace.Name = "ButtonUpdateTouplace";
-            this.ButtonUpdateTouplace.Size = new System.Drawing.Size(418, 74);
+            this.ButtonUpdateTouplace.Size = new System.Drawing.Size(312, 62);
             this.ButtonUpdateTouplace.TabIndex = 16;
             this.ButtonUpdateTouplace.Text = "Update TourPlace";
             this.ButtonUpdateTouplace.UseVisualStyleBackColor = false;
@@ -52,15 +53,15 @@
             // 
             // ButtonUpdateTrans
             // 
-            this.ButtonUpdateTrans.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonUpdateTrans.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonUpdateTrans.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonUpdateTrans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonUpdateTrans.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUpdateTrans.ForeColor = System.Drawing.Color.White;
-            this.ButtonUpdateTrans.Location = new System.Drawing.Point(129, 314);
+            this.ButtonUpdateTrans.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUpdateTrans.ForeColor = System.Drawing.Color.Black;
+            this.ButtonUpdateTrans.Location = new System.Drawing.Point(174, 223);
             this.ButtonUpdateTrans.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonUpdateTrans.Name = "ButtonUpdateTrans";
-            this.ButtonUpdateTrans.Size = new System.Drawing.Size(418, 74);
+            this.ButtonUpdateTrans.Size = new System.Drawing.Size(312, 67);
             this.ButtonUpdateTrans.TabIndex = 15;
             this.ButtonUpdateTrans.Text = "Update Transportation";
             this.ButtonUpdateTrans.UseVisualStyleBackColor = false;
@@ -68,15 +69,15 @@
             // 
             // ButtonUpdateUser
             // 
-            this.ButtonUpdateUser.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.ButtonUpdateUser.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonUpdateUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ButtonUpdateUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonUpdateUser.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonUpdateUser.ForeColor = System.Drawing.Color.White;
-            this.ButtonUpdateUser.Location = new System.Drawing.Point(129, 178);
+            this.ButtonUpdateUser.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonUpdateUser.ForeColor = System.Drawing.Color.Black;
+            this.ButtonUpdateUser.Location = new System.Drawing.Point(174, 127);
             this.ButtonUpdateUser.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ButtonUpdateUser.Name = "ButtonUpdateUser";
-            this.ButtonUpdateUser.Size = new System.Drawing.Size(418, 74);
+            this.ButtonUpdateUser.Size = new System.Drawing.Size(312, 68);
             this.ButtonUpdateUser.TabIndex = 14;
             this.ButtonUpdateUser.Text = "Update User";
             this.ButtonUpdateUser.UseVisualStyleBackColor = false;
@@ -100,6 +101,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonUpdateTouplace);

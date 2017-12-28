@@ -234,6 +234,7 @@
             this.ForeColor = System.Drawing.Color.Coral;
             this.Margin = new System.Windows.Forms.Padding(6, 4, 6, 4);
             this.Name = "Register";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.ResumeLayout(false);

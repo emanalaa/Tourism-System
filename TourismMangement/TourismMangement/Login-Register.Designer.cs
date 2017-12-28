@@ -70,6 +70,7 @@
             this.Controls.Add(this.ButtonSignIn);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Login_Register";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login_Register";
             this.ResumeLayout(false);

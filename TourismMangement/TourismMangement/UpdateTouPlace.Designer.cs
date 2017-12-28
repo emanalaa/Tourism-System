@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UpdateTouPlace));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,7 +42,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 89);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(116, 120);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 24);
             this.label1.TabIndex = 0;
@@ -50,7 +52,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 177);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(116, 201);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 24);
             this.label2.TabIndex = 1;
@@ -59,7 +62,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(38, 268);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(116, 286);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(141, 24);
             this.label3.TabIndex = 2;
@@ -67,14 +71,14 @@
             // 
             // textBoxlocation
             // 
-            this.textBoxlocation.Location = new System.Drawing.Point(185, 169);
+            this.textBoxlocation.Location = new System.Drawing.Point(263, 198);
             this.textBoxlocation.Name = "textBoxlocation";
             this.textBoxlocation.Size = new System.Drawing.Size(300, 32);
             this.textBoxlocation.TabIndex = 4;
             // 
             // textBoxticketprice
             // 
-            this.textBoxticketprice.Location = new System.Drawing.Point(185, 260);
+            this.textBoxticketprice.Location = new System.Drawing.Point(263, 283);
             this.textBoxticketprice.Name = "textBoxticketprice";
             this.textBoxticketprice.Size = new System.Drawing.Size(300, 32);
             this.textBoxticketprice.TabIndex = 5;
@@ -82,11 +86,10 @@
             // update
             // 
             this.update.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.update.ForeColor = System.Drawing.Color.White;
-            this.update.Location = new System.Drawing.Point(217, 364);
+            this.update.Location = new System.Drawing.Point(240, 395);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(140, 47);
+            this.update.Size = new System.Drawing.Size(153, 57);
             this.update.TabIndex = 6;
             this.update.Text = "Update";
             this.update.UseVisualStyleBackColor = false;
@@ -95,7 +98,7 @@
             // ComboName
             // 
             this.ComboName.FormattingEnabled = true;
-            this.ComboName.Location = new System.Drawing.Point(185, 86);
+            this.ComboName.Location = new System.Drawing.Point(263, 117);
             this.ComboName.Name = "ComboName";
             this.ComboName.Size = new System.Drawing.Size(300, 32);
             this.ComboName.TabIndex = 7;
@@ -118,7 +121,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 461);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(681, 567);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.ComboName);
             this.Controls.Add(this.update);

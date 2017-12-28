@@ -54,7 +54,7 @@
             this.AddUserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.AddUserButton.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddUserButton.ForeColor = System.Drawing.Color.White;
-            this.AddUserButton.Location = new System.Drawing.Point(274, 388);
+            this.AddUserButton.Location = new System.Drawing.Point(258, 387);
             this.AddUserButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddUserButton.Name = "AddUserButton";
             this.AddUserButton.Size = new System.Drawing.Size(140, 47);
@@ -100,7 +100,7 @@
             this.labelPhone.BackColor = System.Drawing.Color.Transparent;
             this.labelPhone.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPhone.ForeColor = System.Drawing.Color.Black;
-            this.labelPhone.Location = new System.Drawing.Point(217, 276);
+            this.labelPhone.Location = new System.Drawing.Point(97, 276);
             this.labelPhone.Name = "labelPhone";
             this.labelPhone.Size = new System.Drawing.Size(80, 24);
             this.labelPhone.TabIndex = 37;
@@ -112,7 +112,7 @@
             this.labelWayOfPayment.BackColor = System.Drawing.Color.Transparent;
             this.labelWayOfPayment.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelWayOfPayment.ForeColor = System.Drawing.Color.Black;
-            this.labelWayOfPayment.Location = new System.Drawing.Point(114, 323);
+            this.labelWayOfPayment.Location = new System.Drawing.Point(97, 323);
             this.labelWayOfPayment.Name = "labelWayOfPayment";
             this.labelWayOfPayment.Size = new System.Drawing.Size(183, 24);
             this.labelWayOfPayment.TabIndex = 36;
@@ -124,7 +124,7 @@
             this.labelPassword.BackColor = System.Drawing.Color.Transparent;
             this.labelPassword.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPassword.ForeColor = System.Drawing.Color.Black;
-            this.labelPassword.Location = new System.Drawing.Point(183, 141);
+            this.labelPassword.Location = new System.Drawing.Point(97, 141);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(114, 24);
             this.labelPassword.TabIndex = 35;
@@ -136,7 +136,7 @@
             this.labelEmail.BackColor = System.Drawing.Color.Transparent;
             this.labelEmail.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
-            this.labelEmail.Location = new System.Drawing.Point(225, 230);
+            this.labelEmail.Location = new System.Drawing.Point(97, 230);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(72, 24);
             this.labelEmail.TabIndex = 34;
@@ -148,7 +148,7 @@
             this.labelUsername.BackColor = System.Drawing.Color.Transparent;
             this.labelUsername.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsername.ForeColor = System.Drawing.Color.Black;
-            this.labelUsername.Location = new System.Drawing.Point(183, 95);
+            this.labelUsername.Location = new System.Drawing.Point(97, 95);
             this.labelUsername.Name = "labelUsername";
             this.labelUsername.Size = new System.Drawing.Size(119, 24);
             this.labelUsername.TabIndex = 33;
@@ -234,6 +234,7 @@
             this.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "AddUser";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddUser";
             this.ResumeLayout(false);
